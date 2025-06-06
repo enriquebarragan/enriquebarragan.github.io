@@ -16,13 +16,15 @@
     <div class="max-w-3xl mx-auto px-4 py-4 flex items-center justify-between">
       <h1 class="text-xl font-semibold">
         <a href="{{ '/' | relative_url }}" class="hover:underline">
-          {{ site.title | default: "My Site" }}
+          {{ site.title | default: "untitled" }}
         </a>
       </h1>
       <nav class="space-x-4">
-        <a href="{{ '/' | relative_url }}" class="text-gray-600 hover:text-gray-900">Home</a>
-        <a href="{{ '/blog/' | relative_url }}" class="text-gray-600 hover:text-gray-900">Blog</a>
-        <a href="{{ '/about/' | relative_url }}" class="text-gray-600 hover:text-gray-900">About</a>
+        {% for item in site.nav %}
+          <a href="{{ item.url | relative_url }}" class="text-gray-600 hover:text-gray-900">
+            {{ item.title }}
+          </a>
+        {% endfor %}
       </nav>
     </div>
   </header>
@@ -32,7 +34,7 @@
   </main>
 
   <footer class="border-t border-gray-200 mt-12 py-4 text-center text-sm text-gray-600">
-    &copy; {{ site.time | date: "%Y" }} Enrique Barragan
+    &copy; {{ site.time | date: "%Y" }} Emmanuel Enrique Barragan Lopez
   </footer>
 </body>
 </html>
