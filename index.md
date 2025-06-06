@@ -3,57 +3,23 @@ layout: default
 title: Home
 ---
 
-# Welcome
+<div class="prose lg:prose-xl">
+  <h2 class="text-3xl font-bold mb-4">Welcome</h2>
+  <p>This is a simple Jekyll+Tailwind prototype. Below are a few examples of how you might style things.</p>
 
-This is the homepage. 
+  <!-- Example call-out box -->
+  <div class="border-l-4 border-blue-500 bg-blue-50 p-4 my-6">
+    <p class="font-medium">Note:</p>
+    <p class="text-gray-700">You’re loading Tailwind via CDN. This is fine to experiment, but not optimal long-term.</p>
+  </div>
 
----
-
-## Recent Posts
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-      <span class="post-date">
-        ({{ post.date | date: "%b %-d, %Y" }})
-      </span>
-    </li>
-  {% endfor %}
-</ul>
-
-
----
-
-## Categories
-
-<ul>
-  {% for category in site.categories %}
-    <li>
-      <a href="{{ site.baseurl }}/categories/{{ category[0] | slugify }}/">
-        {{ category[0] }}
-      </a>
-      ({{ category[1].size }} posts)
-    </li>
-  {% endfor %}
-</ul>
-
-
----
-
-## About Me
-
-enrique
-
----
-
-## Quick Links
-
-- [All Posts]({{ site.baseurl }}/blog/)  
-- [Projects]({{ site.baseurl }}/projects/)  
-- [Contact]({{ site.baseurl }}/contact/)  
-
-
----
+  <!-- Example buttons -->
+  <div class="space-x-2">
+    <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700">
+      Primary Action
+    </a>
+    <a href="#" class="inline-block px-4 py-2 border border-blue-600 text-blue-600 font-semibold rounded hover:bg-blue-50">
+      Secondary Action
+    </a>
+  </div>
+</div>
