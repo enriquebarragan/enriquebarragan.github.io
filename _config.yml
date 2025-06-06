@@ -1,4 +1,4 @@
-title: Emmanuel Enrique Barragan
+title: untitled
 description: a personal website 
 author: Emmanuel Enrique Barragan Lopez
 
@@ -11,8 +11,6 @@ kramdown:
   syntax_highlighter: rouge
 
 nav:
-  - title: Home
-    url: /
   - title: Posts
     url: /posts/
   - title: About
