@@ -1,3 +1,24 @@
-title: testing testing
-description: Just a minimal test site
+title: Emmanuel Enrique Barragan
+description: a personal website 
+author: Emmanuel Enrique Barragan Lopez
+
+url: "https://enriquebarragan.me"
+
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+nav:
+  - title: Home
+    url: /
+  - title: Posts
+    url: /posts/
+  - title: About
+    url: /about/
+
+exclude:
+  - README.md
+
+timezone: America/Chicago
