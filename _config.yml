@@ -18,6 +18,5 @@ nav:
 
 exclude:
   - README.md
-  - assets/
 
 timezone: America/Chicago
