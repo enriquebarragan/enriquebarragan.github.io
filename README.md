@@ -6,7 +6,7 @@ my personal website that i'll use to post whatever. [^1]
 
 [^1]: built with
   [jekyll](https://jekyllrb.com/)
-  [tailwind CSS](https://tailwindcss.com/)
-  [github pages](https://pages.github.com/)
+    [tailwind CSS](https://tailwindcss.com/)
+      [github pages](https://pages.github.com/)
 
 
