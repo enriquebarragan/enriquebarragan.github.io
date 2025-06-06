@@ -1,11 +1,12 @@
-# enriquebarragan.github.io
-my personal website that i'll use to post whatever. most changes are done on my phone while walking my dog, and with the help of chatgpt, so keep that in mind if you decide to read the commits. 
+# [enriquebarragan.me](https://enriquebarragan.github.io)
+my personal website that i'll use to post whatever. [^1]
 
-live site
-[https://enriquebarragan.github.io](https://enriquebarragan.github.io)
+> [!NOTE]
+> most changes are done on my phone while walking my dog, and with the help of chatgpt, so keep that in mind if you decide to read the commits. 
 
-built with
-- [jekyll](https://jekyllrb.com/)
-- [tailwind CSS](https://tailwindcss.com/)
-- github pages
+[^1]: built with
+  [jekyll](https://jekyllrb.com/)
+  [tailwind CSS](https://tailwindcss.com/)
+  [github pages](https://pages.github.com/)
+
 
