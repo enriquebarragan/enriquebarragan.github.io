@@ -10,6 +10,6 @@ title: Home
 <div class="mx-auto max-w-xl px-4 pt-4 pb-10 text-center space-y-4">
   <div>
     <h1 class="text-2xl font-semibold font-sans">Emmanuel Enrique Barragan</h1>
-    <p class="text-gray-600">analyst / okay with computers / irving, tx local</p>
+    <p class="text-xs sm:text-sm text-gray-600">analyst / okay with computers / irving, tx local</p>
   </div>
 </div>
