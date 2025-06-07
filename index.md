@@ -9,7 +9,7 @@ title: Home
 
 <div class="mx-auto max-w-xl px-4 pt-4 pb-10 text-center space-y-4">
   <div>
-    <h1 class="text-4xl font-bold font-sans">ENRIQUE BARRAGAN</h1>
+    <h1 class="text-4xl font-extrabold font-sans">Enrique Barragan</h1>
     <p class="text-sm sm:text-base text-gray-600">analyst / okay with computers / irving, tx local</p>
   </div>
 </div>
