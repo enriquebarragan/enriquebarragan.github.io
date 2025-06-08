@@ -13,3 +13,26 @@ title: Home
     <p class="text-sm sm:text-base text-gray-600">analyst · okay with computers · irving, tx local</p>
   </div>
 </div>
+
+<div class="flex justify-center gap-4 pt-2">
+  <a href="https://www.instagram.com/yourusername" target="_blank" aria-label="Instagram">
+    <div class="w-10 h-10 rounded-full shadow bg-white flex items-center justify-center hover:opacity-80 transition">
+      <img src="/assets/icons/instagram.svg" alt="Instagram" class="w-5 h-5">
+    </div>
+  </a>
+  <a href="https://www.linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+    <div class="w-10 h-10 rounded-full shadow bg-white flex items-center justify-center hover:opacity-80 transition">
+      <img src="/assets/icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5">
+    </div>
+  </a>
+  <a href="https://www.youtube.com/@yourusername" target="_blank" aria-label="YouTube">
+    <div class="w-10 h-10 rounded-full shadow bg-white flex items-center justify-center hover:opacity-80 transition">
+      <img src="/assets/icons/youtube.svg" alt="YouTube" class="w-5 h-5">
+    </div>
+  </a>
+  <a href="https://onlyfans.com/yourusername" target="_blank" aria-label="OnlyFans">
+    <div class="w-10 h-10 rounded-full shadow bg-white flex items-center justify-center hover:opacity-80 transition">
+      <img src="/assets/icons/onlyfans.svg" alt="OnlyFans" class="w-5 h-5">
+    </div>
+  </a>
+</div>
