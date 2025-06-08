@@ -15,27 +15,27 @@ title: Home
 </div>
 
 <div class="flex justify-center gap-4 pt-2">
-  <a href="https://www.instagram.com/enr.que_" target="_blank" aria-label="Instagram">
+  <a href="https://www.instagram.com/enr.que_" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
     <div class="w-10 h-10 rounded-full shadow bg-white flex items-center justify-center hover:opacity-80 transition">
-      <img src="/assets/icons/instagram.svg" alt="Instagram" class="w-5 h-5">
+      <img src="/assets/icons/instagram.svg" alt="Instagram" class="w-4 h-4 text-gray-400">
     </div>
   </a>
 
-  <a href="https://www.linkedin.com/in/eebarragan" target="_blank" aria-label="LinkedIn">
+  <a href="https://www.linkedin.com/in/eebarragan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
     <div class="w-10 h-10 rounded-full shadow bg-white flex items-center justify-center hover:opacity-80 transition">
-      <img src="/assets/icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5">
+      <img src="/assets/icons/linkedin.svg" alt="LinkedIn" class="w-4 h-4 text-gray-400">
     </div>
   </a>
 
-  <a href="https://www.youtube.com/@frozenmonkeylove" target="_blank" aria-label="YouTube">
+  <a href="https://www.youtube.com/@frozenmonkeylove" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
     <div class="w-10 h-10 rounded-full shadow bg-white flex items-center justify-center hover:opacity-80 transition">
-      <img src="/assets/icons/youtube.svg" alt="YouTube" class="w-5 h-5">
+      <img src="/assets/icons/youtube.svg" alt="YouTube" class="w-4 h-4 text-gray-400">
     </div>
   </a>
-
+  
   <a href="/assets/images/of-cat.png" target="_blank" aria-label="OnlyFans">
     <div class="w-10 h-10 rounded-full shadow bg-white flex items-center justify-center hover:opacity-80 transition">
-      <img src="/assets/icons/onlyfans.svg" alt="OnlyFans (not really)" class="w-5 h-5">
+      <img src="/assets/icons/onlyfans.svg" alt="OnlyFans (not really)" class="w-4 h-4 text-gray-400">
     </div>
   </a>
 </div>
