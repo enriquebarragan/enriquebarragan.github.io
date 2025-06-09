@@ -4,7 +4,7 @@ title: OnlyFans Parody
 permalink: /rips/onlyfans/
 ---
 
-<div class="w-full max-w-full sm:max-w-lg lg:max-w-xl mx-auto bg-white shadow-md rounded-lg overflow-hidden mt-10">
+<div class="w-full max-w-full sm:max-w-lg lg:max-w-xl mx-auto bg-white shadow-md rounded-lg overflow-hidden mt-2">
   <!-- cover image -->
   <img src="/assets/parodies/onlyfans/cover-image.jpg" alt="cover image" class="w-full h-40 object-cover">
 
@@ -15,7 +15,7 @@ permalink: /rips/onlyfans/
     </div>
 
 
-    <div class="mt-2">
+  <div class="mt-2">
       <h1 class="text-xl font-semibold">enrique</h1>
       <div class="mt-1 text-gray-500 text-sm flex items-baseline space-x-2">
         <span>@slightlyferal</span>
@@ -24,7 +24,7 @@ permalink: /rips/onlyfans/
     </div>
 
     <!-- bio text and features -->
-    <p class="mt-4 text-sm text-gray-700">not a model, just photogenic when blurry</p>
+  <p class="mt-4 text-sm text-gray-700">not a model, just photogenic when blurry</p>
     <p class="mt-4 font-semibold text-gray-800">what you'll get:</p>
     <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
       <li>slow zoom-ins on my face while I debug</li>
@@ -39,7 +39,7 @@ permalink: /rips/onlyfans/
     </ul>
 
     <!-- stats with icons -->
-    <div class="mt-6 flex justify-around text-center">
+  <div class="mt-6 flex justify-around text-center">
       <div class="flex items-center space-x-1">
         <img src="/assets/parodies/onlyfans/picture-icon.svg" alt="pictures icon" class="w-5 h-5">
         <span class="font-bold">3.4k</span>
@@ -55,13 +55,13 @@ permalink: /rips/onlyfans/
     </div>
 
     <!-- subscription offer -->
-    <div class="mt-6 bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 p-4 rounded-md">
+  <div class="mt-6 bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 p-4 rounded-md">
       <h2 class="font-semibold text-gray-800">limited offer - subscribe now and get first access to my half-finished side projects</h2>
       <p class="text-sm text-gray-600 mt-1">only for debugging enthusiasts (limited to 10)</p>
     </div>
 
     <!-- main subscribe button -->
-    <div class="mt-6">
+  <div class="mt-6">
       <button class="w-full py-2 px-4 rounded-lg font-semibold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white flex justify-between">
         <span>subscribe</span>
         <span>$5 for 30 days</span>
@@ -70,7 +70,7 @@ permalink: /rips/onlyfans/
     </div>
 
     <!-- subscription bundles -->
-    <div class="mt-8">
+  <div class="mt-8">
       <h3 class="text-lg font-semibold">subscription bundles</h3>
       <div class="mt-4 space-y-2">
         <button class="w-full py-2 px-4 rounded-lg font-semibold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white flex justify-between">
