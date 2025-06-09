@@ -11,7 +11,7 @@
   <!-- =================================================== -->
 
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+<body class="bg-gray-50 text-gray-800 antialiased min-h-screen flex flex-col">
 
   <div class="text-center pt-6 pb-2 space-x-6 text-gray-600 text-base sm:text-lg font-light">
     <a href="/" class="hover:text-gray-800">home</a>
@@ -19,11 +19,13 @@
     <a href="/about/" class="hover:text-gray-800">about</a>
   </div>
 
-  <main class="max-w-3xl mx-auto px-4 py-8 flex-grow">
-    {{ content }}
-  </main>
+  <div class="flex-grow flex items-center justify-center">
+    <main class="max-w-3xl mx-auto px-4 py-8">
+      {{ content }}
+    </main>
+  </div>
 
-  <footer class="mt-auto py-4 text-center text-sm text-gray-400">
+  <footer class="py-4 text-center text-sm text-gray-400">
     <a href="https://github.com/enriquebarragan/enriquebarragan.github.io/blob/main/LICENSE-content.md" target="_blank" rel="noopener noreferrer">
       &copy; EEB. don’t steal my stuff.
     </a>
@@ -31,6 +33,6 @@
       view source
     </a>
   </footer>
-  
+
 </body>
 </html>
