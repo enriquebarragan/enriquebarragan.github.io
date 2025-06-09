@@ -1,6 +1,6 @@
 ---
-layout: default
-title: OnlyFans Parody
+layout: rips
+title: OnlyFans
 permalink: /rips/onlyfans/
 ---
 
