@@ -11,7 +11,7 @@ permalink: /rips/onlyfans/
   <div class="px-6 py-4">
     <!-- profile picture -->
     <div class="flex -mt-12">
-      <img src="/assets/parodies/onlyfans/profile-picture.jpg" alt="profile picture" class="w-24 h-24 rounded-full border-4 border-white shadow-lg">
+      <img src="/assets/images/of-cat-cover.png.jpg" alt="profile picture" class="w-24 h-24 rounded-full border-4 border-white shadow-lg">
     </div>
 
 
