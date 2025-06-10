@@ -32,8 +32,8 @@ permalink: /rips/onlyfans/
       <li>hot takes I deleted before tweeting</li>
       <li>shirtless but it’s just me fixing layout issues</li>
       <li>voice memos of me explaining things I don’t understand</li>
-      <li>Power BI dashboards with zero context</li>
-      <li>Photoshop timelapses with dramatic background music</li>
+      <li>power BI dashboards with zero context</li>
+      <li>photoshop timelapses with dramatic background music</li>
       <li>dramatic readings of changelogs and RFCs</li>
       <li>exclusive folder tours: “final_final_v3” and others</li>
     </ul>
@@ -66,7 +66,7 @@ permalink: /rips/onlyfans/
         <span>subscribe</span>
         <span>$5 for 30 days</span>
       </button>
-      <p class="text-xs text-gray-500 mt-1">regular price $9.99 / month</p>
+      <p class="text-center text-xs text-gray-500 mt-1">regular price $9.99 / month</p>
     </div>
 
     <!-- subscription bundles -->
