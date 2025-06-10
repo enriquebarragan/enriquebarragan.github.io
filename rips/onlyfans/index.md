@@ -56,34 +56,40 @@ permalink: /rips/onlyfans/
     </div>
 
     <!-- SECTION 2: Subscription Box -->
-    <div class="bg-white shadow-md rounded-md p-4 space-y-6">
-      <div class="bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 p-4 rounded-md">
-        <h2 class="font-semibold text-gray-800">limited offer - subscribe now and get first access to my half-finished side projects</h2>
-        <p class="text-sm text-gray-600 mt-1">only for debugging enthusiasts (limited to 10)</p>
-      </div>
+<div class="bg-white shadow-md rounded-md p-6 space-y-6">
+  <!-- Section Header -->
+  <h2 class="text-xl font-bold text-gray-800">Subscribe & Support</h2>
 
-      <div>
-        <button class="w-full py-2 px-4 rounded-lg font-semibold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white flex justify-between">
-          <span>subscribe</span>
-          <span>$5 for 30 days</span>
-        </button>
-        <p class="text-right text-xs text-gray-500 mt-1">regular price $9.99 / month</p>
-      </div>
+  <!-- Limited Offer Box -->
+  <div class="bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 p-4 rounded-md space-y-1">
+    <h3 class="font-semibold text-gray-800">limited offer – early access to half-finished side projects</h3>
+    <p class="text-sm text-gray-600">only for debugging enthusiasts (limited to 10)</p>
+  </div>
 
-      <div>
-        <h3 class="text-lg font-semibold">subscription bundles</h3>
-        <div class="mt-4 space-y-2">
-          <button class="w-full py-2 px-4 rounded-lg font-semibold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white flex justify-between">
-            <span>3 months (25% off)</span>
-            <span>$22.48 total</span>
-          </button>
-          <button class="w-full py-2 px-4 rounded-lg font-semibold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white flex justify-between">
-            <span>6 months (40% off)</span>
-            <span>$35.96 total</span>
-          </button>
-        </div>
-      </div>
-    </div>
+  <!-- Basic Subscription -->
+  <div class="space-y-1">
+    <button class="w-full py-2 px-4 rounded-lg font-semibold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white flex justify-between items-center">
+      <span>Subscribe</span>
+      <span>$5 for 30 days</span>
+    </button>
+    <p class="text-xs text-gray-500 text-right">regular price $9.99/month</p>
+  </div>
+
+  <!-- Bundles Section -->
+  <div class="space-y-3">
+    <h3 class="text-lg font-semibold text-gray-800">Subscription Bundles</h3>
+
+    <button class="w-full py-2 px-4 rounded-lg font-semibold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white flex justify-between items-center">
+      <span>3 months <span class="text-sm text-gray-200">(25% off)</span></span>
+      <span>$22.48</span>
+    </button>
+
+    <button class="w-full py-2 px-4 rounded-lg font-semibold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white flex justify-between items-center">
+      <span>6 months <span class="text-sm text-gray-200">(40% off)</span></span>
+      <span>$35.96</span>
+    </button>
+  </div>
+</div>
 
   </div>
 </div>
