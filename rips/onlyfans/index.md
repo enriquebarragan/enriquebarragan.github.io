@@ -41,15 +41,15 @@ permalink: /rips/onlyfans/
 
       <div class="mt-6 flex justify-around text-center">
         <div class="flex items-center space-x-1">
-          <img src="/assets/parodies/onlyfans/picture-icon.svg" alt="pictures icon" class="w-5 h-5">
+          <img src="/assets/parodies/onlyfans/picture.svg" alt="pictures icon" class="w-5 h-5">
           <span class="font-bold">3.4k</span>
         </div>
         <div class="flex items-center space-x-1">
-          <img src="/assets/parodies/onlyfans/video-icon.svg" alt="videos icon" class="w-5 h-5">
+          <img src="/assets/parodies/onlyfans/video.svg" alt="videos icon" class="w-5 h-5">
           <span class="font-bold">412</span>
         </div>
         <div class="flex items-center space-x-1">
-          <img src="/assets/parodies/onlyfans/heart-icon.svg" alt="likes icon" class="w-5 h-5">
+          <img src="/assets/parodies/onlyfans/heart.svg" alt="likes icon" class="w-5 h-5">
           <span class="font-bold">3.71m</span>
         </div>
       </div>
