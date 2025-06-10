@@ -66,7 +66,7 @@ permalink: /rips/onlyfans/
         <span>subscribe</span>
         <span>$5 for 30 days</span>
       </button>
-      <p class="text-center text-xs text-gray-500 mt-1">regular price $9.99 / month</p>
+      <p class="text-right text-xs text-gray-500 mt-1">regular price $9.99 / month</p>
     </div>
 
     <!-- subscription bundles -->
