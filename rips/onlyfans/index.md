@@ -8,7 +8,7 @@ permalink: /rips/onlyfans/
   <!-- cover image -->
   <img src="/assets/images/of-cover.jpg" alt="cover image" class="w-full h-40 object-cover object-center">
 
-  <div class="px-6 py-4 space-y-6">
+  <div class="px-6 py-4 space-y-4">
     
     <!-- SECTION 1: Profile Box -->
     <div class="bg-white shadow-md rounded-md p-4">
