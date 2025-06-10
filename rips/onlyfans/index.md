@@ -58,12 +58,12 @@ permalink: /rips/onlyfans/
     <!-- SECTION 2: Subscription Box -->
 <div class="bg-white shadow-md rounded-md p-6 space-y-6">
   <!-- Section Header -->
-  <h2 class="text-xl font-bold text-gray-800">Subscribe & Support</h2>
+  <h2 class="text-xl font-bold text-gray-800">subscribe</h2>
 
   <!-- Limited Offer Box -->
   <div class="bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 p-4 rounded-md space-y-1">
     <h3 class="font-semibold text-gray-800">limited offer – early access to half-finished side projects</h3>
-    <p class="text-sm text-gray-600">only for debugging enthusiasts (limited to 10)</p>
+    <p class="text-sm text-gray-600">only for debugging enthusiasts (10 spots left)</p>
   </div>
 
   <!-- Basic Subscription -->
