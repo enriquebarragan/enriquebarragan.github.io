@@ -4,7 +4,7 @@ title: onlyfans but cleaner
 permalink: /rips/onlyfans/
 ---
 
-<div class="w-full max-w-full sm:max-w-lg lg:max-w-xl mx-auto bg-white shadow-md rounded-lg overflow-hidden mt-2">
+<div class="bg-gray-50 w-full max-w-full sm:max-w-lg lg:max-w-xl mx-auto bg-white shadow-md rounded-lg overflow-hidden mt-2">
   <!-- cover image -->
   <img src="/assets/images/of-cover.jpg" alt="cover image" class="w-full h-40 object-cover object-center">
 
