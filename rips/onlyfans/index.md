@@ -10,14 +10,14 @@ permalink: /rips/onlyfans/
 
   <div class="px-6 py-4 space-y-4">
     
-    <!-- SECTION 1: Profile Box -->
-    <div class="bg-white shadow-md rounded-md p-4">
+  <!-- SECTION 1: Profile Box -->
+  <div class="bg-white shadow-md rounded-md p-4">
       <!-- profile picture -->
       <div class="flex -mt-12">
         <img src="/assets/images/of-pfp.JPG" alt="profile picture" class="w-24 h-24 rounded-full border-4 border-white shadow-lg">
       </div>
 
-      <div class="mt-2">
+  <div class="mt-2">
         <h1 class="text-xl font-semibold">enrique</h1>
         <div class="mt-1 text-gray-500 text-sm flex items-baseline space-x-2">
           <span>@slightlyferal</span>
@@ -25,7 +25,7 @@ permalink: /rips/onlyfans/
         </div>
       </div>
 
-      <p class="mt-4 text-sm text-gray-700">not a model, just photogenic when blurry</p>
+  <p class="mt-4 text-sm text-gray-700">not a model, just photogenic when blurry</p>
       <p class="mt-4 font-semibold text-gray-800">what you'll get:</p>
       <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
         <li>slow zoom-ins on my face while I debug</li>
@@ -39,7 +39,7 @@ permalink: /rips/onlyfans/
         <li>exclusive folder tours: “final_final_v3” and others</li>
       </ul>
 
-      <div class="mt-6 flex justify-around text-center">
+   <div class="mt-6 flex justify-around text-center">
         <div class="flex items-center space-x-1">
           <img src="/assets/icons/picture.svg" alt="pictures icon" class="w-5 h-5">
           <span class="font-bold">3.4k</span>
