@@ -6,7 +6,7 @@ permalink: /rips/onlyfans/
 
 <div class="w-full max-w-full sm:max-w-lg lg:max-w-xl mx-auto bg-white shadow-md rounded-lg overflow-hidden mt-2">
   <!-- cover image -->
-  <img src="/assets/parodies/onlyfans/cover-image.jpg" alt="cover image" class="w-full h-40 object-cover">
+  <img src="/assets/images/of-cat-cover.png" alt="cover image" class="w-full h-40 object-cover">
 
   <div class="px-6 py-4">
     <!-- profile picture -->
