@@ -45,7 +45,7 @@ permalink: /rips/not-onlyfans/
       </div>
 
   <p class="mt-4 text-sm text-gray-700">not a model, just photogenic when blurry</p>
-  <div class="rounded-md bg-gray-50"
+  <div class="rounded-md bg-gray-50">
       <p class="mt-4 font-semibold text-gray-800">what you'll get:</p>
       <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
         <li>4K screenshots of my desktop, no icons censored</li>
