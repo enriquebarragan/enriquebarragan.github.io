@@ -31,13 +31,13 @@ permalink: /rips/not-onlyfans/
           </div>
           <div class="flex items-center space-x-1">
             <img src="/assets/icons/heart.svg" alt="likes icon" class="w-4 h-4">
-            <span>3.71m</span>
+            <span>2</span>
           </div>
         </div>
       </div>
 
       <div class="mt-2">
-        <h1 class="text-2xl font-semibold">enrique 😳</h1>
+        <h1 class="text-xl font-semibold">enrique 😳</h1>
         <div class="mt-1 text-gray-500 text-sm flex items-baseline space-x-2">
           <span>@slightlyferal</span>
           <span>•</span>
@@ -45,8 +45,7 @@ permalink: /rips/not-onlyfans/
         </div>
       </div>
 
-      <p class="mt-4 text-sm text-gray-700">not a model, just photogenic when blurry</p>
-      <p class="mb-2 font-semibold text-gray-800">what you’ll get:</p>
+      <p class="mt-2 text-sm text-gray-700">not a model, just photogenic when blurry</p>
       <div class="rounded-md bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 p-4 shadow-inner mt-4">
         <p class="mb-2 font-semibold text-gray-800 leading-none">what you’ll get:</p>
         <ul class="list-disc list-inside text-xs sm:text-sm text-gray-700 space-y-2">
