@@ -1,6 +1,6 @@
 ---
 layout: rips
-title: onlyfans but cleaner
+title: not onlyfans
 permalink: /rips/onlyfans/
 ---
 
@@ -21,7 +21,7 @@ permalink: /rips/onlyfans/
   </div>
 
   <!-- stats (aligned lower and to the right) -->
-  <div class="flex flex-1 justify-end items-end pl-2 pt-12 gap-4 text-sm text-gray-700">
+  <div class="flex flex-1 justify-end items-end pl-2 pt-16 gap-4 text-sm text-gray-700">
     <div class="flex items-center space-x-1">
       <img src="/assets/icons/picture.svg" alt="pictures icon" class="w-4 h-4">
       <span>3.4k</span>
@@ -39,8 +39,7 @@ permalink: /rips/onlyfans/
       <div class="mt-2">
         <h1 class="text-xl font-semibold">enrique</h1>
         <div class="mt-1 text-gray-500 text-sm flex items-baseline space-x-2">
-          <span>@slightlyferal</span>
-          <span class="text-xs">(seen 4 minutes ago)</span>
+          <span>@slightlyferal • (seen 4 minutes ago) </span>
         </div>
       </div>
 
@@ -56,18 +55,17 @@ permalink: /rips/onlyfans/
         <li>photoshop timelapses with dramatic background music</li>
         <li>dramatic readings of changelogs and RFCs</li>
         <li>exclusive folder tours: “final_final_v3” and others</li>
+        <li>and early access to half-finished side projects</li>
       </ul>
     </div>
 
     <!-- SECTION 2: Subscription Box -->
     <div class="bg-white shadow-md rounded-md p-6 space-y-6">
-      <!-- Section Header -->
-      <h2 class="text-xl font-bold text-gray-800">subscribe</h2>
 
       <!-- Limited Offer Box -->
       <div class="bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 p-4 rounded-md space-y-1">
-        <h3 class="font-semibold text-gray-800">limited offer – early access to half-finished side projects</h3>
-        <p class="text-sm text-gray-600">only for debugging enthusiasts (10 spots left)</p>
+        <h3 class="font-semibold text-gray-800">limited offer – 50% off for 30 days!</h3>
+        <p class="text-sm text-gray-600">(10/10 spots left)</p>
       </div>
 
       <!-- Basic Subscription -->
@@ -78,7 +76,7 @@ permalink: /rips/onlyfans/
         </button>
         <p class="text-xs text-gray-500 text-right">regular price $9.99/month</p>
       </div>
-
+    <hr class="border-t border-gray-300 my-6">
       <!-- Bundles Section -->
       <div class="space-y-3">
         <h3 class="text-lg font-semibold text-gray-800">Subscription Bundles</h3>
