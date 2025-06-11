@@ -14,14 +14,14 @@ permalink: /rips/onlyfans/
     <div class="bg-white shadow-md rounded-md p-4">
       
       <!-- profile + stats -->
-      <div class="flex -mt-12 items-center gap-2 flex-nowrap">
+      <div class="flex -mt-14 items-center gap-2 flex-nowrap">
         <!-- profile picture -->
         <div>
           <img src="/assets/images/of-pfp.JPG" alt="profile picture" class="w-24 h-24 aspect-square rounded-full border-4 border-white shadow-lg object-cover">
         </div>
 
         <!-- stats -->
-        <div class="flex justify-around text-center w-full sm:w-auto sm:justify-start gap-4">
+        <div class="flex justify-around text-center w-auto gap-2">
           <div class="flex items-center space-x-1 text-sm text-gray-700">
             <img src="/assets/icons/picture.svg" alt="pictures icon" class="w-4 h-4">
             <span>3.4k</span>
