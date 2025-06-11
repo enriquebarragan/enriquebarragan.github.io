@@ -39,8 +39,9 @@ permalink: /rips/onlyfans/
       <div class="mt-2">
         <h1 class="text-xl font-semibold">enrique 😳</h1>
         <div class="mt-1 text-gray-500 text-sm flex items-baseline space-x-2">
-          <span>@slightlyferal </span>
-            <span> • (seen 4 minutes ago)</span>
+          <span>@slightlyferal</span>
+            <span>•</span>
+            <span>(seen 4 minutes ago)</span>
         </div>
       </div>
 
@@ -56,7 +57,6 @@ permalink: /rips/onlyfans/
         <li>photoshop timelapses with dramatic background music</li>
         <li>dramatic readings of changelogs and RFCs</li>
         <li>exclusive folder tours: “final_final_v3” and others</li>
-        <li>and early access to half-finished side projects</li>
       </ul>
     </div>
 
@@ -73,7 +73,7 @@ permalink: /rips/onlyfans/
       <div class="space-y-1">
         <button class="w-full py-2 px-4 rounded-lg font-semibold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white flex justify-between items-center">
           <span>Subscribe</span>
-          <span>$5 for 30 days</span>
+          <span>$5 for 30 days and early access to my half-finished side projects </span>
         </button>
         <p class="text-xs text-gray-500 text-right">regular price $9.99/month</p>
       </div>
