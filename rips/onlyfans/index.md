@@ -21,7 +21,7 @@ permalink: /rips/onlyfans/
   </div>
 
   <!-- stats (aligned lower and to the right) -->
-  <div class="flex flex-1 justify-end items-end pl-2 pt-16 gap-4 text-sm text-gray-700">
+  <div class="flex flex-1 justify-end items-end pl-2 pt-14 gap-6 text-sm text-gray-700">
     <div class="flex items-center space-x-1">
       <img src="/assets/icons/picture.svg" alt="pictures icon" class="w-4 h-4">
       <span>3.4k</span>
@@ -37,9 +37,10 @@ permalink: /rips/onlyfans/
   </div>
 </div>
       <div class="mt-2">
-        <h1 class="text-xl font-semibold">enrique</h1>
+        <h1 class="text-xl font-semibold">enrique 😳</h1>
         <div class="mt-1 text-gray-500 text-sm flex items-baseline space-x-2">
-          <span>@slightlyferal • (seen 4 minutes ago) </span>
+          <span>@slightlyferal </span>
+            <span> • (seen 4 minutes ago)</span>
         </div>
       </div>
 
@@ -65,7 +66,7 @@ permalink: /rips/onlyfans/
       <!-- Limited Offer Box -->
       <div class="bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 p-4 rounded-md space-y-1">
         <h3 class="font-semibold text-gray-800">limited offer – 50% off for 30 days!</h3>
-        <p class="text-sm text-gray-600">(10/10 spots left)</p>
+        <p class="text-sm text-gray-600">maybe i'll finish that dog house this month idk (10 spots left)</p>
       </div>
 
       <!-- Basic Subscription -->
