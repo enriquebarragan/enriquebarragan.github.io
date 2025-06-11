@@ -37,7 +37,7 @@ permalink: /rips/not-onlyfans/
       </div>
 
       <div class="mt-2">
-        <h1 class="text-xl font-semibold">enrique 😳</h1>
+        <h1 class="text-2xl font-semibold">enrique 😳</h1>
         <div class="mt-1 text-gray-500 text-sm flex items-baseline space-x-2">
           <span>@slightlyferal</span>
           <span>•</span>
@@ -46,18 +46,17 @@ permalink: /rips/not-onlyfans/
       </div>
 
       <p class="mt-4 text-sm text-gray-700">not a model, just photogenic when blurry</p>
-
-      <div class="rounded-md bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 p-4 shadow-inner mt-2">
-        <p class="mb-2 font-semibold text-gray-800">what you’ll get:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
-          <li>4K screenshots of my desktop, no icons censored</li>
-          <li>hot takes I deleted before tweeting</li>
-          <li>shirtless but it’s just me fixing layout issues</li>
-          <li>voice memos of me explaining things I don’t understand</li>
+      <p class="mb-2 font-semibold text-gray-800">what you’ll get:</p>
+      <div class="rounded-md bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 p-4 shadow-inner mt-4">
+        <p class="mb-2 font-semibold text-gray-800 leading-none">what you’ll get:</p>
+        <ul class="list-disc list-inside text-xs sm:text-sm text-gray-700 space-y-2">
+          <li>hot takes i deleted before tweeting</li>
+          <li>livestreams of me fixing layout issues</li>
+          <li>voice memos where i explain things i don’t understand</li>
           <li>power BI dashboards with zero context</li>
-          <li>photoshop timelapses with dramatic background music</li>
+          <li>photoshop timelapses with background music</li>
           <li>dramatic readings of changelogs and RFCs</li>
-          <li>exclusive folder tours: “final_final_v3” and others</li>
+          <li>computer folder tours (this month: <em>“final_final_v3”</em>)</li>
           <li>early access to half-finished side projects</li>
         </ul>
       </div>
