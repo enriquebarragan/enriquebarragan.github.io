@@ -17,7 +17,7 @@ permalink: /rips/onlyfans/
   <div class="flex -mt-14 gap-2 flex-nowrap items-start">
   <!-- profile picture -->
   <div>
-    <img src="/assets/images/of-pfp.JPG" alt="profile picture" class="w-24 h-24 aspect-square rounded-full border-4 border-white shadow-lg object-cover">
+    <img src="/assets/images/of-pfp.JPG" alt="profile picture" class="w-28 h-28 aspect-square rounded-full border-4 border-white shadow-lg object-cover">
   </div>
 
   <!-- stats (aligned lower and to the right) -->
