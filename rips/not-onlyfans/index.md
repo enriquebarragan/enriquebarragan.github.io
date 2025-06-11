@@ -62,7 +62,7 @@ permalink: /rips/not-onlyfans/
     </div>
 
     <!-- SECTION 2: Subscription Box -->
-    <div class="bg-white shadow-md rounded-md p-6 space-y-6">
+    <div class="bg-white shadow-md rounded-md p-4 space-y-4">
 
       <!-- Limited Offer Box -->
       <div class="bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 p-4 rounded-md space-y-1 shadow-lg">
@@ -84,7 +84,7 @@ permalink: /rips/not-onlyfans/
 
       <!-- Bundles Section -->
       <div class="space-y-3">
-        <h3 class="text-lg font-semibold text-gray-800">Subscription Bundles</h3>
+        <h3 class="text-lg font-semibold text-gray-800">subscription bundles</h3>
 
         <button class="w-full py-2 px-4 rounded-lg font-semibold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white flex justify-between items-center transition duration-200 ease-in-out transform hover:brightness-110 active:scale-95">
           <span>3 months <span class="text-sm text-gray-200">(25% off)</span></span>
