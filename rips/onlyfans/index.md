@@ -13,9 +13,29 @@ permalink: /rips/onlyfans/
   <!-- SECTION 1: Profile Box -->
   <div class="bg-white shadow-md rounded-md p-4">
       <!-- profile picture -->
-      <div class="flex -mt-12">
-        <img src="/assets/images/of-pfp.JPG" alt="profile picture" class="w-24 h-24 rounded-full border-4 border-white shadow-lg">
-      </div>
+      <!-- profile + stats -->
+<div class="flex -mt-12 items-center gap-4 flex-wrap sm:flex-nowrap">
+  <!-- profile picture -->
+  <div>
+    <img src="/assets/images/of-pfp.JPG" alt="profile picture" class="w-24 h-24 rounded-full border-4 border-white shadow-lg">
+  </div>
+
+  <!-- stats -->
+  <div class="flex justify-around text-center w-full sm:w-auto sm:justify-start gap-6">
+    <div class="flex items-center space-x-1">
+      <img src="/assets/icons/picture.svg" alt="pictures icon" class="w-5 h-5">
+      <span class="font-bold">3.4k</span>
+    </div>
+    <div class="flex items-center space-x-1">
+      <img src="/assets/icons/video.svg" alt="videos icon" class="w-5 h-5">
+      <span class="font-bold">412</span>
+    </div>
+    <div class="flex items-center space-x-1">
+      <img src="/assets/icons/heart.svg" alt="likes icon" class="w-5 h-5">
+      <span class="font-bold">3.71m</span>
+    </div>
+  </div>
+</div>
 
   <div class="mt-2">
         <h1 class="text-xl font-semibold">enrique</h1>
