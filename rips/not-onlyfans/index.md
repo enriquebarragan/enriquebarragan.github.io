@@ -64,8 +64,8 @@ permalink: /rips/not-onlyfans/
 
       <!-- Limited Offer Box -->
    <div class="bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 p-4 rounded-md space-y-1 shadow-lg">
-        <h3 class="font-semibold text-gray-800 sm:text-center">limited offer: 50% off for 30 days</h3>
-       <p class="text-sm text-gray-600 text-center">first 10 people will receive a screenshot a doghouse sketched in my Notes app</p>
+        <h3 class="font-semibold text-gray-800 text-center">limited offer: 50% off for 30 days</h3>
+       <p class="text-sm text-gray-800 text-center">and the first 10 people will receive a screenshot a doghouse sketched in my Notes app</p>
         <p class="text-sm text-gray-600 text-center">(10 spots left)</p>
       </div>
       <!-- Basic Subscription -->
