@@ -14,7 +14,7 @@ permalink: /rips/onlyfans/
   <div class="bg-white shadow-md rounded-md p-4">
       <!-- profile picture -->
       <!-- profile + stats -->
-<div class="flex -mt-12 items-center gap-4 flex-wrap sm:flex-nowrap">
+<div class="flex -mt-12 items-center gap-2 flex-nowrap">
   <!-- profile picture -->
   <div>
     <img src="/assets/images/of-pfp.JPG" alt="profile picture" class="w-24 h-24 rounded-full border-4 border-white shadow-lg">
@@ -58,22 +58,6 @@ permalink: /rips/onlyfans/
         <li>dramatic readings of changelogs and RFCs</li>
         <li>exclusive folder tours: “final_final_v3” and others</li>
       </ul>
-
-   <div class="mt-6 flex justify-around text-center">
-        <div class="flex items-center space-x-1">
-          <img src="/assets/icons/picture.svg" alt="pictures icon" class="w-5 h-5">
-          <span class="font-bold">3.4k</span>
-        </div>
-        <div class="flex items-center space-x-1">
-          <img src="/assets/icons/video.svg" alt="videos icon" class="w-5 h-5">
-          <span class="font-bold">412</span>
-        </div>
-        <div class="flex items-center space-x-1">
-          <img src="/assets/icons/heart.svg" alt="likes icon" class="w-5 h-5">
-          <span class="font-bold">3.71m</span>
-        </div>
-      </div>
-    </div>
 
     <!-- SECTION 2: Subscription Box -->
 <div class="bg-white shadow-md rounded-md p-6 space-y-6">
