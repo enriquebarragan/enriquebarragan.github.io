@@ -21,7 +21,7 @@ permalink: /rips/onlyfans/
   </div>
 
   <!-- stats (aligned lower and to the right) -->
-  <div class="flex flex-1 justify-end items-end pl-2 pt-6 gap-4 text-sm text-gray-700">
+  <div class="flex flex-1 justify-end items-end pl-2 pt-12 gap-4 text-sm text-gray-700">
     <div class="flex items-center space-x-1">
       <img src="/assets/icons/picture.svg" alt="pictures icon" class="w-4 h-4">
       <span>3.4k</span>
