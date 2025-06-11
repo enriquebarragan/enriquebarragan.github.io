@@ -45,6 +45,7 @@ permalink: /rips/not-onlyfans/
       </div>
 
   <p class="mt-4 text-sm text-gray-700">not a model, just photogenic when blurry</p>
+  <div class="rounded-md bg-gray-50"
       <p class="mt-4 font-semibold text-gray-800">what you'll get:</p>
       <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
         <li>4K screenshots of my desktop, no icons censored</li>
@@ -55,8 +56,9 @@ permalink: /rips/not-onlyfans/
         <li>photoshop timelapses with dramatic background music</li>
         <li>dramatic readings of changelogs and RFCs</li>
         <li>exclusive folder tours: “final_final_v3” and others</li>
-        <li>and early access to current half-finished side projects</li>
+        <li>early access to half-finished side projects</li>
       </ul>
+    </div>
     </div>
 
     <!-- SECTION 2: Subscription Box -->
@@ -65,7 +67,7 @@ permalink: /rips/not-onlyfans/
       <!-- Limited Offer Box -->
    <div class="bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 p-4 rounded-md space-y-1 shadow-lg">
         <h3 class="font-semibold text-gray-800 text-center">limited offer: 50% off for 30 days</h3>
-       <p class="text-sm text-gray-800 text-center">and the first 10 people will receive a screenshot a doghouse sketched in my Notes app</p>
+       <p class="text-sm text-gray-800 text-center">first 10 people will receive a screenshot a doghouse sketched in my Notes app</p>
         <p class="text-sm text-gray-600 text-center">(10 spots left)</p>
       </div>
       <!-- Basic Subscription -->
