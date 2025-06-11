@@ -47,8 +47,7 @@ permalink: /rips/not-onlyfans/
 
       <p class="mt-4 text-sm text-gray-700">not a model, just photogenic when blurry</p>
 
-      <!-- UPDATED “what you'll get” BOX -->
-      <div class="rounded-md bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 p-6 shadow-inner">
+      <div class="rounded-md bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 p-4 shadow-inner mt-2">
         <p class="mb-2 font-semibold text-gray-800">what you’ll get:</p>
         <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
           <li>4K screenshots of my desktop, no icons censored</li>
