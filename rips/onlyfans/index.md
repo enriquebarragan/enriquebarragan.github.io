@@ -48,7 +48,6 @@ permalink: /rips/onlyfans/
       <p class="mt-4 text-sm text-gray-700">not a model, just photogenic when blurry</p>
       <p class="mt-4 font-semibold text-gray-800">what you'll get:</p>
       <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
-        <li>slow zoom-ins on my face while I debug</li>
         <li>4K screenshots of my desktop, no icons censored</li>
         <li>hot takes I deleted before tweeting</li>
         <li>shirtless but it’s just me fixing layout issues</li>
@@ -57,6 +56,7 @@ permalink: /rips/onlyfans/
         <li>photoshop timelapses with dramatic background music</li>
         <li>dramatic readings of changelogs and RFCs</li>
         <li>exclusive folder tours: “final_final_v3” and others</li>
+        <li>and early access to current half-finished side projects</li>
       </ul>
     </div>
 
@@ -65,15 +65,14 @@ permalink: /rips/onlyfans/
 
       <!-- Limited Offer Box -->
       <div class="bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 p-4 rounded-md space-y-1">
-        <h3 class="font-semibold text-gray-800">limited offer – 50% off for 30 days!</h3>
-        <p class="text-sm text-gray-600">maybe i'll finish that dog house this month idk (10 spots left)</p>
+        <h3 class="font-semibold text-gray-800">limited offer: 50% off for 30 days and i'll send you a hand drawn blueprint for a dog house i'm building, maybe.</h3>
+        <p class="text-sm text-gray-600">(10 spots left)</p>
       </div>
-
       <!-- Basic Subscription -->
       <div class="space-y-1">
         <button class="w-full py-2 px-4 rounded-lg font-semibold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white flex justify-between items-center">
           <span>Subscribe</span>
-          <span>$5 for 30 days and early access to my half-finished side projects </span>
+          <span>$5 for 30 days</span>
         </button>
         <p class="text-xs text-gray-500 text-right">regular price $9.99/month</p>
       </div>
