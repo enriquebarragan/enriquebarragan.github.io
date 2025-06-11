@@ -20,7 +20,7 @@ permalink: /rips/not-onlyfans/
                class="w-28 h-28 aspect-square rounded-full border-4 border-white shadow-lg object-cover">
         </div>
         <!-- stats -->
-        <div class="flex flex-1 justify-end items-end pl-2 pt-14 gap-6 text-sm text-gray-700">
+        <div class="flex flex-1 justify-evenly items-end pl-2 pt-12 gap-6 text-sm text-gray-800">
           <div class="flex items-center space-x-1">
             <img src="/assets/icons/picture.svg" alt="pictures icon" class="w-4 h-4">
             <span>3.4k</span>
@@ -74,7 +74,7 @@ permalink: /rips/not-onlyfans/
       <!-- Basic Subscription -->
       <div class="space-y-1">
         <button class="w-full py-2 px-4 rounded-lg font-semibold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-white flex justify-between items-center transition duration-200 ease-in-out transform hover:brightness-110 active:scale-95">
-          <span>Subscribe</span>
+          <span>subscribe</span>
           <span>$5 for 30 days</span>
         </button>
         <p class="text-xs text-gray-500 text-right">regular price $9.99/month</p>
