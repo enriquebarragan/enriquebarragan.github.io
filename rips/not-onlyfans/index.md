@@ -20,7 +20,7 @@ permalink: /rips/not-onlyfans/
                class="w-28 h-28 aspect-square rounded-full border-4 border-white shadow-lg object-cover">
         </div>
         <!-- stats -->
-  <div class="flex flex-1 justify-evenly items-end pt-12 text-base text-gray-800">
+  <div class="flex justify-between items-end gap-4 pt-6 text-sm text-gray-800 flex-wrap">
   <!-- Picture Icon -->
   <div class="flex items-center space-x-1 text-indigo-600">
     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
