@@ -12,7 +12,7 @@ permalink: /rips/not-onlyfans/
     class="w-full h-40 object-cover object-center"
   />
 
-  <div class="px-6 py-4 space-y-6">
+  <div class="px-6 py-4 space-y-4">
 
     <!-- SECTION 1: Profile Card -->
 <div class="bg-white shadow-md rounded-lg px-6 pb-4 pt-4 space-y-4">
@@ -57,9 +57,9 @@ permalink: /rips/not-onlyfans/
       </div>
 
       <!-- “what you’ll get” -->
-      <div class="bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 p-2 rounded-md shadow-inner">
+      <div class="bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 p-4 rounded-md shadow-inner">
         <p class="font-semibold text-gray-800 mb-2">what you’ll get:</p>
-        <ul class="list-disc list-inside text-gray-700 text-sm space-y-1">
+        <ul class="list-disc list-inside text-gray-700 text-xs space-y-1">
           <li>hot takes i deleted before tweeting</li>
           <li>livestreams of me fixing layout issues</li>
           <li>voice memos where i explain things i don’t understand</li>
