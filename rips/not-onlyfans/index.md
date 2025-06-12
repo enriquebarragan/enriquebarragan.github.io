@@ -73,7 +73,7 @@ permalink: /rips/not-onlyfans/
     </div>
 
     <!-- SECTION 2: Subscription Card -->
-    <div class="bg-white shadow-md rounded-lg p-4 space-y-6">
+    <div class="bg-white shadow-md rounded-lg p-6 space-y-6">
       <div class="bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 p-4 rounded-md shadow-lg text-center space-y-2">
         <h3 class="font-semibold text-gray-800">limited offer: 50% off for 30 days</h3>
         <p class="text-sm text-gray-800">first 10 people will receive a screenshot of a doghouse sketched in my Notes app</p>
