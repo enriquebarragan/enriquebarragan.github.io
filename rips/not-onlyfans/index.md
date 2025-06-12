@@ -1,3 +1,9 @@
+---
+layout: rips
+title: not onlyfans
+permalink: /rips/not-onlyfans/
+---
+
 <div class="w-full bg-gray-50">
   <!-- cover image -->
   <img
