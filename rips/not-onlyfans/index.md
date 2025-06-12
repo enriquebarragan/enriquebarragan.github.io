@@ -24,7 +24,7 @@ permalink: /rips/not-onlyfans/
       />
 
       <!-- stats -->
-      <div class="flex justify-end space-x-6 text-gray-800 text-sm pt-4">
+      <div class="flex justify-end space-x-6 text-gray-800 text-sm">
         <div class="flex items-center space-x-1 text-indigo-600">
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M3,22H21a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1H3A1,1,0,0,0,2,3V21A1,1,0,0,0,3,22Zm2.414-2L10,15.414l1.293,1.293a1,1,0,0,0,1.414,0L17,12.414l3,3V20ZM20,4v8.586l-2.293-2.293a1,1,0,0,0-1.414,0L12,14.586l-1.293-1.293a1,1,0,0,0-1.414,0L4,18.586V4ZM6,8.5A2.5,2.5,0,1,1,8.5,11,2.5,2.5,0,0,1,6,8.5Z"/>
@@ -46,7 +46,7 @@ permalink: /rips/not-onlyfans/
       </div>
 
       <!-- name/bio -->
-      <div class="pt-12 space-y-2">
+      <div class="pt-4 space-y-2">
         <h1 class="text-xl font-semibold">enrique 😳</h1>
         <div class="text-gray-500 text-sm flex items-center space-x-2">
           <span>@slightlyferal</span><span>•</span><span>(seen 4 minutes ago)</span>
@@ -71,7 +71,7 @@ permalink: /rips/not-onlyfans/
     </div>
 
     <!-- SECTION 2: Subscription Card -->
-    <div class="bg-white shadow-md rounded-lg p-6 space-y-6">
+    <div class="bg-white shadow-md rounded-lg p-4 space-y-6">
       <div class="bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 p-4 rounded-md shadow-lg text-center space-y-2">
         <h3 class="font-semibold text-gray-800">limited offer: 50% off for 30 days</h3>
         <p class="text-sm text-gray-800">first 10 people will receive a screenshot of a doghouse sketched in my Notes app</p>
