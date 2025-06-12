@@ -51,7 +51,7 @@ permalink: /rips/not-onlyfans/
       <div class="space-y-2">
         <h1 class="text-xl font-semibold">enrique 😳</h1>
         <div class="text-gray-500 text-sm flex items-center space-x-2">
-          <span>@slightlyferal</span><span>•</span><span>(seen 4 minutes ago)</span>
+          <span>@slightlyferal</span><span>•</span><span class="text-sm">(seen 4 minutes ago)</span>
         </div>
         <p class="text-gray-700 text-sm">not a model, just committed to the bit.</p>
       </div>
