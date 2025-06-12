@@ -15,7 +15,7 @@ permalink: /rips/not-onlyfans/
   <div class="px-6 py-4 space-y-8">
 
     <!-- SECTION 1: Profile Card -->
-    <div class="relative bg-white shadow-md rounded-lg p-6 space-y-4">
+    <div class="relative bg-white shadow-md rounded-lg pt-14 pb-6 px-6 space-y-4">
       <!-- avatar overlap -->
       <img
         src="/assets/images/of-pfp.JPG"
@@ -46,7 +46,7 @@ permalink: /rips/not-onlyfans/
       </div>
 
       <!-- name/bio -->
-      <div class="pt-4 space-y-2">
+      <div class="space-y-2">
         <h1 class="text-xl font-semibold">enrique 😳</h1>
         <div class="text-gray-500 text-sm flex items-center space-x-2">
           <span>@slightlyferal</span><span>•</span><span>(seen 4 minutes ago)</span>
