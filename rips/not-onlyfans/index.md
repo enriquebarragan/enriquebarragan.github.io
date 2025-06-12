@@ -11,7 +11,7 @@ permalink: /rips/not-onlyfans/
   <div class="px-6 py-4 space-y-4">
     
     <!-- SECTION 1: Profile Box -->
-    <div class="bg-white shadow-md rounded-md p-4">
+  <div class="bg-white shadow-md rounded-md p-4">
       <!-- profile + stats -->
       <div class="flex -mt-14 gap-2 flex-nowrap items-start">
         <!-- profile picture -->
@@ -20,7 +20,7 @@ permalink: /rips/not-onlyfans/
                class="w-28 h-28 aspect-square rounded-full border-4 border-white shadow-lg object-cover">
         </div>
         <!-- stats -->
-        <div class="flex flex-1 justify-evenly items-end pt-12 text-base text-gray-800">
+  <div class="flex flex-1 justify-evenly items-end pt-12 text-base text-gray-800">
   <!-- Picture Icon -->
   <div class="flex items-center space-x-1 text-indigo-600">
     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +46,7 @@ permalink: /rips/not-onlyfans/
   </div>
 </div>
 
-      <div class="mt-2">
+   <div class="mt-2">
         <h1 class="text-xl font-semibold">enrique 😳</h1>
         <div class="mt-1 text-gray-500 text-sm flex items-baseline space-x-2">
           <span>@slightlyferal</span>
