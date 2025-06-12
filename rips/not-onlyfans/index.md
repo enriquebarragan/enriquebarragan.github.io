@@ -45,7 +45,7 @@ permalink: /rips/not-onlyfans/
         </div>
       </div>
 
-      <p class="mt-2 text-sm text-gray-700">not a model, just photogenic when blurry</p>
+      <p class="mt-2 text-sm text-gray-700">not a model, just committed to the bit.</p>
       <div class="rounded-md bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 p-4 shadow-inner mt-4">
         <p class="mb-2 font-semibold text-gray-800 leading-none">what you’ll get:</p>
         <ul class="list-disc list-inside text-xs sm:text-sm text-gray-700 space-y-2">
