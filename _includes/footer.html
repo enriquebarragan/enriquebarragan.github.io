@@ -1,23 +1,23 @@
-<footer class="relative pb-12 py-4 px-4 text-xs text-gray-400">
-  <div class="flex justify-between items-center">
-    <!-- Left -->
-    <div>
-      <a href="https://github.com/enriquebarragan/enriquebarragan.github.io/blob/main/LICENSE-content.md" target="_blank" rel="noopener noreferrer">
-        &copy; 2025 EEB.
-      </a>
-    </div>
-
-    <!-- Right -->
-    <div class="flex items-center gap-2 [&_img]:w-3 [&_img]:h-auto">
-      {% include socials.html %}
-    </div>
+<footer class="grid [grid-template-columns:1fr_auto_1fr] items-center py-4 px-4 text-xs text-gray-400">
+  <!-- Left column -->
+  <div class="justify-self-start">
+    <a href="https://github.com/enriquebarragan/enriquebarragan.github.io/blob/main/LICENSE-content.md"
+       target="_blank" rel="noopener noreferrer">
+      &copy; 2025 EEB.
+    </a>
   </div>
 
-  <!-- Center (absolute so it stays centered even with left/right size mismatch) -->
-  <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
-    <a href="https://github.com/enriquebarragan/enriquebarragan.github.io" target="_blank" rel="noopener noreferrer"
-       class="hover:text-gray-600 pointer-events-auto">
+  <!-- Center column -->
+  <div class="justify-self-center">
+    <a href="https://github.com/enriquebarragan/enriquebarragan.github.io"
+       target="_blank" rel="noopener noreferrer"
+       class="hover:text-gray-600">
       view source
     </a>
+  </div>
+
+  <!-- Right column -->
+  <div class="justify-self-end flex items-center gap-2 [&_img]:w-3 [&_img]:h-auto">
+    {% include socials.html %}
   </div>
 </footer>
