@@ -1,13 +1,36 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="pt-2 bg-gray-50 text-gray-800 antialiased min-h-screen flex flex-col">
+    {% include nav.html %}
 
-<div class="flex justify-center mb-2 pt-12">
-  <img src="/assets/images/me.jpg" alt="Enrique" class="w-56 h-56 rounded-full object-cover shadow-xl">
-</div>
+    <div class="flex-grow">
+      <main class="max-w-3xl mx-auto px-4">
+        <div class="flex justify-center mb-2 pt-12">
+          <img
+            src="/assets/images/me.jpg"
+            alt="Enrique"
+            class="w-56 h-56 rounded-full object-cover shadow-xl">
+        </div>
 
-<div class="mx-auto max-w-xl px-4 pt-4 py-2 pb-12 text-center space-y-1">
-  <h1 class="text-4xl font-extrabold font-sans">Enrique Barragan</h1>
-  <p class="text-sm sm:text-base text-gray-600">analyst · okay with computers · irving, tx local</p>
-</div>
+        <div
+          class="mx-auto max-w-xl px-4 pt-4 py-2 pb-12 text-center space-y-1">
+          <h1 class="text-4xl font-extrabold font-sans">
+            Enrique Barragan
+          </h1>
+          <p class="text-sm sm:text-base text-gray-600">
+            analyst · okay with computers · irving, tx local
+          </p>
+        </div>
+      </main>
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>
