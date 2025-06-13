@@ -17,16 +17,20 @@ permalink: /rips/not-onlyfans/
     <!-- SECTION 1: Profile Card -->
 <div class="bg-white shadow-md rounded-lg p-6 space-y-4">
   <!-- Avatar and Stats Row -->
-  <div class="flex items-start relative">
-    <!-- Avatar -->
+<div class="flex items-start">
+  <!-- Avatar -->
+  <div class="shrink-0">
     <img
       src="/assets/images/of-pfp.JPG"
       alt="profile picture"
       class="w-28 h-28 rounded-full border-4 border-white shadow-lg object-cover -mt-16"
     />
+  </div>
 
+  <!-- Spacer that grows and centers stats in remaining space -->
+  <div class="flex-1 flex justify-center -mt-2">
     <!-- Stats -->
-  <div class="absolute left-1/2 transform -translate-x-1/2 -mt-2 flex space-x-6 text-gray-800 text-sm">
+    <div class="flex space-x-6 text-gray-800 text-sm">
       <div class="flex items-center space-x-1 text-indigo-600">
         <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path d="M3,22H21a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1H3A1,1,0,0,0,2,3V21A1,1,0,0,0,3,22Zm2.414-2L10,15.414l1.293,1.293a1,1,0,0,0,1.414,0L17,12.414l3,3V20ZM20,4v8.586l-2.293-2.293a1,1,0,0,0-1.414,0L12,14.586l-1.293-1.293a1,1,0,0,0-1.414,0L4,18.586V4ZM6,8.5A2.5,2.5,0,1,1,8.5,11,2.5,2.5,0,0,1,6,8.5Z"/>
@@ -47,6 +51,7 @@ permalink: /rips/not-onlyfans/
       </div>
     </div>
   </div>
+</div>
       <!-- name/bio -->
       <div class="space-y-2">
         <h1 class="text-xl font-semibold">enrique 😳</h1>
