@@ -15,7 +15,7 @@ permalink: /rips/not-onlyfans/
   <div class="px-6 py-4 space-y-4">
 
     <!-- SECTION 1: Profile Card -->
-<div class="bg-white shadow-md rounded-lg px-6 pb-4 pt-4 space-y-4">
+<div class="bg-white shadow-md rounded-lg p-6 space-y-4">
   <!-- Avatar and Stats Row -->
   <div class="flex items-start justify-between">
     <!-- Avatar -->
