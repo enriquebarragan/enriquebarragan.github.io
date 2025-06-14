@@ -7,30 +7,28 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="pt-2 bg-gray-50 text-gray-800 antialiased flex flex-col">
-    {% include nav.html %}
+<body class="flex flex-col antialiased bg-gray-50 text-gray-800 pt-2">
+  {% include nav.html %}
 
-      <main class="max-w-3xl mx-auto px-4 mt-12 mb-12">
-        <div class="flex justify-center mb-2">
-          <img
-            src="/assets/images/me.jpg"
-            alt="Enrique"
-            class="w-56 h-56 rounded-full object-cover shadow-xl">
-        </div>
-
-        <div
-          class="mx-auto max-w-xl px-4 pt-4 py-2 pb-4 text-center space-y-1 font-sans">
-          <h1 class="text-4xl font-extrabold">
-            Enrique Barragan
-          </h1>
-          <p class="text-sm sm:text-base text-gray-600">
-            analyst · okay with computers · irving, tx local
-          </p>
-        </div>
-      </main>
-
-    <div class="flex justify-center items-center p-2 gap-8 [&_img]:w-6 [&_img]:h-auto">
-      {% include socials.html %}
+  <main class="mx-auto max-w-3xl mt-12 mb-12 px-4">
+    <div class="flex justify-center mb-2">
+      <img
+        src="/assets/images/me.jpg"
+        alt="Enrique"
+        class="w-56 h-56 rounded-full object-cover shadow-xl"
+      />
     </div>
-  </body>
+
+    <div class="mx-auto max-w-xl px-4 pt-4 pb-4 text-center space-y-1 font-sans">
+      <h1 class="text-4xl font-extrabold">Enrique Barragan</h1>
+      <p class="text-sm sm:text-base text-gray-600">
+        analyst · okay with computers · Irving, TX local
+      </p>
+    </div>
+  </main>
+
+  <div class="flex justify-center items-center gap-8 p-2 [&_img]:w-6 [&_img]:h-auto">
+    {% include socials.html %}
+  </div>
+</body>
 </html>
