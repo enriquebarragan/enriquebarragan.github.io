@@ -3,13 +3,15 @@
   {% assign defaultLink = "hover:text-gray-800 transition-colors" %}
   {% assign activeLink  = "bg-gradient-to-r from-orange-400 to-blue-500 bg-clip-text text-transparent" %}
 
-  <a
-    href="/"
-    class="
-      {{ defaultLink }}
-      {% if current == "/" %} {{ activeLink }} {% endif %}
-    "
-  >home</a>
+  {% unless current == "/" %}
+    <a
+      href="/"
+      class="
+        {{ defaultLink }}
+        {% if current == "/" %} {{ activeLink }} {% endif %}
+      "
+    >home</a>
+  {% endunless %}
 
   <a
     href="/about/"
