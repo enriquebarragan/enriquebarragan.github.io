@@ -7,12 +7,12 @@ permalink: /about/
 <div class="flex flex-col gap-6">
   
   <!-- Site Card -->
-  <div class="max-w-2xl mx-auto px-6 py-8 bg-white rounded-2xl shadow-md ring-1 ring-gray-100 transition hover:shadow-lg">
-    <h1 class="text-3xl font-bold mb-6 text-gray-900 tracking-tight border-b-2 border-gray-200 pb-2">
+  <div class="max-w-2xl mx-auto px-6 py-8 bg-white rounded-2xl shadow-md ring-1 ring-gray-100 border-l-4 border-orange-500">
+    <h1 class="text-3xl font-bold mb-6 text-orange-600 tracking-tight border-b-2 border-orange-200 pb-2">
       About
     </h1>
 
-    <h2 class="text-2xl font-semibold mb-4 text-gray-800 tracking-wide">
+    <h2 class="text-2xl font-semibold mb-4 text-orange-500 tracking-wide">
       This Site
     </h2>
     <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
@@ -21,8 +21,8 @@ permalink: /about/
   </div>
   
   <!-- Me Card -->
-  <div class="max-w-2xl mx-auto px-6 py-8 bg-white rounded-2xl shadow-md ring-1 ring-gray-100 transition hover:shadow-lg">
-    <h2 class="text-2xl font-semibold mb-4 text-gray-800 tracking-wide border-b-2 border-gray-200 pb-2">
+  <div class="max-w-2xl mx-auto px-6 py-8 bg-white rounded-2xl shadow-md ring-1 ring-gray-100 border-l-4 border-blue-500">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-600 tracking-wide border-b-2 border-blue-200 pb-2">
       Me
     </h2>
     <ul class="list-disc list-inside space-y-2 mb-6 text-base sm:text-lg text-gray-700">
