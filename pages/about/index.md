@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<div class="flex flex-col gap-6">
+<div class="flex flex-col gap-6 mx-4">
   
   <!-- Site Card -->
   <div class="max-w-2xl mx-auto px-6 py-8 bg-white rounded-2xl shadow-md ring-1 ring-gray-100 border-l-4 border-orange-500">
