@@ -1,5 +1,29 @@
 <div class="flex justify-center space-x-8 py-2 text-gray-600 sm:text-lg font-light">
-  <a href="/" class="hover:text-gray-800">home</a>
-  <a href="/about/" class="hover:text-gray-800">about</a>
-  <a href="/works/" class="hover:text-gray-800">works</a>
+  {% assign current = page.url %}
+  {% assign defaultLink = "hover:text-gray-800 transition-colors" %}
+  {% assign activeLink  = "bg-gradient-to-r from-orange-400 to-teal-500 bg-clip-text text-transparent" %}
+
+  <a
+    href="/"
+    class="
+      {{ defaultLink }}
+      {% if current == "/" %} {{ activeLink }} {% endif %}
+    "
+  >home</a>
+
+  <a
+    href="/about/"
+    class="
+      {{ defaultLink }}
+      {% if current == "/about/" %} {{ activeLink }} {% endif %}
+    "
+  >about</a>
+
+  <a
+    href="/works/"
+    class="
+      {{ defaultLink }}
+      {% if current == "/works/" %} {{ activeLink }} {% endif %}
+    "
+  >works</a>
 </div>
