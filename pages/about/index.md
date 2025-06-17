@@ -6,14 +6,14 @@ permalink: /about/
 
 <div class="flex flex-col gap-6 mt-4 mx-4">
   <!-- Top-level heading -->
-  <h1 class="max-w-2xl mx-auto text-3xl font-bold pb-2 border-b mb-4">
-    About
+  <h1 class="max-w-2xl mx-auto text-3xl font-bold pb-2 mb-4">
+    about
   </h1>
 
   <!-- “This Site” section -->
   <section class="max-w-2xl mx-auto px-6">
     <h2 class="text-2xl font-semibold mb-4">
-      This Site
+      this site
     </h2>
     <p class="text-base leading-relaxed">
       I made this site mostly because I wanted to mess around with Tailwind CSS, partly because I needed
@@ -26,7 +26,7 @@ permalink: /about/
   <!-- “Me” section -->
   <section class="max-w-2xl mx-auto px-6">
     <h2 class="text-2xl font-semibold mb-4">
-      Me
+      me
     </h2>
     <ul class="list-disc list-inside mb-6">
       <li><strong>Name:</strong> Emmanuel Enrique Barragan</li>
