@@ -6,7 +6,7 @@ permalink: /about/
 
 <div class="flex flex-col gap-6 mt-4 mx-4">
   <!-- Top-level heading -->
-  <h1 class="max-w-2xl mx-auto text-3xl font-bold pb-2 mb-4">
+  <h1 class="sr-only">
     about
   </h1>
 
