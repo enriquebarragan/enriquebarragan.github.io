@@ -13,7 +13,7 @@ permalink: /about/
   </p>
   </div>
   
-  <div class="max-w-2xl px-4 py-8">
+  <div class="max-w-2xl px-4">
   <h2 class="text-2xl font-semibold mb-3 text-gray-800">About Me</h2>
   <ul class="mb-4 text-base sm:text-lg text-gray-700">
     <li><strong>Name:</strong> Emmanuel Enrique Barragan</li>
