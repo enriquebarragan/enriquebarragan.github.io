@@ -21,7 +21,7 @@ permalink: /about/
     <li><strong>Current Role:</strong> Senior Software Analyst</li>
   </ul>
   <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
-    I read a lot about a wide range of topics—some useful, some obscure, all interesting (to me, anyway). I'm pretty good with computers, and I credit an early childhood addiction to video games for honing my problem-solving skills.
+    I read a lot about a wide range of topics. Some useful, some obscure, all interesting (to me, anyway). I'm pretty good with computers, and I credit an early childhood video game addiction for honing my problem-solving skills.
   </p>
 </div>
 </div>
