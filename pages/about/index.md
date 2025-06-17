@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<div class=flex-col">
+<div class="flex flex-col gap-4">
   
   <div class="max-w-2xl mx-auto px-4 py-8">
   <h1 class="text-3xl font-bold mb-4 text-gray-800">About This Site</h1>
@@ -13,7 +13,7 @@ permalink: /about/
   </p>
   </div>
 
-  <div class="max-w-2xl mx-auto px-4 py-4">
+  <div class="max-w-2xl mx-auto px-4">
   <h1 class="text-3xl font-bold mb-4 text-gray-800">About Me</h1>
   <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
     enrique
