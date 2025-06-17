@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<div class="min-h-screen flex flex-col items-center mx-auto mt-12 px-4">
+<div class="min-h-screen flex flex-col items-center mx-auto mt-6 px-4">
   <div class="max-w-3xl w-full space-y-8">
     <!-- Top-level heading for screen readers -->
     <h1 class="sr-only">
