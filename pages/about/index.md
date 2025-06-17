@@ -17,7 +17,7 @@ permalink: /about/
     </h2>
     <p class="text-base leading-relaxed">
       This website is just my personal space to build stuff and write without
-      worrying about deadlines.
+      worrying about deadlines.<br><br>
       
       I made this site mostly because I learned how to use Tailwind, partly because I needed
       a spot to share my photos without compressing the details out of them, and partly because I still have
@@ -30,7 +30,7 @@ permalink: /about/
     <h2 class="text-2xl font-semibold mb-4">
       me
     </h2>
-    <ul class="list-disc list-inside mb-6">
+    <ul class="text-sm list-disc list-inside mb-6">
       <li><strong>Name:</strong> Emmanuel Enrique Barragan</li>
       <li><strong>Location:</strong> Irving, TX</li>
       <li><strong>Current Role:</strong> Senior Software Analyst</li>
