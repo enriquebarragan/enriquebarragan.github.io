@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
- <h1 class="sr-only">
+        <div class="max-w-3xl w-full space-y-8">
+            <!-- Top-level heading for screen readers -->
+            <h1 class="sr-only">
                 About Me and This Website
             </h1>
 
@@ -41,3 +43,4 @@ permalink: /about/
                 </p>
             </section>
         </div>
+    </div>
