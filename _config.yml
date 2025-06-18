@@ -7,6 +7,6 @@ exclude:
   - LICENSE-content.md
 
 include:
-  - rips
+  - pages
 
 timezone: America/Chicago
