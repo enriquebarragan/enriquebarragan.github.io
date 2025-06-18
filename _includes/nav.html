@@ -25,7 +25,7 @@
     href="/things-i-made/"
     class="
       {{ defaultLink }}
-      {% if current == "/things-i-made/" %} {{ activeLink }} {% endif %}
+      {% if current contains "/things-i-made/" %} {{ activeLink }} {% endif %}
     "
   >things i made</a>
 </div>
