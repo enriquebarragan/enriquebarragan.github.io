@@ -10,3 +10,8 @@ include:
   - pages
 
 timezone: America/Chicago
+
+collections:
+  things-i-made:
+    output: true
+    permalink: /things-i-made/:slug/
