@@ -1,0 +1,23 @@
+---
+layout: default
+title: Things I Made
+permalink: /things-i-made/
+---
+
+<div class="space-y-12">
+  {% for item in site.things-i-made reversed %}
+    <div class="space-y-1">
+      <h2 class="text-2xl font-semibold text-blue-700 hover:underline">
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      </h2>
+      <p class="text-sm text-gray-500">
+        {{ item.date | date: "%B %d, %Y" }}
+      </p>
+      {% if item.excerpt %}
+        <p class="text-base text-gray-700">
+          {{ item.excerpt }}
+        </p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
