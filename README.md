@@ -11,4 +11,4 @@ built with [jekyll](https://jekyllrb.com/), [tailwind CSS](https://tailwindcss.c
 ### License
 
 - Site code is licensed under the [MIT License](LICENSE)
-- Original content (writing, images) is licensed under [CC BY-NC 4.0](LICENSE-content.md)
+- Original content (writing, images) is licensed under [CC BY-NC 4.0](LICENSE-content.md) 
