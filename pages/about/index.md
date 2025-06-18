@@ -4,14 +4,14 @@ title: About
 permalink: /about/
 ---
 
-<div class="flex flex-col gap-6 mt-4 mx-4">
+<div class="flex flex-col gap-6 mt-4">
   <!-- Top-level heading -->
   <h1 class="sr-only">
     about
   </h1>
 
   <!-- “This Site” section -->
-  <section class="max-w-2xl mx-auto px-6">
+  <section class="space-y-4">
     <h2 class="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1">
       this website
     </h2>
