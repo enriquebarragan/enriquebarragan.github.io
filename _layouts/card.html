@@ -8,34 +8,53 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 min-h-screen">
-  <main class="max-w-2xl mx-auto p-6">
-<div class="bg-white rounded-xl shadow overflow-hidden">
-  {% if page.image %}
-  <img
-    src="{{ page.image }}"
-    alt="{{ page.title }}"
-    class="w-full object-cover"
-  >
-  {% endif %}
-  <div class="p-6">
-    <h1 class="text-3xl font-bold mb-2">
-      {{ page.title }}
-    </h1>
-    {% if page.condition %}
-    <p class="text-gray-600">
-      Condition: {{ page.condition }}
-    </p>
-    {% endif %}
-    {% if page.price %}
-    <p class="text-2xl font-semibold mt-2">
-      ${{ page.price }}
-    </p>
-    {% endif %}
-    <div class="mt-6 prose">
-      {{ content }}
+  <main class="max-w-4xl mx-auto p-6">
+
+    <div class="bg-white rounded-xl shadow overflow-hidden">
+
+      {% if page.images %}
+      <div class="p-4 space-y-4">
+        {% for image in page.images %}
+        <img
+          src="{{ image }}"
+          alt="{{ page.title }}"
+          loading="lazy"
+          class="w-full rounded-lg"
+        >
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <div class="p-6">
+        <h1 class="text-3xl font-bold">
+          {{ page.title }}
+        </h1>
+
+        {% if page.condition %}
+        <p class="text-gray-600 mt-2">
+          Condition: {{ page.condition }}
+        </p>
+        {% endif %}
+
+        {% if page.price %}
+        <p class="text-2xl font-semibold mt-2">
+          ${{ page.price }}
+        </p>
+        {% endif %}
+
+        {% if page.sold %}
+        <span class="inline-block mt-4 px-3 py-1 bg-red-100 text-red-700 rounded">
+          Sold
+        </span>
+        {% endif %}
+
+        <div class="mt-6 prose">
+          {{ content }}
+        </div>
+      </div>
+
     </div>
-  </div>
-</div>
+
   </main>
 </body>
 </html>
