@@ -1,4 +1,4 @@
-title: enriquebarragan.me
+title: personal page
 author: Emmanuel Enrique Barragan
 
 exclude:
@@ -12,6 +12,6 @@ include:
 timezone: America/Chicago
 
 collections:
-  things-i-made:
+  cards:
     output: true
-    permalink: /things-i-made/:slug/
+    permalink: /cards/:slug/
