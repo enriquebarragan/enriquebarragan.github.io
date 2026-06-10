@@ -10,7 +10,3 @@ images:
   - /assets/cards/gaeas-cradle/IMG_1810.jpeg
   - /assets/cards/gaeas-cradle/IMG_1813.jpeg
 ---
-
-**Gaea’s Cradle**
-
-Condition is **MP**.
