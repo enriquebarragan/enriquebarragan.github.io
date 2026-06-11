@@ -1,4 +1,4 @@
-# [enriquebarragan.me](https://enriquebarragan.github.io)
+# [enriquebarragan.github.io](https://enriquebarragan.github.io)
 my personal website that i use to post whatever.
 
 > [!NOTE]
