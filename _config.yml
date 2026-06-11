@@ -14,4 +14,4 @@ timezone: America/Chicago
 collections:
   cards:
     output: true
-    permalink: /cards/:slug/
+    permalink: /:slug/
