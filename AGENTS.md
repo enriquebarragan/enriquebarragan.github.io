@@ -20,7 +20,7 @@ This is a GitHub Pages site built with Jekyll.
 
 - GitHub Pages builds from the source files. Commit source changes, not `_site/` output.
 - Card pages live in `_cards/`.
-- Card images live in `assets/cards/<slug>/`.
+- Card images live in `assets/images/cards/<slug>/`.
 
 ## Routing
 

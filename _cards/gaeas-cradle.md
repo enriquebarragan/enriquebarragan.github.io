@@ -6,7 +6,7 @@ price: 1200
 sold: false
 
 images:
-  - /assets/cards/gaeas-cradle/IMG_1812.jpeg
-  - /assets/cards/gaeas-cradle/IMG_1810.jpeg
-  - /assets/cards/gaeas-cradle/IMG_1813.jpeg
+  - /assets/images/cards/gaeas-cradle/presentation.jpeg
+  - /assets/images/cards/gaeas-cradle/front.jpeg
+  - /assets/images/cards/gaeas-cradle/back.jpeg
 ---
