@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: "Cards" }}</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+  <div class="border-b border-slate-200 bg-white">
+    {% include nav.html %}
+  </div>
+
+  <main class="mx-auto max-w-6xl px-4 py-8">
+    {{ content }}
+
+    <section class="mt-6">
+      <div id="cards-status" class="rounded border border-slate-200 bg-white px-4 py-3 text-sm text-slate-600">
+        Loading cards...
+      </div>
+      <div id="cards-grid" class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+    </section>
+  </main>
+
+  {% include footer.html %}
+
+  <script>
+    const currency = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      maximumFractionDigits: 2
+    });
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, (character) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        "\"": "&quot;",
+        "'": "&#39;"
+      }[character]));
+    }
+
+    function renderCards(cards) {
+      const availableCards = cards.filter((card) => !card.sold);
+      const status = document.getElementById("cards-status");
+      const grid = document.getElementById("cards-grid");
+
+      status.textContent = `${availableCards.length} available cards`;
+
+      grid.innerHTML = availableCards.map((card) => `
+        <article class="grid grid-cols-[96px_1fr] gap-4 rounded border border-slate-200 bg-white p-4 shadow-sm">
+          <a href="${escapeHtml(card.tcgplayer_url)}" target="_blank" rel="noopener" class="block">
+            <img
+              src="${escapeHtml(card.photo_url)}"
+              alt="${escapeHtml(card.name)}"
+              class="aspect-[3/4] w-24 rounded object-cover"
+              loading="lazy"
+            >
+          </a>
+          <div class="min-w-0">
+            <h2 class="truncate text-base font-semibold text-slate-950">
+              <a href="${escapeHtml(card.tcgplayer_url)}" target="_blank" rel="noopener" class="hover:underline">${escapeHtml(card.name)}</a>
+            </h2>
+            <p class="mt-1 text-sm text-slate-600">${escapeHtml(card.set_name)}</p>
+            <dl class="mt-4 grid grid-cols-2 gap-3 text-sm">
+              <div>
+                <dt class="text-xs uppercase tracking-wide text-slate-500">Market</dt>
+                <dd class="font-medium">${currency.format(card.market_price)}</dd>
+              </div>
+              <div>
+                <dt class="text-xs uppercase tracking-wide text-slate-500">Sale</dt>
+                <dd class="font-medium">${currency.format(card.sale_price)}</dd>
+              </div>
+              <div>
+                <dt class="text-xs uppercase tracking-wide text-slate-500">Qty</dt>
+                <dd class="font-medium">${card.quantity}</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    fetch("/assets/data/cards.json")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(renderCards)
+      .catch((error) => {
+        document.getElementById("cards-status").textContent = `Could not load cards: ${error.message}`;
+      });
+  </script>
+</body>
+</html>
