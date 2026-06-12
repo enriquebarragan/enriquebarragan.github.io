@@ -1,7 +1,5 @@
-# [ebarragan.dev](https://enriquebarragan.github.io)
-my personal website.
-
-built with [jekyll](https://jekyllrb.com/), [tailwind CSS](https://tailwindcss.com/), [github pages](https://pages.github.com/)
+# [ebarragan.dev](https://ebarragan.dev)
+Free hosted website? :D
 
 ---
 
@@ -9,7 +7,7 @@ built with [jekyll](https://jekyllrb.com/), [tailwind CSS](https://tailwindcss.c
 
 #### Docker
 
-Use this if Ruby is not installed locally:
+If Docker is installed locally:
 
 ```powershell
 docker run --rm -it `
