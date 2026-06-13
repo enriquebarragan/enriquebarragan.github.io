@@ -96,15 +96,11 @@
               Latest Blog Entry
             </h2>
             <div class="space-y-1 p-2">
-              <p>
-                <a class="font-bold text-[#003399] underline" href="/blogs/free-hosted-site/">Thank you GitHub for the free hosted site :)</a>
-              </p>
-              <p>
-                <a class="font-bold text-[#003399] underline" href="/blogs/new-404-page/">New 404 page</a>
-              </p>
-              <p>
-                <a class="font-bold text-[#003399] underline" href="/blogs/test-blog/">Test blog</a>
-              </p>
+              {% for post in site.posts limit:3 %}
+                <p>
+                  <a class="font-bold text-[#003399] underline" href="{{ post.url }}">{{ post.title }}</a>
+                </p>
+              {% endfor %}
               <p class="pt-2">
                 <a class="font-bold text-[#003399] underline" href="/blogs/">View All Blog Entries</a>
               </p>
