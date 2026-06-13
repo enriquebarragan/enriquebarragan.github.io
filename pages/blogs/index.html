@@ -1,0 +1,24 @@
+---
+layout: default
+title: Blog
+permalink: /blogs/
+---
+
+<section class="my-8 space-y-6">
+  <header class="border-b border-gray-300 pb-4">
+    <h1 class="text-3xl font-semibold tracking-normal text-gray-950">Blog</h1>
+    <p class="mt-2 text-base text-gray-600">Recent updates from the site.</p>
+  </header>
+
+  <div class="space-y-5">
+    {% for post in site.posts %}
+      <article class="space-y-1">
+        <p class="text-sm text-gray-500">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <h2 class="text-xl font-semibold">
+          <a class="text-blue-700 underline" href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <p class="text-base leading-relaxed text-gray-700">{{ post.excerpt | strip_html | truncate: 180 }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
