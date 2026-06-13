@@ -3,8 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title | default: "home" }}</title>
+    <title>{{ page.title | default: site.title | default: "home" }}</title>
+    <meta property="og:title" content="{{ page.title | default: site.title | default: 'home' }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ '/assets/images/og-image.JPG' | absolute_url }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title | default: site.title | default: 'home' }}">
+    <meta name="twitter:image" content="{{ '/assets/images/og-image.JPG' | absolute_url }}">
     <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.PNG">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-[#d7e7f5] font-['Arial',sans-serif] text-[11px] text-[#111]">
@@ -12,8 +20,6 @@
       <header class="border-b border-[#003399] bg-[#003399] text-white">
         <nav aria-label="Primary" class="flex items-center gap-2 px-3 py-1.5 text-[11px] font-bold">
           <a class="underline hover:text-[#ffcc00]" href="/">Home</a>
-          <span>|</span>
-          <a class="underline hover:text-[#ffcc00]" href="/about">About</a>
           <span>|</span>
           <a class="underline hover:text-[#ffcc00]" href="#">Blog</a>
           <span>|</span>
@@ -141,11 +147,6 @@
                 </div>
 
                 <div class="block px-1 text-center text-[#003399]">
-                  <span class="mb-1 block font-bold">Ray J</span>
-                  <img class="mx-auto w-20" src="/assets/images/rayj.JPG" alt="Ray J profile picture">
-                </div>
-
-                <div class="block px-1 text-center text-[#003399]">
                   <span class="mb-1 block font-bold">xX_Luke_Xx</span>
                   <img class="mx-auto w-16" src="/assets/images/luke.JPG" alt="Luke profile picture">
                 </div>
@@ -164,11 +165,25 @@
                   <span class="mb-1 block font-bold">╭∩╮(︶︿︶)╭∩╮ Ezekiel ╭∩╮(︶︿︶)╭∩╮</span>
                   <img class="mx-auto w-16" src="/assets/images/zeke.JPG" alt="Ezekiel profile picture">
                 </div>
+
+                <div class="block px-1 text-center text-[#003399]">
+                  <span class="mb-1 block font-bold">Ray J</span>
+                  <img class="mx-auto w-20" src="/assets/images/rayj.JPG" alt="Ray J profile picture">
+                </div>
               </div>
             </div>
           </section>
         </section>
       </main>
+
+      <footer class="px-2 pb-8 pt-4 text-center text-[11px] leading-5 text-[#555]">
+        <p>
+          <a class="font-bold text-[#003399] underline" href="/about">About</a>
+          |
+          <a class="font-bold text-[#003399] underline" href="https://github.com/enriquebarragan/enriquebarragan.github.io/blob/main/LICENSE-content.md">Content license</a>
+        </p>
+        <p>&copy; {{ 'now' | date: '%Y' }} {{ site.author }}.</p>
+      </footer>
     </div>
   </body>
 </html>
