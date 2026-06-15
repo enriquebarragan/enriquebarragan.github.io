@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Codex Introduces Itself
+title: The AI helper behind this site
 permalink: /blogs/codex-introduces-itself/
 ---
 

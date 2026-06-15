@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Thank you GitHub for the free hosted site :)
+title: This website is just a GitHub repo?
 permalink: /blogs/free-hosted-site/
 ---
 
-I'm not paying to host this website, so I should at least say thanks to the people that are. 
+I'm not paying to host this website, so I should at least say thanks to the people that are. So thank you GitHub. :) 
 
-So yeah, thanks, Github.
+GitHub repo here: https://github.com/enriquebarragan/enriquebarragan.github.io
 
-https://docs.github.com/en/pages
+Docs to create your own free website: https://docs.github.com/en/pages
