@@ -10,6 +10,14 @@ Free hosted website? :D
 If Docker is installed locally:
 
 ```powershell
+.\scripts\preview.ps1
+```
+
+Open <http://localhost:4000>.
+
+Or run the Docker command directly:
+
+```powershell
 docker run --rm -it `
   -p 4000:4000 `
   -v "${PWD}:/site" `

@@ -55,9 +55,46 @@
           </section>
 
           <section class="space-y-2">
-            <div class="border border-black bg-white px-4 py-5 text-center text-[16px] font-bold">
-              <a class="font-bold text-[#003399] underline" href="/cards">I'm selling some of my MTG cards</a>
+            <div id="mtg-ad" class="border border-[#777] bg-[#fff8d5] p-1 shadow-[2px_2px_0_#999]" role="complementary" aria-label="Advertisement">
+              <div class="mb-1 flex items-center justify-between bg-[#ffcc00] px-1.5 py-1 text-[10px] font-bold uppercase tracking-normal text-[#5f3600]">
+                <span>Sponsored Link</span>
+                <span>Ad</span>
+              </div>
+              <div class="relative overflow-hidden bg-white">
+                <a class="block" href="/cards/" aria-label="Shop Enrique's Magic cards">
+                  <img class="block w-full" src="/assets/images/mtg-ad.png" alt="Advertisement for Magic cards for sale">
+                </a>
+                <button
+                  class="absolute right-1 top-1 border border-[#333] bg-[#eeeeee] px-1.5 py-0.5 text-[10px] font-bold leading-none text-[#111] shadow-[1px_1px_0_#666] hover:bg-white"
+                  type="button"
+                  aria-label="Close Magic cards advertisement"
+                  data-close-ad
+                >
+                  close ad
+                </button>
+              </div>
+              <div class="mt-1 flex items-center justify-between px-1 text-[10px] leading-3 text-[#666]">
+                <span>Limited time internet offer</span>
+                <a class="font-bold text-[#003399] underline" href="/cards/">Visit sponsor</a>
+              </div>
             </div>
+
+          <section class="border border-[#6699cc] bg-white">
+            <h2 class="bg-[#336699] px-2 py-1 text-[12px] font-bold text-white">
+              Latest Blog Entry
+            </h2>
+            <div class="space-y-1 p-2">
+              {% for post in site.posts limit:3 %}
+                <p>
+                  <a class="font-bold text-[#003399] underline" href="{{ post.url }}">{{ post.title }}</a>
+                </p>
+              {% endfor %}
+              <p class="pt-2">
+                <a class="font-bold text-[#003399] underline" href="/blogs/">View All Blog Entries</a>
+              </p>
+            </div>
+          </section>
+        </aside>
 
           <section class="border border-[#6699cc] bg-white">
             <h2 class="bg-[#336699] px-2 py-1 text-[12px] font-bold text-white">
@@ -89,23 +126,6 @@
               </tbody>
             </table>
           </section>
-        </aside>
-
-          <section class="border border-[#6699cc] bg-white">
-            <h2 class="bg-[#336699] px-2 py-1 text-[12px] font-bold text-white">
-              Latest Blog Entry
-            </h2>
-            <div class="space-y-1 p-2">
-              {% for post in site.posts limit:3 %}
-                <p>
-                  <a class="font-bold text-[#003399] underline" href="{{ post.url }}">{{ post.title }}</a>
-                </p>
-              {% endfor %}
-              <p class="pt-2">
-                <a class="font-bold text-[#003399] underline" href="/blogs/">View All Blog Entries</a>
-              </p>
-            </div>
-          </section>
 
           <section class="border border-[#cc6600] bg-white">
             <h2 class="bg-[#ff9900] px-2 py-1 text-[13px] font-bold text-white">
@@ -136,7 +156,7 @@
             <div class="p-2 text-[11px]">
               <p class="mb-2 font-bold text-[#003399]">Enrique has 19 friends.</p>
 
-              <div class="grid grid-cols-3 gap-x-2 gap-y-4 sm:grid-cols-5">
+              <div class="grid grid-cols-3 gap-x-2 gap-y-4 md:grid-cols-6">
                 <div class="block px-1 text-center text-[#003399]">
                   <span class="mb-1 block font-bold">Tom</span>
                   <img class="mx-auto w-20" src="/assets/images/tom.JPG" alt="Tom profile picture">
@@ -181,5 +201,15 @@
         <p>&copy; {{ 'now' | date: '%Y' }} {{ site.author }}.</p>
       </footer>
     </div>
+    <script>
+      document.querySelectorAll("[data-close-ad]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const ad = button.closest("#mtg-ad");
+          if (ad) {
+            ad.hidden = true;
+          }
+        });
+      });
+    </script>
   </body>
 </html>
