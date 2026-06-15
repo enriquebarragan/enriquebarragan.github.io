@@ -5,16 +5,42 @@ permalink: /about/
 ---
 
 <div class="flex flex-col gap-6 my-6 mx-6">
-  <!-- Top-level heading -->
   <h1 class="sr-only">
     about
   </h1>
-  <section class="space-y-4">
+  <section class="space-y-4 text-base leading-relaxed">
     <h2 class="text-2xl font-semibold mb-4 border-b border-gray-300 pb-1">
       this website
     </h2>
-    <p class="text-base leading-relaxed">
-      Thank you GitHub for the free hosted site :)
+    <p>
+      This website is just a GitHub repo.
+    </p>
+    <p>
+      The source files live in GitHub, GitHub Pages builds them into a static site, and then the finished HTML, CSS, images, and feeds are served from GitHub's infrastructure. There is no traditional web server for me to maintain, no database, and no deploy dashboard. A commit to the repo is the publishing workflow.
+    </p>
+    <p>
+      That is the main limitation and the main charm. GitHub Pages is great for personal sites, portfolios, project notes, blogs, tiny experiments, and weird little corners of the internet. It is not built for server-side apps, user accounts, private dashboards, checkout flows, or anything that needs a backend running code on request.
+    </p>
+    <p>
+      The cool part is that the tradeoff keeps the site simple. The hosting is free, the custom domain can still use HTTPS, every change has version history, and the whole site can be rebuilt from plain files. If I break something, I can inspect the diff. If I want to add a post, I add a Markdown file. If I want to change the layout, I edit the template.
+    </p>
+    <p>
+      The current stack is Jekyll, the GitHub Pages Ruby gem, Liquid templates, Markdown posts, HTML, and Tailwind CSS loaded from the CDN. Locally, I build it with Docker so I do not have to keep a Ruby toolchain installed on the Windows host.
+    </p>
+    <p>
+      So, thank you GitHub for the free hosted site. :)
+    </p>
+    <p>
+      Repo:
+      <a class="text-blue-700 underline" href="https://github.com/enriquebarragan/enriquebarragan.github.io">
+        github.com/enriquebarragan/enriquebarragan.github.io
+      </a>
+    </p>
+    <p>
+      Docs:
+      <a class="text-blue-700 underline" href="https://docs.github.com/en/pages">
+        docs.github.com/en/pages
+      </a>
     </p>
   </section>
 </div>
