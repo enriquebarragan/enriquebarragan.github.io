@@ -1,0 +1,239 @@
+---
+title: Ezekiel
+permalink: /ezekiel/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ezekiel's Alpha Zone | personal page</title>
+    <meta property="og:title" content="Ezekiel's Alpha Zone">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ '/assets/images/zeke.JPG' | absolute_url }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ezekiel's Alpha Zone">
+    <meta name="twitter:image" content="{{ '/assets/images/zeke.JPG' | absolute_url }}">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.PNG">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #111;
+        background-image:
+          radial-gradient(circle at 18px 18px, #ff2a00 0 6px, transparent 7px),
+          repeating-linear-gradient(45deg, #111 0 18px, #3d0000 18px 36px, #221400 36px 54px);
+        background-size: 42px 42px, 96px 96px;
+      }
+
+      .danger-tape {
+        background-image: repeating-linear-gradient(-45deg, #ffdf00 0 14px, #ffdf00 14px 28px, #111 28px 42px, #111 42px 56px);
+      }
+
+      .flame {
+        background-image: linear-gradient(90deg, #ff2a00, #ffdf00, #ff2a00, #9b0000);
+      }
+
+      .sniff {
+        animation: sniff 1.4s ease-in-out infinite alternate;
+      }
+
+      .throb {
+        animation: throb .8s steps(2, start) infinite;
+      }
+
+      .float-badge {
+        animation: floatBadge 4s ease-in-out infinite alternate;
+      }
+
+      @keyframes sniff {
+        from { transform: rotate(-3deg) translateX(-2px); }
+        to { transform: rotate(4deg) translateX(4px); }
+      }
+
+      @keyframes throb {
+        50% { color: #ffdf00; background-color: #9b0000; }
+      }
+
+      @keyframes floatBadge {
+        from { transform: rotate(9deg) translateY(0); }
+        to { transform: rotate(16deg) translateY(12px); }
+      }
+    </style>
+  </head>
+  <body class="min-h-screen overflow-x-hidden font-['Impact','Arial_Black',Arial,sans-serif] text-[11px] text-white">
+    <div class="pointer-events-none fixed left-2 top-20 z-20 hidden border-4 border-[#ffdf00] bg-black px-3 py-2 text-center text-[18px] font-black uppercase text-[#ff2a00] shadow-[6px_6px_0_#ffdf00] md:block">
+      ALPHA<br>DETECTED
+    </div>
+
+    <div class="float-badge pointer-events-none fixed right-4 top-28 z-20 hidden border-4 border-black bg-[#ffdf00] px-3 py-2 text-center text-[13px] font-black uppercase text-black shadow-[5px_5px_0_#ff2a00] lg:block">
+      butt<br>security<br>level 10
+    </div>
+
+    <div class="mx-auto my-3 w-[97%] max-w-[960px] border-[7px] border-[#ffdf00] bg-[#1a1a1a] shadow-[12px_12px_0_#9b0000]">
+      <header class="border-b-[7px] border-[#ffdf00] bg-black p-1">
+        <marquee class="danger-tape border-2 border-black px-2 py-1 text-[18px] font-black uppercase text-[#ff2a00]">
+          ezekiel is the alpha dog!!! approach with snacks!!! no one smells his butt!!! he smells every butt!!!
+        </marquee>
+
+        <nav aria-label="Ezekiel profile navigation" class="mt-1 flex flex-wrap justify-center gap-1 bg-[#9b0000] p-2 text-[12px] font-black uppercase">
+          <a class="bg-black px-2 py-1 text-[#ffdf00] underline" href="/">home</a>
+          <a class="rotate-[-4deg] bg-[#ffdf00] px-2 py-1 text-black underline" href="/#friends">pack list</a>
+          <a class="bg-white px-2 py-1 text-[#9b0000] underline" href="#">submit to alpha</a>
+          <a class="rotate-[3deg] bg-[#ff2a00] px-2 py-1 text-black underline" href="#">send steak</a>
+          <a class="bg-black px-2 py-1 text-white underline" href="#">challenge denied</a>
+        </nav>
+      </header>
+
+      <main class="grid gap-2 p-2 md:grid-cols-[35%_40%_25%]">
+        <aside class="space-y-2">
+          <section class="sniff border-4 border-[#ff2a00] bg-[#2a0000] shadow-[6px_6px_0_#ffdf00]">
+            <h1 class="flame border-b-4 border-[#ffdf00] px-2 py-2 text-center text-[28px] font-black uppercase leading-none text-black">
+              Ezekiel
+            </h1>
+            <div class="p-2">
+              <img class="mx-auto w-full max-w-[255px] rotate-[-2deg] border-4 border-[#ffdf00]" src="/assets/images/zeke.JPG" alt="Ezekiel the alpha dog">
+              <p class="throb mt-2 border-2 border-[#ffdf00] bg-black px-2 py-2 text-center text-[17px] font-black uppercase text-[#ff2a00]">
+                alpha dog. no notes.
+              </p>
+              <table class="mt-2 w-full border-collapse bg-black text-[11px] leading-4">
+                <tbody>
+                  <tr>
+                    <th class="border border-[#ffdf00] bg-[#9b0000] px-1 text-left">Status</th>
+                    <td class="border border-[#ffdf00] px-1">patrolling the perimeter</td>
+                  </tr>
+                  <tr>
+                    <th class="border border-[#ffdf00] bg-[#9b0000] px-1 text-left">Mood</th>
+                    <td class="border border-[#ffdf00] px-1">badass, but emotionally available for treats</td>
+                  </tr>
+                  <tr>
+                    <th class="border border-[#ffdf00] bg-[#9b0000] px-1 text-left">Rank</th>
+                    <td class="border border-[#ffdf00] px-1">alpha of this page and several nearby rugs</td>
+                  </tr>
+                  <tr>
+                    <th class="border border-[#ffdf00] bg-[#9b0000] px-1 text-left">Power</th>
+                    <td class="border border-[#ffdf00] px-1">can smell every dog's butt</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="border-4 border-[#ffdf00] bg-[#ff2a00] p-2 text-center text-black shadow-[5px_5px_0_#000]">
+            <p class="text-[18px] font-black uppercase">Contact the Alpha</p>
+            <div class="mt-2 grid grid-cols-2 gap-1 text-[10px] font-black">
+              <a class="bg-black p-2 text-[#ffdf00] underline" href="#">bark loudly</a>
+              <a class="bg-[#ffdf00] p-2 text-black underline" href="#">offer bone</a>
+              <a class="bg-white p-2 text-[#9b0000] underline" href="#">request sniff</a>
+              <a class="bg-[#2a0000] p-2 text-white underline" href="#">do not sniff</a>
+            </div>
+          </section>
+        </aside>
+
+        <section class="space-y-2">
+          <section class="relative rotate-[.7deg] border-4 border-[#ffdf00] bg-white p-3 text-black shadow-[7px_7px_0_#ff2a00]">
+            <div class="absolute -right-4 -top-4 rotate-[12deg] border-2 border-black bg-[#ffdf00] px-2 py-1 text-[13px] font-black uppercase">
+              verified untouchable butt
+            </div>
+            <h2 class="bg-black px-2 py-1 text-[17px] font-black uppercase text-[#ffdf00]">Ezekiel's Blurbs</h2>
+            <div class="mt-3 space-y-4 text-[12px] leading-5">
+              <div class="bg-[#fff3b0] p-2">
+                <h3 class="mb-1 text-[15px] font-black text-[#9b0000]">About me:</h3>
+                <p>
+                  I am Ezekiel. Alpha dog. Badass. I can smell every dog's butt in the neighborhood, through fences, across sidewalks, and in dreams. But no one smells mine. That is not a rule I wrote down. That is just nature understanding who is in charge.
+                </p>
+              </div>
+
+              <div class="ml-5 rotate-[-1.5deg] bg-[#ffd7c2] p-2">
+                <h3 class="mb-1 text-[15px] font-black text-[#9b0000]">Who I'd like to meet:</h3>
+                <p>
+                  A mailman brave enough to admit defeat, a squirrel with honor, and the mysterious dog who keeps signing the grass by the mailbox.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="border-4 border-[#ff2a00] bg-black shadow-[7px_7px_0_#ffdf00]">
+            <h2 class="danger-tape border-b-4 border-[#ff2a00] px-2 py-1 text-[17px] font-black uppercase text-[#ff2a00]">Ezekiel's Interests</h2>
+            <table class="w-full border-collapse text-[11px] leading-4">
+              <tbody>
+                <tr>
+                  <th class="w-[25%] border-2 border-[#ffdf00] bg-[#9b0000] px-2 py-1 text-left align-top">General</th>
+                  <td class="border-2 border-[#ffdf00] bg-[#1a1a1a] px-2 py-1">Perimeter checks, dramatic barking, strategic butt intelligence, looking majestic in doorways.</td>
+                </tr>
+                <tr>
+                  <th class="border-2 border-[#ffdf00] bg-[#ff2a00] px-2 py-1 text-left align-top text-black">Music</th>
+                  <td class="border-2 border-[#ffdf00] bg-black px-2 py-1">Collar jingles, distant sirens, the forbidden squeaker at 11:43 p.m.</td>
+                </tr>
+                <tr>
+                  <th class="border-2 border-[#ffdf00] bg-[#ffdf00] px-2 py-1 text-left align-top text-black">Movies</th>
+                  <td class="border-2 border-[#ffdf00] bg-[#2a0000] px-2 py-1">Any scene where someone opens a door. Also security camera footage starring me.</td>
+                </tr>
+                <tr>
+                  <th class="border-2 border-[#ffdf00] bg-white px-2 py-1 text-left align-top text-[#9b0000]">Heroes</th>
+                  <td class="border-2 border-[#ffdf00] bg-black px-2 py-1">Myself, but from yesterday when I scared a leaf.</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section class="border-4 border-white bg-[#2a0000] shadow-[7px_7px_0_#000]">
+            <h2 class="bg-[#ff2a00] px-2 py-1 text-[17px] font-black uppercase text-black">Ezekiel's Blog Entries</h2>
+            <div class="space-y-2 p-2">
+              <article class="rotate-[-1deg] border-2 border-[#ffdf00] bg-black p-2">
+                <p class="text-[#ffdf00]">June 15, 2026</p>
+                <h3 class="text-[15px] font-black text-white underline">perimeter secure, butt protocol intact</h3>
+                <p class="mt-1 leading-5">Smelled three dogs, one suspicious shoe, and the corner of the couch. No one smelled me. Another flawless shift.</p>
+              </article>
+
+              <article class="ml-5 rotate-[1.4deg] border-2 border-[#ffdf00] bg-[#9b0000] p-2">
+                <p class="text-[#ffdf00]">June 13, 2026</p>
+                <h3 class="text-[15px] font-black text-white underline">squirrel incident report</h3>
+                <p class="mt-1 leading-5">Squirrel entered my airspace with no paperwork. I issued several verbal warnings from inside the house.</p>
+              </article>
+
+              <article class="rotate-[-.6deg] border-2 border-[#ffdf00] bg-black p-2">
+                <p class="text-[#ffdf00]">June 10, 2026</p>
+                <h3 class="text-[15px] font-black text-white underline">bath rumors are false</h3>
+                <p class="mt-1 leading-5">I have heard people saying the word bath. This is propaganda. I am already perfect.</p>
+              </article>
+            </div>
+          </section>
+        </section>
+
+        <aside class="space-y-2">
+          <section class="border-4 border-[#ffdf00] bg-[#ff2a00] p-2 text-center text-black shadow-[5px_5px_0_#000]">
+            <p class="text-[20px] font-black uppercase">Pack Rank</p>
+            <p class="mt-1 bg-black px-1 py-2 text-[30px] font-black text-[#ffdf00]">#1</p>
+          </section>
+
+          <section class="rotate-[2deg] border-4 border-[#ff2a00] bg-black p-2 shadow-[5px_5px_0_#ffdf00]">
+            <h2 class="text-[14px] font-black uppercase text-[#ffdf00]">Ezekiel's Top 8</h2>
+            <ol class="mt-2 list-decimal space-y-1 pl-5">
+              <li>me</li>
+              <li>my reflection</li>
+              <li>the treat jar</li>
+              <li>the yard</li>
+              <li>the couch I protect</li>
+              <li>dogs I have smelled</li>
+              <li>dogs I will smell</li>
+              <li>Enrique, pack associate</li>
+            </ol>
+          </section>
+
+          <section class="border-4 border-black bg-[#ffdf00] p-2 text-center text-black shadow-[5px_5px_0_#ff2a00]">
+            <p class="text-[16px] font-black uppercase">Guestbook</p>
+            <p class="mt-2 text-[11px] font-black">sign below if you accept the hierarchy</p>
+            <textarea class="mt-2 h-20 w-full border-2 border-black bg-white p-1 text-[10px] text-black">i acknowledge ezekiel as alpha and will not attempt a reciprocal sniff</textarea>
+          </section>
+
+          <section class="border-4 border-[#ffdf00] bg-[#9b0000] p-2 text-center text-[12px] font-black uppercase shadow-[5px_5px_0_#000]">
+            Ezekiel has 1 alpha friend and 999 dogs under investigation.
+          </section>
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>
