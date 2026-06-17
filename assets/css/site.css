@@ -331,6 +331,7 @@ img {
 [class~="shadow-[12px_12px_0_#9b0000]"] { box-shadow: 12px 12px 0 #9b0000; }
 [class~="shadow-[1px_1px_0_#666]"] { box-shadow: 1px 1px 0 #666; }
 [class~="shadow-[2px_2px_0_#999]"] { box-shadow: 2px 2px 0 #999; }
+[class~="shadow-[2px_2px_0_#6699cc]"] { box-shadow: 2px 2px 0 #6699cc; }
 [class~="shadow-[4px_4px_0_#00d0ff]"] { box-shadow: 4px 4px 0 #00d0ff; }
 [class~="shadow-[4px_4px_0_#31ff49]"] { box-shadow: 4px 4px 0 #31ff49; }
 [class~="shadow-[4px_4px_0_#ff00aa]"] { box-shadow: 4px 4px 0 #ff00aa; }
