@@ -37,6 +37,12 @@ permalink: /photos/
         </figure>
 
         <dl class="photo-meta">
+          {% if photo.camera %}
+            <div>
+              <dt>Camera</dt>
+              <dd>{{ photo.camera }}</dd>
+            </div>
+          {% endif %}
           {% if photo.focal_length %}
             <div>
               <dt>Focal length</dt>

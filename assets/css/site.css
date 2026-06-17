@@ -397,8 +397,8 @@ img {
 }
 
 .photo-page {
-  width: min(calc(100vw - 2rem), 68rem);
-  margin: 3rem calc(50% - min(calc(100vw - 2rem), 68rem) / 2) 4rem;
+  width: 100vw;
+  margin: 3rem calc(50% - 50vw) 4rem;
 }
 
 .photo-page-header {
@@ -410,11 +410,11 @@ img {
 
 .photo-list {
   display: grid;
-  gap: 6rem;
+  gap: 5rem;
 }
 
 .photo-entry {
-  padding-bottom: 5rem;
+  padding-bottom: 4.5rem;
   border-bottom: 1px solid #e5e7eb;
 }
 
@@ -424,23 +424,19 @@ img {
 }
 
 .photo-frame {
-  display: flex;
-  justify-content: center;
-  padding: clamp(1.75rem, 5vw, 5rem);
+  width: 100vw;
   background: #fff;
-  box-shadow: 0 18px 60px rgb(15 23 42 / .08);
 }
 
 .photo-frame img {
-  width: auto;
-  max-width: 100%;
-  max-height: min(78vh, 760px);
-  object-fit: contain;
+  width: 100%;
+  height: auto;
 }
 
 .photo-caption {
   max-width: 48rem;
-  margin: 2rem auto 0;
+  margin: 2.25rem auto 0;
+  padding: 0 1rem;
 }
 
 .photo-caption-header {
@@ -451,14 +447,15 @@ img {
 
 .photo-meta {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   gap: 1rem 2rem;
   max-width: 48rem;
   margin: 1.5rem auto 0;
-  padding-top: 1.25rem;
+  padding: 1.25rem 1rem 0;
   border-top: 1px solid #e5e7eb;
   color: #0f172a;
   font-size: .875rem;
+  text-align: center;
 }
 
 .photo-meta dt {
