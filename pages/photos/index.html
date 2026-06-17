@@ -1,0 +1,67 @@
+---
+layout: default
+title: Photos
+permalink: /photos/
+---
+
+<section class="my-8 space-y-6">
+  <header class="border-b border-gray-300 pb-4">
+    <h1 class="text-3xl font-semibold tracking-normal text-gray-950">Photos</h1>
+    <p class="mt-2 text-base text-gray-600">Favorite photos from the archive.</p>
+  </header>
+
+  <div class="space-y-6">
+    {% for photo in site.data.photos %}
+      <article class="space-y-4 border-b border-gray-300 pb-8">
+        <figure class="space-y-3">
+          <img
+            class="w-full rounded-lg border border-gray-200 bg-white"
+            src="{{ photo.image }}"
+            alt="{{ photo.alt | default: photo.title | escape }}"
+          >
+          <figcaption class="space-y-2">
+            <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+              <h2 class="text-2xl font-semibold text-gray-950">{{ photo.title }}</h2>
+              {% if photo.date %}
+                <time class="text-sm text-gray-500" datetime="{{ photo.date }}">
+                  {{ photo.date | date: "%B %-d, %Y" }}
+                </time>
+              {% endif %}
+            </div>
+
+            {% if photo.commentary %}
+              <p class="text-base leading-relaxed text-gray-700">{{ photo.commentary }}</p>
+            {% endif %}
+          </figcaption>
+        </figure>
+
+        <dl class="grid grid-cols-2 gap-3 text-sm sm:grid-cols-2">
+          {% if photo.focal_length %}
+            <div class="rounded border border-slate-200 bg-slate-50 p-3">
+              <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Focal length</dt>
+              <dd class="mt-1 text-slate-900">{{ photo.focal_length }}</dd>
+            </div>
+          {% endif %}
+          {% if photo.iso %}
+            <div class="rounded border border-slate-200 bg-slate-50 p-3">
+              <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">ISO</dt>
+              <dd class="mt-1 text-slate-900">{{ photo.iso }}</dd>
+            </div>
+          {% endif %}
+          {% if photo.aperture %}
+            <div class="rounded border border-slate-200 bg-slate-50 p-3">
+              <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Aperture</dt>
+              <dd class="mt-1 text-slate-900">{{ photo.aperture }}</dd>
+            </div>
+          {% endif %}
+          {% if photo.shutter_speed %}
+            <div class="rounded border border-slate-200 bg-slate-50 p-3">
+              <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Shutter speed</dt>
+              <dd class="mt-1 text-slate-900">{{ photo.shutter_speed }}</dd>
+            </div>
+          {% endif %}
+        </dl>
+      </article>
+    {% endfor %}
+  </div>
+</section>
