@@ -33,41 +33,26 @@ permalink: /photos/
             {% if photo.commentary %}
               <p class="text-base leading-relaxed text-gray-700">{{ photo.commentary }}</p>
             {% endif %}
+
+            <p class="photo-meta">
+              {% if photo.camera %}
+                <span>{{ photo.camera }}</span>
+              {% endif %}
+              {% if photo.focal_length %}
+                <span>{{ photo.focal_length }}</span>
+              {% endif %}
+              {% if photo.iso %}
+                <span>ISO {{ photo.iso }}</span>
+              {% endif %}
+              {% if photo.aperture %}
+                <span>{{ photo.aperture }}</span>
+              {% endif %}
+              {% if photo.shutter_speed %}
+                <span>{{ photo.shutter_speed }}</span>
+              {% endif %}
+            </p>
           </figcaption>
         </figure>
-
-        <dl class="photo-meta">
-          {% if photo.camera %}
-            <div>
-              <dt>Camera</dt>
-              <dd>{{ photo.camera }}</dd>
-            </div>
-          {% endif %}
-          {% if photo.focal_length %}
-            <div>
-              <dt>Focal length</dt>
-              <dd>{{ photo.focal_length }}</dd>
-            </div>
-          {% endif %}
-          {% if photo.iso %}
-            <div>
-              <dt>ISO</dt>
-              <dd>{{ photo.iso }}</dd>
-            </div>
-          {% endif %}
-          {% if photo.aperture %}
-            <div>
-              <dt>Aperture</dt>
-              <dd>{{ photo.aperture }}</dd>
-            </div>
-          {% endif %}
-          {% if photo.shutter_speed %}
-            <div>
-              <dt>Shutter speed</dt>
-              <dd>{{ photo.shutter_speed }}</dd>
-            </div>
-          {% endif %}
-        </dl>
       </article>
     {% endfor %}
   </div>
