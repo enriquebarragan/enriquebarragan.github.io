@@ -1,8 +1,6 @@
 ---
 title: "Gaea's Cradle"
 layout: card
-condition: "MP"
-price: 1200
 sold: false
 
 images:
