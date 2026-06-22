@@ -15,7 +15,7 @@ DEFAULT_INPUT = REPO_ROOT / "data" / "tcgplayer-export.csv"
 DEFAULT_OUTPUT = REPO_ROOT / "assets" / "data" / "cards.json"
 
 PICTURES_URL_BY_PRODUCT_ID = {
-    "6883": "/gaeas-cradle/",
+    "6883": "/cradle/",
 }
 
 

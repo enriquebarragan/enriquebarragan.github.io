@@ -1,6 +1,7 @@
 ---
 title: "Gaea's Cradle"
 layout: card
+permalink: /cradle/
 sold: false
 
 images:
