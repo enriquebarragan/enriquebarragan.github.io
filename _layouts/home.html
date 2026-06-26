@@ -89,36 +89,72 @@
       <a href="/about/">About me</a>
     </main>
 
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
     <script type="module">
-      import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js";
+      import * as THREE from "three";
+      import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
+      import { RenderPixelatedPass } from "three/addons/postprocessing/RenderPixelatedPass.js";
+      import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 
       const container = document.querySelector("#animation-stage");
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
       camera.position.set(0, 0, 5.4);
 
-      const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+      const renderer = new THREE.WebGLRenderer({ antialias: false, alpha: true });
       renderer.setClearColor(0xffffff, 0);
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.shadowMap.enabled = true;
       container.appendChild(renderer.domElement);
 
-      const blackLine = new THREE.LineBasicMaterial({ color: 0x000000 });
-      const whiteFace = new THREE.MeshBasicMaterial({
-        color: 0xffffff,
-        transparent: true,
-        opacity: 0.04,
+      const composer = new EffectComposer(renderer);
+      const pixelatedPass = new RenderPixelatedPass(3, scene, camera);
+      pixelatedPass.normalEdgeStrength = 0;
+      pixelatedPass.depthEdgeStrength = 0;
+      composer.addPass(pixelatedPass);
+      composer.addPass(new OutputPass());
+
+      scene.add(new THREE.AmbientLight(0xb6c7d9, 2.2));
+
+      const keyLight = new THREE.DirectionalLight(0xffffff, 2.6);
+      keyLight.position.set(2.5, 3.5, 4);
+      keyLight.castShadow = true;
+      scene.add(keyLight);
+
+      const rimLight = new THREE.SpotLight(0x8fd3ff, 12, 8, Math.PI / 7, 0.35, 1.5);
+      rimLight.position.set(-2.6, 1.2, 3.2);
+      rimLight.castShadow = true;
+      scene.add(rimLight);
+      scene.add(rimLight.target);
+
+      const fillMaterial = new THREE.MeshPhongMaterial({
+        color: 0xf4fbff,
+        emissive: 0x102033,
+        emissiveIntensity: 0.08,
+        shininess: 90,
+        specular: 0xbde8ff,
         side: THREE.DoubleSide
       });
 
-      function addWireframe(mesh, geometry) {
-        mesh.add(new THREE.LineSegments(new THREE.EdgesGeometry(geometry), blackLine));
-      }
+      const darkMaterial = new THREE.MeshPhongMaterial({
+        color: 0x05080d,
+        shininess: 60,
+        specular: 0x9dc7ff
+      });
 
       function createD20() {
         const group = new THREE.Group();
         const geometry = new THREE.IcosahedronGeometry(1.55, 0);
-        const die = new THREE.Mesh(geometry, whiteFace);
-        addWireframe(die, geometry);
+        const die = new THREE.Mesh(geometry, fillMaterial);
+        die.castShadow = true;
+        die.receiveShadow = true;
         group.add(die);
 
         return {
@@ -133,15 +169,14 @@
 
       function createTorus() {
         const group = new THREE.Group();
-        const geometry = new THREE.TorusGeometry(1.16, 0.36, 8, 24);
-        const torus = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({
-          color: 0x000000,
-          wireframe: true
-        }));
+        const geometry = new THREE.TorusGeometry(1.16, 0.36, 12, 32);
+        const torus = new THREE.Mesh(geometry, fillMaterial);
+        torus.castShadow = true;
+        torus.receiveShadow = true;
         group.add(torus);
 
         return {
-          label: "Rotating wireframe torus",
+          label: "Rotating filled torus",
           object: group,
           tick: () => {
             group.rotation.x += 0.008;
@@ -152,22 +187,21 @@
 
       function createCatHead() {
         const group = new THREE.Group();
-        const catMaterial = new THREE.MeshBasicMaterial({
-          color: 0xffffff,
-          side: THREE.DoubleSide
-        });
+        const catMaterial = fillMaterial;
 
         const headGeometry = new THREE.IcosahedronGeometry(1.08, 1);
         const head = new THREE.Mesh(headGeometry, catMaterial);
         head.scale.set(1.18, 0.96, 0.92);
-        addWireframe(head, headGeometry);
+        head.castShadow = true;
+        head.receiveShadow = true;
         group.add(head);
 
         const earGeometry = new THREE.ConeGeometry(0.38, 0.82, 3);
         const leftEar = new THREE.Mesh(earGeometry, catMaterial);
         leftEar.position.set(-0.7, 0.95, 0);
         leftEar.rotation.set(0, 0, 0.26);
-        addWireframe(leftEar, earGeometry);
+        leftEar.castShadow = true;
+        leftEar.receiveShadow = true;
         group.add(leftEar);
 
         const rightEar = leftEar.clone();
@@ -176,7 +210,7 @@
         group.add(rightEar);
 
         const eyeGeometry = new THREE.OctahedronGeometry(0.09, 0);
-        const eyeMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+        const eyeMaterial = darkMaterial;
         const leftEye = new THREE.Mesh(eyeGeometry, eyeMaterial);
         leftEye.position.set(-0.36, 0.18, 0.9);
         leftEye.scale.set(1.15, 1.15, 0.35);
@@ -216,6 +250,7 @@
         selectedAnimation = animations[selectedIndex]();
         container.setAttribute("aria-label", selectedAnimation.label);
         scene.add(selectedAnimation.object);
+        rimLight.target = selectedAnimation.object;
       }
 
       function advanceAnimation() {
@@ -227,6 +262,7 @@
       function resize() {
         const size = container.clientWidth;
         renderer.setSize(size, size);
+        composer.setSize(size, size);
         camera.aspect = 1;
         camera.updateProjectionMatrix();
       }
@@ -235,7 +271,7 @@
         if (!reducedMotion.matches) {
           selectedAnimation.tick();
         }
-        renderer.render(scene, camera);
+        composer.render();
         requestAnimationFrame(animate);
       }
 
