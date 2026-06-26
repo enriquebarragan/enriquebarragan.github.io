@@ -160,9 +160,9 @@
         return {
           label: "Spinning 20 sided die",
           object: group,
-          tick: () => {
-            group.rotation.x += 0.006;
-            group.rotation.y += 0.012;
+          tick: (speed = 1) => {
+            group.rotation.x += 0.006 * speed;
+            group.rotation.y += 0.012 * speed;
           }
         };
       }
@@ -178,9 +178,9 @@
         return {
           label: "Rotating filled torus",
           object: group,
-          tick: () => {
-            group.rotation.x += 0.008;
-            group.rotation.y += 0.014;
+          tick: (speed = 1) => {
+            group.rotation.x += 0.008 * speed;
+            group.rotation.y += 0.014 * speed;
           }
         };
       }
@@ -214,8 +214,8 @@
         return {
           label: "Low poly cat head rotating",
           object: group,
-          tick: () => {
-            group.rotation.y += 0.011;
+          tick: (speed = 1) => {
+            group.rotation.y += 0.011 * speed;
           }
         };
       }
@@ -251,9 +251,7 @@
       }
 
       function animate() {
-        if (!reducedMotion.matches) {
-          selectedAnimation.tick();
-        }
+        selectedAnimation.tick(reducedMotion.matches ? 0.35 : 1);
         composer.render();
         requestAnimationFrame(animate);
       }
