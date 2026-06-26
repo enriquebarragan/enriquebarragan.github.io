@@ -209,23 +209,6 @@
         rightEar.rotation.z = -0.26;
         group.add(rightEar);
 
-        const eyeGeometry = new THREE.OctahedronGeometry(0.09, 0);
-        const eyeMaterial = darkMaterial;
-        const leftEye = new THREE.Mesh(eyeGeometry, eyeMaterial);
-        leftEye.position.set(-0.36, 0.18, 0.9);
-        leftEye.scale.set(1.15, 1.15, 0.35);
-        group.add(leftEye);
-
-        const rightEye = leftEye.clone();
-        rightEye.position.x = 0.36;
-        group.add(rightEye);
-
-        const noseGeometry = new THREE.TetrahedronGeometry(0.13, 0);
-        const nose = new THREE.Mesh(noseGeometry, eyeMaterial);
-        nose.position.set(0, -0.1, 0.98);
-        nose.rotation.z = Math.PI / 4;
-        group.add(nose);
-
         group.rotation.x = -0.08;
 
         return {
