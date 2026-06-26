@@ -204,9 +204,23 @@
       }
 
       const animations = [createD20, createTorus, createCatHead];
-      const selectedAnimation = animations[Math.floor(Math.random() * animations.length)]();
-      container.setAttribute("aria-label", selectedAnimation.label);
-      scene.add(selectedAnimation.object);
+      let selectedIndex = Math.floor(Math.random() * animations.length);
+      let selectedAnimation;
+
+      function setAnimation(index) {
+        if (selectedAnimation) {
+          scene.remove(selectedAnimation.object);
+        }
+
+        selectedIndex = index;
+        selectedAnimation = animations[selectedIndex]();
+        container.setAttribute("aria-label", selectedAnimation.label);
+        scene.add(selectedAnimation.object);
+      }
+
+      function advanceAnimation() {
+        setAnimation((selectedIndex + 1) % animations.length);
+      }
 
       const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
@@ -226,7 +240,15 @@
       }
 
       resize();
+      setAnimation(selectedIndex);
       window.addEventListener("resize", resize);
+      document.addEventListener("click", (event) => {
+        if (event.target.closest("a")) {
+          return;
+        }
+
+        advanceAnimation();
+      });
       animate();
     </script>
   </body>
