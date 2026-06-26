@@ -185,6 +185,179 @@
         };
       }
 
+      function createCube() {
+        const group = new THREE.Group();
+        const geometry = new THREE.BoxGeometry(1.85, 1.85, 1.85, 1, 1, 1);
+        const cube = new THREE.Mesh(geometry, fillMaterial);
+        cube.castShadow = true;
+        cube.receiveShadow = true;
+        group.add(cube);
+        group.rotation.set(0.18, 0.38, 0.08);
+
+        return {
+          label: "Rotating cube",
+          object: group,
+          tick: (speed = 1) => {
+            group.rotation.x += 0.007 * speed;
+            group.rotation.y += 0.01 * speed;
+          }
+        };
+      }
+
+      function createCrystal() {
+        const group = new THREE.Group();
+        const geometry = new THREE.OctahedronGeometry(1.55, 0);
+        const crystal = new THREE.Mesh(geometry, fillMaterial);
+        crystal.scale.set(0.86, 1.24, 0.86);
+        crystal.castShadow = true;
+        crystal.receiveShadow = true;
+        group.add(crystal);
+
+        return {
+          label: "Octahedron crystal rotating",
+          object: group,
+          tick: (speed = 1) => {
+            group.rotation.x += 0.006 * speed;
+            group.rotation.y += 0.013 * speed;
+          }
+        };
+      }
+
+      function createPyramid() {
+        const group = new THREE.Group();
+        const geometry = new THREE.ConeGeometry(1.35, 2, 4);
+        const pyramid = new THREE.Mesh(geometry, fillMaterial);
+        pyramid.rotation.y = Math.PI / 4;
+        pyramid.castShadow = true;
+        pyramid.receiveShadow = true;
+        group.add(pyramid);
+
+        return {
+          label: "Spinning pyramid",
+          object: group,
+          tick: (speed = 1) => {
+            group.rotation.x += 0.006 * speed;
+            group.rotation.y += 0.012 * speed;
+          }
+        };
+      }
+
+      function createUfo() {
+        const group = new THREE.Group();
+
+        const saucerGeometry = new THREE.SphereGeometry(1.45, 16, 8);
+        const saucer = new THREE.Mesh(saucerGeometry, fillMaterial);
+        saucer.scale.set(1.32, 0.24, 1.32);
+        saucer.castShadow = true;
+        saucer.receiveShadow = true;
+        group.add(saucer);
+
+        const domeGeometry = new THREE.SphereGeometry(0.72, 12, 8, 0, Math.PI * 2, 0, Math.PI / 2);
+        const dome = new THREE.Mesh(domeGeometry, fillMaterial);
+        dome.position.y = 0.2;
+        dome.scale.set(1, 0.78, 1);
+        dome.castShadow = true;
+        dome.receiveShadow = true;
+        group.add(dome);
+
+        const ringGeometry = new THREE.TorusGeometry(1.15, 0.08, 8, 24);
+        const ring = new THREE.Mesh(ringGeometry, darkMaterial);
+        ring.rotation.x = Math.PI / 2;
+        ring.position.y = -0.03;
+        group.add(ring);
+
+        group.rotation.x = 0.18;
+
+        return {
+          label: "Spinning UFO",
+          object: group,
+          tick: (speed = 1) => {
+            group.rotation.y += 0.014 * speed;
+          }
+        };
+      }
+
+      function createFish() {
+        const group = new THREE.Group();
+
+        const bodyGeometry = new THREE.SphereGeometry(0.95, 12, 8);
+        const body = new THREE.Mesh(bodyGeometry, fillMaterial);
+        body.scale.set(1.35, 0.72, 0.62);
+        body.castShadow = true;
+        body.receiveShadow = true;
+        group.add(body);
+
+        const tailGeometry = new THREE.ConeGeometry(0.56, 0.9, 3);
+        const tail = new THREE.Mesh(tailGeometry, fillMaterial);
+        tail.position.x = -1.35;
+        tail.rotation.z = Math.PI / 2;
+        tail.scale.set(1, 0.82, 1);
+        tail.castShadow = true;
+        tail.receiveShadow = true;
+        group.add(tail);
+
+        const finGeometry = new THREE.ConeGeometry(0.28, 0.5, 3);
+        const topFin = new THREE.Mesh(finGeometry, fillMaterial);
+        topFin.position.set(0.02, 0.6, 0);
+        topFin.rotation.z = Math.PI;
+        topFin.castShadow = true;
+        topFin.receiveShadow = true;
+        group.add(topFin);
+
+        const eyeGeometry = new THREE.OctahedronGeometry(0.09, 0);
+        const eye = new THREE.Mesh(eyeGeometry, darkMaterial);
+        eye.position.set(0.78, 0.14, 0.5);
+        eye.scale.set(1, 1, 0.4);
+        group.add(eye);
+
+        group.rotation.set(0.08, -0.28, -0.04);
+
+        return {
+          label: "Low poly fish rotating",
+          object: group,
+          tick: (speed = 1) => {
+            group.rotation.y += 0.012 * speed;
+            group.rotation.z += 0.002 * speed;
+          }
+        };
+      }
+
+      function createCrown() {
+        const group = new THREE.Group();
+
+        const bandGeometry = new THREE.BoxGeometry(1.9, 0.45, 0.78);
+        const band = new THREE.Mesh(bandGeometry, fillMaterial);
+        band.position.y = -0.42;
+        band.castShadow = true;
+        band.receiveShadow = true;
+        group.add(band);
+
+        const pointGeometry = new THREE.ConeGeometry(0.34, 1.05, 4);
+        [-0.68, 0, 0.68].forEach((x, index) => {
+          const point = new THREE.Mesh(pointGeometry, fillMaterial);
+          point.position.set(x, 0.22 + (index === 1 ? 0.12 : 0), 0);
+          point.rotation.y = Math.PI / 4;
+          point.castShadow = true;
+          point.receiveShadow = true;
+          group.add(point);
+        });
+
+        const gemGeometry = new THREE.OctahedronGeometry(0.12, 0);
+        const gem = new THREE.Mesh(gemGeometry, darkMaterial);
+        gem.position.set(0, -0.42, 0.42);
+        group.add(gem);
+
+        group.rotation.set(0.12, -0.28, 0.04);
+
+        return {
+          label: "Rotating crown",
+          object: group,
+          tick: (speed = 1) => {
+            group.rotation.y += 0.011 * speed;
+          }
+        };
+      }
+
       function createCatHead() {
         const group = new THREE.Group();
         const catMaterial = fillMaterial;
@@ -220,7 +393,7 @@
         };
       }
 
-      const animations = [createD20, createTorus, createCatHead];
+      const animations = [createD20, createTorus, createCube, createCrystal, createPyramid, createUfo, createFish, createCrown, createCatHead];
       let selectedIndex = Math.floor(Math.random() * animations.length);
       let selectedAnimation;
 
