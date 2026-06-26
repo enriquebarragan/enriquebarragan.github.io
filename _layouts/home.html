@@ -50,14 +50,14 @@
         letter-spacing: 0;
       }
 
-      #die {
+      #animation-stage {
         width: min(58vw, 280px);
         height: min(58vw, 280px);
         margin: clamp(2rem, 6vh, 3.25rem) 0 clamp(1.75rem, 4vh, 2.5rem);
         overflow: visible;
       }
 
-      #die canvas {
+      #animation-stage canvas {
         display: block;
         width: 100% !important;
         height: 100% !important;
@@ -76,7 +76,7 @@
       }
 
       @media (prefers-reduced-motion: reduce) {
-        #die {
+        #animation-stage {
           transform: rotate(0deg);
         }
       }
@@ -85,14 +85,14 @@
   <body>
     <main>
       <h1>Enrique</h1>
-      <div id="die" aria-label="Spinning 20 sided die" role="img"></div>
+      <div id="animation-stage" aria-label="Random rotating animation" role="img"></div>
       <a href="/about/">About me</a>
     </main>
 
     <script type="module">
       import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js";
 
-      const container = document.querySelector("#die");
+      const container = document.querySelector("#animation-stage");
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
       camera.position.set(0, 0, 5.4);
@@ -102,22 +102,111 @@
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
       container.appendChild(renderer.domElement);
 
-      const geometry = new THREE.IcosahedronGeometry(1.55, 0);
-      const faceMaterial = new THREE.MeshBasicMaterial({
+      const blackLine = new THREE.LineBasicMaterial({ color: 0x000000 });
+      const whiteFace = new THREE.MeshBasicMaterial({
         color: 0xffffff,
         transparent: true,
-        opacity: 0.02,
+        opacity: 0.04,
         side: THREE.DoubleSide
       });
-      const die = new THREE.Mesh(geometry, faceMaterial);
-      scene.add(die);
 
-      const edges = new THREE.EdgesGeometry(geometry);
-      const wire = new THREE.LineSegments(
-        edges,
-        new THREE.LineBasicMaterial({ color: 0x000000 })
-      );
-      die.add(wire);
+      function addWireframe(mesh, geometry) {
+        mesh.add(new THREE.LineSegments(new THREE.EdgesGeometry(geometry), blackLine));
+      }
+
+      function createD20() {
+        const group = new THREE.Group();
+        const geometry = new THREE.IcosahedronGeometry(1.55, 0);
+        const die = new THREE.Mesh(geometry, whiteFace);
+        addWireframe(die, geometry);
+        group.add(die);
+
+        return {
+          label: "Spinning 20 sided die",
+          object: group,
+          tick: () => {
+            group.rotation.x += 0.006;
+            group.rotation.y += 0.012;
+          }
+        };
+      }
+
+      function createTorus() {
+        const group = new THREE.Group();
+        const geometry = new THREE.TorusGeometry(1.16, 0.36, 8, 24);
+        const torus = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({
+          color: 0x000000,
+          wireframe: true
+        }));
+        group.add(torus);
+
+        return {
+          label: "Rotating wireframe torus",
+          object: group,
+          tick: () => {
+            group.rotation.x += 0.008;
+            group.rotation.y += 0.014;
+          }
+        };
+      }
+
+      function createCatHead() {
+        const group = new THREE.Group();
+        const catMaterial = new THREE.MeshBasicMaterial({
+          color: 0xffffff,
+          side: THREE.DoubleSide
+        });
+
+        const headGeometry = new THREE.IcosahedronGeometry(1.08, 1);
+        const head = new THREE.Mesh(headGeometry, catMaterial);
+        head.scale.set(1.18, 0.96, 0.92);
+        addWireframe(head, headGeometry);
+        group.add(head);
+
+        const earGeometry = new THREE.ConeGeometry(0.38, 0.82, 3);
+        const leftEar = new THREE.Mesh(earGeometry, catMaterial);
+        leftEar.position.set(-0.7, 0.95, 0);
+        leftEar.rotation.set(0, 0, 0.26);
+        addWireframe(leftEar, earGeometry);
+        group.add(leftEar);
+
+        const rightEar = leftEar.clone();
+        rightEar.position.x = 0.7;
+        rightEar.rotation.z = -0.26;
+        group.add(rightEar);
+
+        const eyeGeometry = new THREE.OctahedronGeometry(0.09, 0);
+        const eyeMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+        const leftEye = new THREE.Mesh(eyeGeometry, eyeMaterial);
+        leftEye.position.set(-0.36, 0.18, 0.9);
+        leftEye.scale.set(1.15, 1.15, 0.35);
+        group.add(leftEye);
+
+        const rightEye = leftEye.clone();
+        rightEye.position.x = 0.36;
+        group.add(rightEye);
+
+        const noseGeometry = new THREE.TetrahedronGeometry(0.13, 0);
+        const nose = new THREE.Mesh(noseGeometry, eyeMaterial);
+        nose.position.set(0, -0.1, 0.98);
+        nose.rotation.z = Math.PI / 4;
+        group.add(nose);
+
+        group.rotation.x = -0.08;
+
+        return {
+          label: "Low poly cat head rotating",
+          object: group,
+          tick: () => {
+            group.rotation.y += 0.011;
+          }
+        };
+      }
+
+      const animations = [createD20, createTorus, createCatHead];
+      const selectedAnimation = animations[Math.floor(Math.random() * animations.length)]();
+      container.setAttribute("aria-label", selectedAnimation.label);
+      scene.add(selectedAnimation.object);
 
       const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
@@ -130,8 +219,7 @@
 
       function animate() {
         if (!reducedMotion.matches) {
-          die.rotation.x += 0.006;
-          die.rotation.y += 0.012;
+          selectedAnimation.tick();
         }
         renderer.render(scene, camera);
         requestAnimationFrame(animate);
