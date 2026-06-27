@@ -150,38 +150,6 @@
         specular: 0x9dc7ff
       });
 
-      function addSmileyFace(group, z, scale = 1, y = 0) {
-        const face = new THREE.Group();
-        const eyeGeometry = new THREE.BoxGeometry(0.11, 0.16, 0.04);
-        const mouthGeometry = new THREE.BoxGeometry(0.11, 0.08, 0.04);
-
-        [
-          [-0.32, 0.24, -0.08],
-          [0.24, 0.19, 0.07]
-        ].forEach(([x, eyeY, rotation]) => {
-          const eye = new THREE.Mesh(eyeGeometry, darkMaterial);
-          eye.position.set(x, eyeY, 0);
-          eye.rotation.z = rotation;
-          face.add(eye);
-        });
-
-        [
-          [-0.34, -0.17, -0.38],
-          [-0.18, -0.28, -0.2],
-          [0.03, -0.31, 0.08],
-          [0.24, -0.22, 0.34]
-        ].forEach(([x, mouthY, rotation]) => {
-          const tooth = new THREE.Mesh(mouthGeometry, darkMaterial);
-          tooth.position.set(x, mouthY, 0);
-          tooth.rotation.z = rotation;
-          face.add(tooth);
-        });
-
-        face.position.set(0, y, z);
-        face.scale.setScalar(scale);
-        group.add(face);
-      }
-
       function createD20() {
         const group = new THREE.Group();
         const geometry = new THREE.IcosahedronGeometry(1.55, 0);
@@ -189,7 +157,6 @@
         die.castShadow = true;
         die.receiveShadow = true;
         group.add(die);
-        addSmileyFace(group, 1.46, 1.02);
 
         return {
           label: "Spinning 20 sided die",
@@ -208,7 +175,6 @@
         torus.castShadow = true;
         torus.receiveShadow = true;
         group.add(torus);
-        addSmileyFace(group, 1.03, 0.8);
 
         return {
           label: "Rotating filled torus",
@@ -227,7 +193,6 @@
         sphere.castShadow = true;
         sphere.receiveShadow = true;
         group.add(sphere);
-        addSmileyFace(group, 1.34, 1.05);
 
         return {
           label: "Perfect sphere rotating",
@@ -245,7 +210,6 @@
         cube.castShadow = true;
         cube.receiveShadow = true;
         group.add(cube);
-        addSmileyFace(group, 0.94, 1);
         group.rotation.set(0.18, 0.38, 0.08);
 
         return {
@@ -266,7 +230,6 @@
         crystal.castShadow = true;
         crystal.receiveShadow = true;
         group.add(crystal);
-        addSmileyFace(group, 1.12, 0.9);
 
         return {
           label: "Octahedron crystal rotating",
@@ -286,7 +249,6 @@
         pyramid.castShadow = true;
         pyramid.receiveShadow = true;
         group.add(pyramid);
-        addSmileyFace(group, 1.08, 0.86);
 
         return {
           label: "Spinning pyramid",
@@ -321,7 +283,6 @@
         ring.rotation.x = Math.PI / 2;
         ring.position.y = -0.03;
         group.add(ring);
-        addSmileyFace(group, 1.48, 0.7, -0.05);
 
         group.rotation.x = 0.18;
 
@@ -357,7 +318,6 @@
         rightEar.position.x = 0.7;
         rightEar.rotation.z = -0.26;
         group.add(rightEar);
-        addSmileyFace(group, 1.02, 0.76, -0.08);
 
         group.rotation.x = -0.08;
 
