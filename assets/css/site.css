@@ -467,6 +467,78 @@ img {
   color: #9ca3af;
 }
 
+.contact-body {
+  min-height: 100vh;
+  background: #fff;
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+}
+
+.contact-page {
+  width: 100%;
+  max-width: 32rem;
+  margin: 3rem auto 4rem;
+  padding: 0 1rem;
+}
+
+.contact-page h1 {
+  margin-bottom: 1.5rem;
+  color: #111827;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.contact-list {
+  display: grid;
+  gap: .75rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  min-height: 3.25rem;
+  padding: .75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  color: #1f2937;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  transition: color 150ms ease, border-color 150ms ease;
+}
+
+.contact-link:hover {
+  border-color: #d1d5db;
+  color: #111827;
+}
+
+.contact-link:focus-visible {
+  outline: 2px solid #111827;
+  outline-offset: .25rem;
+}
+
+.contact-link img,
+.contact-email-icon {
+  flex: 0 0 auto;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.contact-link img {
+  object-fit: contain;
+}
+
+.contact-email-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #9ca3af;
+  border-radius: 9999px;
+  color: #4b5563;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 @keyframes spin {
   to { transform: rotate(360deg); }
 }

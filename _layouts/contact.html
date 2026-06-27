@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title | default: "contact me" }}</title>
+    <meta property="og:title" content="{{ page.title | default: site.title | default: 'contact me' }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ '/assets/images/og-image.JPG' | absolute_url }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title | default: site.title | default: 'contact me' }}">
+    <meta name="twitter:image" content="{{ '/assets/images/og-image.JPG' | absolute_url }}">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.PNG">
+    <link rel="stylesheet" href="/assets/css/site.css">
+  </head>
+  <body class="contact-body">
+    <main>
+      {{ content }}
+    </main>
+  </body>
+</html>

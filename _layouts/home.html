@@ -75,6 +75,13 @@
         outline-offset: 0.25rem;
       }
 
+      .home-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem 2rem;
+      }
+
       @media (prefers-reduced-motion: reduce) {
         #animation-stage {
           transform: rotate(0deg);
@@ -86,7 +93,10 @@
     <main>
       <h1>Enrique</h1>
       <div id="animation-stage" aria-label="Random rotating animation" role="img"></div>
-      <a href="/about/">About me</a>
+      <nav class="home-links" aria-label="Primary">
+        <a href="/about/">About me</a>
+        <a href="/contact/">Contact me</a>
+      </nav>
     </main>
 
     <script type="importmap">
