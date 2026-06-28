@@ -509,6 +509,7 @@ img {
   flex-direction: column;
   align-items: center;
   gap: .35rem;
+  margin-top: 3rem;
 }
 
 .contact-link {
@@ -536,6 +537,12 @@ img {
 .contact-link:focus-visible {
   outline: 1px solid #27272a;
   outline-offset: .35rem;
+}
+
+.contact-note {
+  margin-left: -.25rem;
+  color: #a1a1aa;
+  font-size: .875rem;
 }
 
 .contact-link img,
