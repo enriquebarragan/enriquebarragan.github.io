@@ -54,7 +54,14 @@
         width: min(72vw, 340px);
         height: min(72vw, 340px);
         margin: clamp(2rem, 6vh, 3.25rem) 0 0.8rem;
+        cursor: grab;
         overflow: visible;
+        touch-action: none;
+        user-select: none;
+      }
+
+      #animation-stage.is-dragging {
+        cursor: grabbing;
       }
 
       #animation-stage canvas {
@@ -471,12 +478,50 @@
       ];
       let selectedIndex = Math.floor(Math.random() * animations.length);
       let selectedAnimation;
+      const interaction = {
+        pointerId: null,
+        isDragging: false,
+        hasDragged: false,
+        autoSpin: true,
+        lastX: 0,
+        lastY: 0,
+        velocityX: 0,
+        velocityY: 0,
+        suppressClick: false
+      };
+      const dragSensitivity = 0.01;
+      const momentumDamping = 0.92;
+      const momentumStopThreshold = 0.0001;
+      let lastFrameTime = performance.now();
+
+      function resetInteraction() {
+        interaction.pointerId = null;
+        interaction.isDragging = false;
+        interaction.hasDragged = false;
+        interaction.autoSpin = true;
+        interaction.lastX = 0;
+        interaction.lastY = 0;
+        interaction.velocityX = 0;
+        interaction.velocityY = 0;
+        interaction.suppressClick = false;
+        container.classList.remove("is-dragging");
+      }
+
+      function rotateSelected(deltaX, deltaY) {
+        if (!selectedAnimation) {
+          return;
+        }
+
+        selectedAnimation.object.rotation.x += deltaY;
+        selectedAnimation.object.rotation.y += deltaX;
+      }
 
       function setAnimation(index) {
         if (selectedAnimation) {
           scene.remove(selectedAnimation.object);
         }
 
+        resetInteraction();
         selectedIndex = index;
         selectedAnimation = animations[selectedIndex]();
         container.setAttribute("aria-label", selectedAnimation.label);
@@ -499,8 +544,26 @@
         camera.updateProjectionMatrix();
       }
 
-      function animate() {
-        selectedAnimation.tick((reducedMotion.matches ? 0.35 : 1) * rotationSpeed);
+      function animate(timestamp = performance.now()) {
+        const frameScale = Math.min((timestamp - lastFrameTime) / 16.67, 2);
+        lastFrameTime = timestamp;
+
+        if (interaction.autoSpin) {
+          selectedAnimation.tick((reducedMotion.matches ? 0.35 : 1) * rotationSpeed);
+        } else if (!interaction.isDragging) {
+          rotateSelected(interaction.velocityY * frameScale, interaction.velocityX * frameScale);
+          interaction.velocityX *= Math.pow(momentumDamping, frameScale);
+          interaction.velocityY *= Math.pow(momentumDamping, frameScale);
+
+          if (Math.abs(interaction.velocityX) < momentumStopThreshold) {
+            interaction.velocityX = 0;
+          }
+
+          if (Math.abs(interaction.velocityY) < momentumStopThreshold) {
+            interaction.velocityY = 0;
+          }
+        }
+
         composer.render();
         requestAnimationFrame(animate);
       }
@@ -508,8 +571,71 @@
       resize();
       setAnimation(selectedIndex);
       window.addEventListener("resize", resize);
+
+      container.addEventListener("pointerdown", (event) => {
+        if (event.pointerType === "mouse" && event.button !== 0) {
+          return;
+        }
+
+        interaction.pointerId = event.pointerId;
+        interaction.isDragging = true;
+        interaction.hasDragged = false;
+        interaction.lastX = event.clientX;
+        interaction.lastY = event.clientY;
+        interaction.velocityX = 0;
+        interaction.velocityY = 0;
+        container.classList.add("is-dragging");
+        container.setPointerCapture(event.pointerId);
+      });
+
+      container.addEventListener("pointermove", (event) => {
+        if (!interaction.isDragging || event.pointerId !== interaction.pointerId) {
+          return;
+        }
+
+        const deltaX = event.clientX - interaction.lastX;
+        const deltaY = event.clientY - interaction.lastY;
+
+        if (!interaction.hasDragged && Math.hypot(deltaX, deltaY) < 3) {
+          return;
+        }
+
+        interaction.hasDragged = true;
+        interaction.autoSpin = false;
+        interaction.suppressClick = true;
+        interaction.lastX = event.clientX;
+        interaction.lastY = event.clientY;
+        interaction.velocityX = deltaY * dragSensitivity;
+        interaction.velocityY = deltaX * dragSensitivity;
+        rotateSelected(interaction.velocityY, interaction.velocityX);
+      });
+
+      function endDrag(event) {
+        if (!interaction.isDragging || event.pointerId !== interaction.pointerId) {
+          return;
+        }
+
+        if (interaction.hasDragged) {
+          window.setTimeout(() => {
+            interaction.suppressClick = false;
+          }, 0);
+        }
+
+        interaction.pointerId = null;
+        interaction.isDragging = false;
+        container.classList.remove("is-dragging");
+      }
+
+      container.addEventListener("pointerup", endDrag);
+      container.addEventListener("pointercancel", endDrag);
+
       document.addEventListener("click", (event) => {
         if (event.target.closest("a")) {
+          return;
+        }
+
+        if (interaction.suppressClick && event.target.closest("#animation-stage")) {
+          interaction.suppressClick = false;
           return;
         }
 
