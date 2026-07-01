@@ -6,6 +6,7 @@ exclude:
   - README.md
   - LICENSE
   - LICENSE-content.md
+  - assets/3d/cat.glb
 
 include:
   - pages

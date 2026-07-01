@@ -118,6 +118,8 @@
     </script>
     <script type="module">
       import * as THREE from "three";
+      import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+      import { MeshoptDecoder } from "three/addons/libs/meshopt_decoder.module.js";
       import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
       import { RenderPixelatedPass } from "three/addons/postprocessing/RenderPixelatedPass.js";
       import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
@@ -168,6 +170,10 @@
         shininess: 60,
         specular: 0x9dc7ff
       });
+
+      const gltfLoader = new GLTFLoader();
+      gltfLoader.setMeshoptDecoder(MeshoptDecoder);
+      let catModelPromise;
 
       function createD20() {
         const group = new THREE.Group();
@@ -349,7 +355,71 @@
         };
       }
 
-      const animations = [createD20, createTorus, createSphere, createCube, createCrystal, createPyramid, createUfo, createCatHead];
+      function loadCatModel() {
+        if (!catModelPromise) {
+          catModelPromise = gltfLoader.loadAsync("/assets/3d/cat.optimized.glb").then((gltf) => {
+            const model = gltf.scene;
+            const bounds = new THREE.Box3().setFromObject(model);
+            const center = bounds.getCenter(new THREE.Vector3());
+            const size = bounds.getSize(new THREE.Vector3());
+            const maxAxis = Math.max(size.x, size.y, size.z);
+
+            model.position.sub(center);
+            model.scale.setScalar(maxAxis > 0 ? 2.55 / maxAxis : 1);
+            model.rotation.set(-0.18, Math.PI, 0);
+
+            model.traverse((child) => {
+              if (!child.isMesh) {
+                return;
+              }
+
+              if (!child.geometry.attributes.normal) {
+                child.geometry.computeVertexNormals();
+              }
+
+              child.material = fillMaterial;
+              child.castShadow = true;
+              child.receiveShadow = true;
+            });
+
+            return model;
+          });
+        }
+
+        return catModelPromise;
+      }
+
+      function createGLBCat() {
+        const group = new THREE.Group();
+        const placeholder = new THREE.Mesh(new THREE.IcosahedronGeometry(0.8, 1), fillMaterial);
+        placeholder.scale.set(1.08, 0.9, 0.86);
+        placeholder.castShadow = true;
+        placeholder.receiveShadow = true;
+        group.add(placeholder);
+
+        loadCatModel()
+          .then((model) => {
+            if (!group.parent) {
+              return;
+            }
+
+            group.clear();
+            group.add(model.clone(true));
+          })
+          .catch(() => {
+            container.setAttribute("aria-label", "Rotating 3D cat model failed to load");
+          });
+
+        return {
+          label: "Rotating 3D cat model",
+          object: group,
+          tick: (speed = 1) => {
+            group.rotation.y += 0.011 * speed;
+          }
+        };
+      }
+
+      const animations = [createD20, createTorus, createSphere, createCube, createCrystal, createPyramid, createUfo, createCatHead, createGLBCat];
       let selectedIndex = Math.floor(Math.random() * animations.length);
       let selectedAnimation;
 
