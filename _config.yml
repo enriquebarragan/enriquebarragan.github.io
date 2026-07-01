@@ -6,7 +6,7 @@ exclude:
   - README.md
   - LICENSE
   - LICENSE-content.md
-  - assets/3d/cat.glb
+  - assets/3d/custom/cheeto.glb
 
 include:
   - pages

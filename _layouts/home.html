@@ -53,7 +53,7 @@
       #animation-stage {
         width: min(72vw, 340px);
         height: min(72vw, 340px);
-        margin: clamp(2rem, 6vh, 3.25rem) 0 clamp(2.25rem, 5vh, 3.5rem);
+        margin: clamp(2rem, 6vh, 3.25rem) 0 0.8rem;
         overflow: visible;
       }
 
@@ -74,6 +74,17 @@
       a:focus-visible {
         outline: 2px solid #000;
         outline-offset: 0.25rem;
+      }
+
+      .model-credit {
+        min-height: 1rem;
+        max-width: min(84vw, 34rem);
+        margin: 0 0 clamp(1.25rem, 4vh, 2.75rem);
+        color: #666;
+        font-size: 0.72rem;
+        font-weight: 300;
+        line-height: 1.35;
+        text-align: center;
       }
 
       .home-links {
@@ -102,6 +113,7 @@
     <main>
       <h1>Enrique</h1>
       <div id="animation-stage" aria-label="Random rotating animation" role="img"></div>
+      <p id="model-credit" class="model-credit" aria-live="polite"></p>
       <nav class="home-links" aria-label="Primary">
         <a href="/about/">about</a>
         <a href="/contact/">contact</a>
@@ -125,6 +137,7 @@
       import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 
       const container = document.querySelector("#animation-stage");
+      const modelCredit = document.querySelector("#model-credit");
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
       camera.position.set(0, 0, 6.8);
@@ -173,7 +186,7 @@
 
       const gltfLoader = new GLTFLoader();
       gltfLoader.setMeshoptDecoder(MeshoptDecoder);
-      let catModelPromise;
+      const modelCache = new Map();
 
       function createD20() {
         const group = new THREE.Group();
@@ -355,9 +368,9 @@
         };
       }
 
-      function loadCatModel() {
-        if (!catModelPromise) {
-          catModelPromise = gltfLoader.loadAsync("/assets/3d/cat.optimized.glb").then((gltf) => {
+      function loadModel(config) {
+        if (!modelCache.has(config.path)) {
+          const modelPromise = gltfLoader.loadAsync(config.path).then((gltf) => {
             const model = gltf.scene;
             const bounds = new THREE.Box3().setFromObject(model);
             const center = bounds.getCenter(new THREE.Vector3());
@@ -365,8 +378,8 @@
             const maxAxis = Math.max(size.x, size.y, size.z);
 
             model.position.sub(center);
-            model.scale.setScalar(maxAxis > 0 ? 2.55 / maxAxis : 1);
-            model.rotation.set(-0.18, Math.PI, 0);
+            model.scale.setScalar(maxAxis > 0 ? config.size / maxAxis : 1);
+            model.rotation.set(config.rotation.x, config.rotation.y, config.rotation.z);
 
             model.traverse((child) => {
               if (!child.isMesh) {
@@ -377,19 +390,24 @@
                 child.geometry.computeVertexNormals();
               }
 
-              child.material = fillMaterial;
+              if (config.useSiteMaterial) {
+                child.material = fillMaterial;
+              }
+
               child.castShadow = true;
               child.receiveShadow = true;
             });
 
             return model;
           });
+
+          modelCache.set(config.path, modelPromise);
         }
 
-        return catModelPromise;
+        return modelCache.get(config.path);
       }
 
-      function createGLBCat() {
+      function createModelAnimation(config) {
         const group = new THREE.Group();
         const placeholder = new THREE.Mesh(new THREE.IcosahedronGeometry(0.8, 1), fillMaterial);
         placeholder.scale.set(1.08, 0.9, 0.86);
@@ -397,7 +415,7 @@
         placeholder.receiveShadow = true;
         group.add(placeholder);
 
-        loadCatModel()
+        loadModel(config)
           .then((model) => {
             if (!group.parent) {
               return;
@@ -407,19 +425,50 @@
             group.add(model.clone(true));
           })
           .catch(() => {
-            container.setAttribute("aria-label", "Rotating 3D cat model failed to load");
+            container.setAttribute("aria-label", `${config.label} failed to load`);
           });
 
         return {
-          label: "Rotating 3D cat model",
+          label: config.label,
+          credit: config.credit || "",
           object: group,
           tick: (speed = 1) => {
-            group.rotation.y += 0.011 * speed;
+            group.rotation.y += config.spin * speed;
           }
         };
       }
 
-      const animations = [createD20, createTorus, createSphere, createCube, createCrystal, createPyramid, createUfo, createCatHead, createGLBCat];
+      const modelAnimations = [
+        {
+          label: "Rotating 3D Cheeto model",
+          path: "/assets/3d/custom/cheeto.optimized.glb",
+          size: 2.55,
+          rotation: new THREE.Euler(-0.18, Math.PI, 0),
+          spin: 0.011,
+          useSiteMaterial: true
+        },
+        {
+          label: "Rotating Dingus the Cat model",
+          path: "/assets/3d/dingus_cat/dingus_cat.glb",
+          size: 2.75,
+          rotation: new THREE.Euler(-0.12, Math.PI, 0),
+          spin: 0.011,
+          useSiteMaterial: false,
+          credit: '"Dingus the Cat" by alwayshasbean (CC BY 4.0), via Poly Pizza.'
+        }
+      ];
+
+      const animations = [
+        createD20,
+        createTorus,
+        createSphere,
+        createCube,
+        createCrystal,
+        createPyramid,
+        createUfo,
+        createCatHead,
+        ...modelAnimations.map((config) => () => createModelAnimation(config))
+      ];
       let selectedIndex = Math.floor(Math.random() * animations.length);
       let selectedAnimation;
 
@@ -431,6 +480,7 @@
         selectedIndex = index;
         selectedAnimation = animations[selectedIndex]();
         container.setAttribute("aria-label", selectedAnimation.label);
+        modelCredit.textContent = selectedAnimation.credit || "";
         scene.add(selectedAnimation.object);
         rimLight.target = selectedAnimation.object;
       }
