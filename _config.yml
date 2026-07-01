@@ -7,6 +7,7 @@ exclude:
   - LICENSE
   - LICENSE-content.md
   - assets/3d/custom/cheeto.glb
+  - assets/3d/camera/canon_at-1_camera.glb
 
 include:
   - pages

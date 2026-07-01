@@ -185,195 +185,9 @@
         side: THREE.DoubleSide
       });
 
-      const darkMaterial = new THREE.MeshPhongMaterial({
-        color: 0x05080d,
-        shininess: 60,
-        specular: 0x9dc7ff
-      });
-
       const gltfLoader = new GLTFLoader();
       gltfLoader.setMeshoptDecoder(MeshoptDecoder);
       const modelCache = new Map();
-
-      function createD20() {
-        const group = new THREE.Group();
-        const geometry = new THREE.IcosahedronGeometry(1.55, 0);
-        const die = new THREE.Mesh(geometry, fillMaterial);
-        die.castShadow = true;
-        die.receiveShadow = true;
-        group.add(die);
-
-        return {
-          label: "Spinning 20 sided die",
-          object: group,
-          tick: (speed = 1) => {
-            group.rotation.x += 0.006 * speed;
-            group.rotation.y += 0.012 * speed;
-          }
-        };
-      }
-
-      function createTorus() {
-        const group = new THREE.Group();
-        const geometry = new THREE.TorusGeometry(1.16, 0.36, 12, 32);
-        const torus = new THREE.Mesh(geometry, fillMaterial);
-        torus.castShadow = true;
-        torus.receiveShadow = true;
-        group.add(torus);
-
-        return {
-          label: "Rotating filled torus",
-          object: group,
-          tick: (speed = 1) => {
-            group.rotation.x += 0.008 * speed;
-            group.rotation.y += 0.014 * speed;
-          }
-        };
-      }
-
-      function createSphere() {
-        const group = new THREE.Group();
-        const geometry = new THREE.SphereGeometry(1.42, 32, 20);
-        const sphere = new THREE.Mesh(geometry, fillMaterial);
-        sphere.castShadow = true;
-        sphere.receiveShadow = true;
-        group.add(sphere);
-
-        return {
-          label: "Perfect sphere rotating",
-          object: group,
-          tick: (speed = 1) => {
-            group.rotation.y += 0.013 * speed;
-          }
-        };
-      }
-
-      function createCube() {
-        const group = new THREE.Group();
-        const geometry = new THREE.BoxGeometry(1.85, 1.85, 1.85, 1, 1, 1);
-        const cube = new THREE.Mesh(geometry, fillMaterial);
-        cube.castShadow = true;
-        cube.receiveShadow = true;
-        group.add(cube);
-        group.rotation.set(0.18, 0.38, 0.08);
-
-        return {
-          label: "Rotating cube",
-          object: group,
-          tick: (speed = 1) => {
-            group.rotation.x += 0.007 * speed;
-            group.rotation.y += 0.01 * speed;
-          }
-        };
-      }
-
-      function createCrystal() {
-        const group = new THREE.Group();
-        const geometry = new THREE.OctahedronGeometry(1.55, 0);
-        const crystal = new THREE.Mesh(geometry, fillMaterial);
-        crystal.scale.set(0.86, 1.24, 0.86);
-        crystal.castShadow = true;
-        crystal.receiveShadow = true;
-        group.add(crystal);
-
-        return {
-          label: "Octahedron crystal rotating",
-          object: group,
-          tick: (speed = 1) => {
-            group.rotation.x += 0.006 * speed;
-            group.rotation.y += 0.013 * speed;
-          }
-        };
-      }
-
-      function createPyramid() {
-        const group = new THREE.Group();
-        const geometry = new THREE.ConeGeometry(1.35, 2, 4);
-        const pyramid = new THREE.Mesh(geometry, fillMaterial);
-        pyramid.rotation.y = Math.PI / 4;
-        pyramid.castShadow = true;
-        pyramid.receiveShadow = true;
-        group.add(pyramid);
-
-        return {
-          label: "Spinning pyramid",
-          object: group,
-          tick: (speed = 1) => {
-            group.rotation.x += 0.006 * speed;
-            group.rotation.y += 0.012 * speed;
-          }
-        };
-      }
-
-      function createUfo() {
-        const group = new THREE.Group();
-
-        const saucerGeometry = new THREE.SphereGeometry(1.45, 16, 8);
-        const saucer = new THREE.Mesh(saucerGeometry, fillMaterial);
-        saucer.scale.set(1.32, 0.24, 1.32);
-        saucer.castShadow = true;
-        saucer.receiveShadow = true;
-        group.add(saucer);
-
-        const domeGeometry = new THREE.SphereGeometry(0.72, 12, 8, 0, Math.PI * 2, 0, Math.PI / 2);
-        const dome = new THREE.Mesh(domeGeometry, fillMaterial);
-        dome.position.y = 0.2;
-        dome.scale.set(1, 0.78, 1);
-        dome.castShadow = true;
-        dome.receiveShadow = true;
-        group.add(dome);
-
-        const ringGeometry = new THREE.TorusGeometry(1.15, 0.08, 8, 24);
-        const ring = new THREE.Mesh(ringGeometry, darkMaterial);
-        ring.rotation.x = Math.PI / 2;
-        ring.position.y = -0.03;
-        group.add(ring);
-
-        group.rotation.x = 0.18;
-
-        return {
-          label: "Spinning UFO",
-          object: group,
-          tick: (speed = 1) => {
-            group.rotation.y += 0.014 * speed;
-          }
-        };
-      }
-
-      function createCatHead() {
-        const group = new THREE.Group();
-        const catMaterial = fillMaterial;
-
-        const headGeometry = new THREE.IcosahedronGeometry(1.08, 1);
-        const head = new THREE.Mesh(headGeometry, catMaterial);
-        head.scale.set(1.18, 0.96, 0.92);
-        head.castShadow = true;
-        head.receiveShadow = true;
-        group.add(head);
-
-        const earGeometry = new THREE.ConeGeometry(0.38, 0.82, 3);
-        const leftEar = new THREE.Mesh(earGeometry, catMaterial);
-        leftEar.position.set(-0.7, 0.95, 0);
-        leftEar.rotation.set(0, 0, 0.26);
-        leftEar.castShadow = true;
-        leftEar.receiveShadow = true;
-        group.add(leftEar);
-
-        const rightEar = leftEar.clone();
-        rightEar.position.x = 0.7;
-        rightEar.rotation.z = -0.26;
-        group.add(rightEar);
-
-        group.rotation.x = -0.08;
-
-        return {
-          label: "Low poly cat head rotating",
-          object: group,
-          tick: (speed = 1) => {
-            group.rotation.y += 0.011 * speed;
-          }
-        };
-      }
 
       function loadModel(config) {
         if (!modelCache.has(config.path)) {
@@ -462,20 +276,19 @@
           spin: 0.011,
           useSiteMaterial: false,
           credit: '"Dingus the Cat" by alwayshasbean (CC BY 4.0), via Poly Pizza.'
+        },
+        {
+          label: "Rotating Canon AT-1 camera model",
+          path: "/assets/3d/camera/canon_at-1_camera.optimized.glb",
+          size: 2.75,
+          rotation: new THREE.Euler(-0.12, Math.PI, 0),
+          spin: 0.011,
+          useSiteMaterial: false,
+          credit: '"Canon AT-1 Retro Camera" by AleixoAlonso is licensed under Creative Commons Attribution.'
         }
       ];
 
-      const animations = [
-        createD20,
-        createTorus,
-        createSphere,
-        createCube,
-        createCrystal,
-        createPyramid,
-        createUfo,
-        createCatHead,
-        ...modelAnimations.map((config) => () => createModelAnimation(config))
-      ];
+      const animations = modelAnimations.map((config) => () => createModelAnimation(config));
       let selectedIndex = Math.floor(Math.random() * animations.length);
       let selectedAnimation;
       const interaction = {
