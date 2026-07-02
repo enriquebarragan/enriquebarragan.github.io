@@ -13,6 +13,7 @@
     <meta name="twitter:image" content="{{ '/assets/images/og-image.JPG' | absolute_url }}">
     <link rel="icon" href="/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.PNG">
+    <link rel="preload" href="/assets/3d/ps1_controller/ps1_controller.glb" as="fetch" type="model/gltf-binary" crossorigin>
     <style>
       :root {
         color: #000;
@@ -230,11 +231,6 @@
 
       function createModelAnimation(config) {
         const group = new THREE.Group();
-        const placeholder = new THREE.Mesh(new THREE.IcosahedronGeometry(0.8, 1), fillMaterial);
-        placeholder.scale.set(1.08, 0.9, 0.86);
-        placeholder.castShadow = true;
-        placeholder.receiveShadow = true;
-        group.add(placeholder);
 
         loadModel(config)
           .then((model) => {
@@ -261,41 +257,6 @@
 
       const modelAnimations = [
         {
-          label: "Rotating retro PC model",
-          path: "/assets/3d/custom/simple_pc_retro.glb",
-          size: 2.85,
-          rotation: new THREE.Euler(-0.12, Math.PI, 0),
-          spin: 0.011,
-          useSiteMaterial: false
-        },
-        {
-          label: "Rotating Dingus the Cat model",
-          path: "/assets/3d/dingus_cat/maxwell_the_cat_dingus.glb",
-          size: 2.75,
-          rotation: new THREE.Euler(-0.12, Math.PI, 0),
-          spin: 0.011,
-          useSiteMaterial: false,
-          credit: '"Maxwell the cat (Dingus)" by bean(alwayshasbean) is licensed under Creative Commons Attribution.'
-        },
-        {
-          label: "Rotating Dell laptop model",
-          path: "/assets/3d/laptop/dell_laptop.glb",
-          size: 2.75,
-          rotation: new THREE.Euler(-0.12, Math.PI, 0),
-          spin: 0.011,
-          useSiteMaterial: false,
-          credit: '"Dell Laptop" by Maradugaura is licensed under Creative Commons Attribution.'
-        },
-        {
-          label: "Rotating Oiiaioooooiai cat model",
-          path: "/assets/3d/oiiaioooooiai_cat/oiiaioooooiai_cat.glb",
-          size: 2.75,
-          rotation: new THREE.Euler(-0.12, Math.PI, 0),
-          spin: 0.011,
-          useSiteMaterial: false,
-          credit: '"Oiiaioooooiai Cat" by Zhuier is licensed under Creative Commons Attribution.'
-        },
-        {
           label: "Rotating PlayStation controller model",
           path: "/assets/3d/ps1_controller/ps1_controller.glb",
           size: 2.85,
@@ -303,15 +264,6 @@
           spin: 0.011,
           useSiteMaterial: false,
           credit: '"Sony Playstation One Controller" by synthetic worlds is licensed under Creative Commons Attribution.'
-        },
-        {
-          label: "Rotating retro computer station model",
-          path: "/assets/3d/retro_computer/computer_station.glb",
-          size: 2.85,
-          rotation: new THREE.Euler(-0.12, Math.PI, 0),
-          spin: 0.011,
-          useSiteMaterial: false,
-          credit: '"PS1 Style Retro Computer Station - Low Poly" by blblwh is licensed under Creative Commons Attribution.'
         }
       ];
 
@@ -371,6 +323,10 @@
       }
 
       function advanceAnimation() {
+        if (animations.length < 2) {
+          return;
+        }
+
         setAnimation((selectedIndex + 1) % animations.length);
       }
 
