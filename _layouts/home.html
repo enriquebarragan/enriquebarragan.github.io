@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title | default: site.title | default: "Enrique" }}</title>
-    <meta property="og:title" content="{{ page.title | default: site.title | default: 'Enrique' }}">
+    <title>{{ page.title | default: site.title | default: "personal page" }}</title>
+    <meta property="og:title" content="{{ page.title | default: site.title | default: 'personal page' }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:image" content="{{ '/assets/images/og-image.JPG' | absolute_url }}">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ page.title | default: site.title | default: 'Enrique' }}">
+    <meta name="twitter:title" content="{{ page.title | default: site.title | default: 'personal page' }}">
     <meta name="twitter:image" content="{{ '/assets/images/og-image.JPG' | absolute_url }}">
     <link rel="icon" href="/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.PNG">
@@ -40,14 +40,6 @@
         flex-direction: column;
         align-items: center;
         padding: clamp(2rem, 8vh, 4.5rem) 1rem 2rem;
-      }
-
-      h1 {
-        margin: 0;
-        font-size: clamp(3.75rem, 9vw, 7rem);
-        font-weight: 300;
-        line-height: 1;
-        letter-spacing: 0;
       }
 
       .home-image {
@@ -90,8 +82,7 @@
   </head>
   <body>
     <main>
-      <h1>Enrique</h1>
-      <img class="home-image" src="/assets/images/IMG_2825.jpg" alt="Enrique">
+      <img class="home-image" src="/assets/images/IMG_2825.jpg" alt="Homepage photo">
       <nav class="home-links" aria-label="Primary">
         <a href="/about/">about</a>
         <a href="/contact/">contact</a>
