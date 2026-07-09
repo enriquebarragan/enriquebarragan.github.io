@@ -13,7 +13,6 @@
     <meta name="twitter:image" content="{{ '/assets/images/og-image.JPG' | absolute_url }}">
     <link rel="icon" href="/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.PNG">
-    <link rel="preload" href="/assets/3d/ps1_controller/ps1_controller.glb" as="fetch" type="model/gltf-binary" crossorigin>
     <style>
       :root {
         color: #000;
@@ -51,24 +50,12 @@
         letter-spacing: 0;
       }
 
-      #animation-stage {
-        width: min(72vw, 340px);
-        height: min(72vw, 340px);
-        margin: clamp(2rem, 6vh, 3.25rem) 0 0.8rem;
-        cursor: grab;
-        overflow: visible;
-        touch-action: none;
-        user-select: none;
-      }
-
-      #animation-stage.is-dragging {
-        cursor: grabbing;
-      }
-
-      #animation-stage canvas {
+      .home-image {
         display: block;
-        width: 100% !important;
-        height: 100% !important;
+        width: min(72vw, 340px);
+        max-height: min(72vw, 340px);
+        margin: clamp(2rem, 6vh, 3.25rem) 0 0.8rem;
+        object-fit: contain;
       }
 
       a {
@@ -82,17 +69,6 @@
       a:focus-visible {
         outline: 2px solid #000;
         outline-offset: 0.25rem;
-      }
-
-      .model-credit {
-        min-height: 1rem;
-        max-width: min(84vw, 34rem);
-        margin: 0 0 clamp(1.25rem, 4vh, 2.75rem);
-        color: #666;
-        font-size: 0.72rem;
-        font-weight: 300;
-        line-height: 1.35;
-        text-align: center;
       }
 
       .home-links {
@@ -110,334 +86,16 @@
         }
       }
 
-      @media (prefers-reduced-motion: reduce) {
-        #animation-stage {
-          transform: rotate(0deg);
-        }
-      }
     </style>
   </head>
   <body>
     <main>
       <h1>Enrique</h1>
-      <div id="animation-stage" aria-label="Random rotating animation" role="img"></div>
-      <p id="model-credit" class="model-credit" aria-live="polite"></p>
+      <img class="home-image" src="/assets/images/IMG_2825.jpg" alt="Enrique">
       <nav class="home-links" aria-label="Primary">
         <a href="/about/">about</a>
         <a href="/contact/">contact</a>
       </nav>
     </main>
-
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
-        }
-      }
-    </script>
-    <script type="module">
-      import * as THREE from "three";
-      import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
-      import { MeshoptDecoder } from "three/addons/libs/meshopt_decoder.module.js";
-      import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
-      import { RenderPixelatedPass } from "three/addons/postprocessing/RenderPixelatedPass.js";
-      import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
-
-      const container = document.querySelector("#animation-stage");
-      const modelCredit = document.querySelector("#model-credit");
-      const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
-      camera.position.set(0, 0, 6.8);
-      const rotationSpeed = 1.55;
-
-      const renderer = new THREE.WebGLRenderer({ antialias: false, alpha: true });
-      renderer.setClearColor(0xffffff, 0);
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-      renderer.shadowMap.enabled = true;
-      container.appendChild(renderer.domElement);
-
-      const composer = new EffectComposer(renderer);
-      const pixelatedPass = new RenderPixelatedPass(3, scene, camera);
-      pixelatedPass.normalEdgeStrength = 0;
-      pixelatedPass.depthEdgeStrength = 0;
-      composer.addPass(pixelatedPass);
-      composer.addPass(new OutputPass());
-
-      scene.add(new THREE.AmbientLight(0xb6c7d9, 2.2));
-
-      const keyLight = new THREE.DirectionalLight(0xffffff, 2.6);
-      keyLight.position.set(2.5, 3.5, 4);
-      keyLight.castShadow = true;
-      scene.add(keyLight);
-
-      const rimLight = new THREE.SpotLight(0x8fd3ff, 12, 8, Math.PI / 7, 0.35, 1.5);
-      rimLight.position.set(-2.6, 1.2, 3.2);
-      rimLight.castShadow = true;
-      scene.add(rimLight);
-      scene.add(rimLight.target);
-
-      const fillMaterial = new THREE.MeshPhongMaterial({
-        color: 0xf4fbff,
-        emissive: 0x102033,
-        emissiveIntensity: 0.08,
-        shininess: 90,
-        specular: 0xbde8ff,
-        side: THREE.DoubleSide
-      });
-
-      const gltfLoader = new GLTFLoader();
-      gltfLoader.setMeshoptDecoder(MeshoptDecoder);
-      const modelCache = new Map();
-
-      function loadModel(config) {
-        if (!modelCache.has(config.path)) {
-          const modelPromise = gltfLoader.loadAsync(config.path).then((gltf) => {
-            const model = gltf.scene;
-            const bounds = new THREE.Box3().setFromObject(model);
-            const center = bounds.getCenter(new THREE.Vector3());
-            const size = bounds.getSize(new THREE.Vector3());
-            const maxAxis = Math.max(size.x, size.y, size.z);
-
-            model.position.sub(center);
-            model.scale.setScalar(maxAxis > 0 ? config.size / maxAxis : 1);
-            model.rotation.set(config.rotation.x, config.rotation.y, config.rotation.z);
-
-            model.traverse((child) => {
-              if (!child.isMesh) {
-                return;
-              }
-
-              if (!child.geometry.attributes.normal) {
-                child.geometry.computeVertexNormals();
-              }
-
-              if (config.useSiteMaterial) {
-                child.material = fillMaterial;
-              }
-
-              child.castShadow = true;
-              child.receiveShadow = true;
-            });
-
-            return model;
-          });
-
-          modelCache.set(config.path, modelPromise);
-        }
-
-        return modelCache.get(config.path);
-      }
-
-      function createModelAnimation(config) {
-        const group = new THREE.Group();
-
-        loadModel(config)
-          .then((model) => {
-            if (!group.parent) {
-              return;
-            }
-
-            group.clear();
-            group.add(model.clone(true));
-          })
-          .catch(() => {
-            container.setAttribute("aria-label", `${config.label} failed to load`);
-          });
-
-        return {
-          label: config.label,
-          credit: config.credit || "",
-          object: group,
-          tick: (speed = 1) => {
-            group.rotation.y += config.spin * speed;
-          }
-        };
-      }
-
-      const modelAnimations = [
-        {
-          label: "Rotating PlayStation controller model",
-          path: "/assets/3d/ps1_controller/ps1_controller.glb",
-          size: 2.85,
-          rotation: new THREE.Euler(-0.12, Math.PI, 0),
-          spin: 0.011,
-          useSiteMaterial: false,
-          credit: '"Sony Playstation One Controller" by synthetic worlds is licensed under Creative Commons Attribution.'
-        }
-      ];
-
-      const animations = modelAnimations.map((config) => () => createModelAnimation(config));
-      let selectedIndex = Math.floor(Math.random() * animations.length);
-      let selectedAnimation;
-      const interaction = {
-        pointerId: null,
-        isDragging: false,
-        hasDragged: false,
-        autoSpin: true,
-        lastX: 0,
-        lastY: 0,
-        velocityX: 0,
-        velocityY: 0,
-        suppressClick: false
-      };
-      const dragSensitivity = 0.01;
-      const momentumDamping = 0.92;
-      const momentumStopThreshold = 0.0001;
-      let lastFrameTime = performance.now();
-
-      function resetInteraction() {
-        interaction.pointerId = null;
-        interaction.isDragging = false;
-        interaction.hasDragged = false;
-        interaction.autoSpin = true;
-        interaction.lastX = 0;
-        interaction.lastY = 0;
-        interaction.velocityX = 0;
-        interaction.velocityY = 0;
-        interaction.suppressClick = false;
-        container.classList.remove("is-dragging");
-      }
-
-      function rotateSelected(deltaX, deltaY) {
-        if (!selectedAnimation) {
-          return;
-        }
-
-        selectedAnimation.object.rotation.x += deltaY;
-        selectedAnimation.object.rotation.y += deltaX;
-      }
-
-      function setAnimation(index) {
-        if (selectedAnimation) {
-          scene.remove(selectedAnimation.object);
-        }
-
-        resetInteraction();
-        selectedIndex = index;
-        selectedAnimation = animations[selectedIndex]();
-        container.setAttribute("aria-label", selectedAnimation.label);
-        modelCredit.textContent = selectedAnimation.credit || "";
-        scene.add(selectedAnimation.object);
-        rimLight.target = selectedAnimation.object;
-      }
-
-      function advanceAnimation() {
-        if (animations.length < 2) {
-          return;
-        }
-
-        setAnimation((selectedIndex + 1) % animations.length);
-      }
-
-      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-
-      function resize() {
-        const size = container.clientWidth;
-        renderer.setSize(size, size);
-        composer.setSize(size, size);
-        camera.aspect = 1;
-        camera.updateProjectionMatrix();
-      }
-
-      function animate(timestamp = performance.now()) {
-        const frameScale = Math.min((timestamp - lastFrameTime) / 16.67, 2);
-        lastFrameTime = timestamp;
-
-        if (interaction.autoSpin) {
-          selectedAnimation.tick((reducedMotion.matches ? 0.35 : 1) * rotationSpeed);
-        } else if (!interaction.isDragging) {
-          rotateSelected(interaction.velocityY * frameScale, interaction.velocityX * frameScale);
-          interaction.velocityX *= Math.pow(momentumDamping, frameScale);
-          interaction.velocityY *= Math.pow(momentumDamping, frameScale);
-
-          if (Math.abs(interaction.velocityX) < momentumStopThreshold) {
-            interaction.velocityX = 0;
-          }
-
-          if (Math.abs(interaction.velocityY) < momentumStopThreshold) {
-            interaction.velocityY = 0;
-          }
-        }
-
-        composer.render();
-        requestAnimationFrame(animate);
-      }
-
-      resize();
-      setAnimation(selectedIndex);
-      window.addEventListener("resize", resize);
-
-      container.addEventListener("pointerdown", (event) => {
-        if (event.pointerType === "mouse" && event.button !== 0) {
-          return;
-        }
-
-        interaction.pointerId = event.pointerId;
-        interaction.isDragging = true;
-        interaction.hasDragged = false;
-        interaction.lastX = event.clientX;
-        interaction.lastY = event.clientY;
-        interaction.velocityX = 0;
-        interaction.velocityY = 0;
-        container.classList.add("is-dragging");
-        container.setPointerCapture(event.pointerId);
-      });
-
-      container.addEventListener("pointermove", (event) => {
-        if (!interaction.isDragging || event.pointerId !== interaction.pointerId) {
-          return;
-        }
-
-        const deltaX = event.clientX - interaction.lastX;
-        const deltaY = event.clientY - interaction.lastY;
-
-        if (!interaction.hasDragged && Math.hypot(deltaX, deltaY) < 3) {
-          return;
-        }
-
-        interaction.hasDragged = true;
-        interaction.autoSpin = false;
-        interaction.suppressClick = true;
-        interaction.lastX = event.clientX;
-        interaction.lastY = event.clientY;
-        interaction.velocityX = deltaY * dragSensitivity;
-        interaction.velocityY = deltaX * dragSensitivity;
-        rotateSelected(interaction.velocityY, interaction.velocityX);
-      });
-
-      function endDrag(event) {
-        if (!interaction.isDragging || event.pointerId !== interaction.pointerId) {
-          return;
-        }
-
-        if (interaction.hasDragged) {
-          window.setTimeout(() => {
-            interaction.suppressClick = false;
-          }, 0);
-        }
-
-        interaction.pointerId = null;
-        interaction.isDragging = false;
-        container.classList.remove("is-dragging");
-      }
-
-      container.addEventListener("pointerup", endDrag);
-      container.addEventListener("pointercancel", endDrag);
-
-      document.addEventListener("click", (event) => {
-        if (event.target.closest("a")) {
-          return;
-        }
-
-        if (interaction.suppressClick && event.target.closest("#animation-stage")) {
-          interaction.suppressClick = false;
-          return;
-        }
-
-        advanceAnimation();
-      });
-      animate();
-    </script>
   </body>
 </html>
