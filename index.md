@@ -1,4 +1,4 @@
 ---
 layout: home
-title: personal page
+title: Enrique
 ---
