@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refresh card sale prices in assets/data/cards.json from Scryfall."""
+"""Refresh card market prices in assets/data/cards.json from Scryfall."""
 
 from __future__ import annotations
 
@@ -37,19 +37,6 @@ def parse_price(value: Any) -> Decimal | None:
         raise ValueError(f"Could not parse price: {value!r}") from exc
 
     return price if price > 0 else None
-
-
-def calculate_sale_price(market_price: Decimal) -> int:
-    if market_price < Decimal("20"):
-        multiplier = Decimal("0.70")
-    elif market_price <= Decimal("40"):
-        multiplier = Decimal("0.75")
-    elif market_price <= Decimal("65"):
-        multiplier = Decimal("0.80")
-    else:
-        multiplier = Decimal("0.90")
-
-    return int(market_price * multiplier)
 
 
 def load_cards(path: Path) -> list[dict[str, Any]]:
@@ -137,11 +124,6 @@ def update_prices(
         product_id = str(card.get("product_id") or "").strip()
         name = str(card.get("name") or product_id or f"card {index}")
 
-        if card.get("manual_sale_price") is True:
-            messages.append(f"{name}: skipped manual sale price (${card.get('sale_price')})")
-            skipped_count += 1
-            continue
-
         if not product_id:
             messages.append(f"Skipped card {index}: missing product_id")
             skipped_count += 1
@@ -154,23 +136,24 @@ def update_prices(
         request_count += 1
         printing_hint = printing_by_product_id.get(product_id, "")
         market_price, source_key = choose_market_price(scryfall_card, printing_hint)
-        old_sale_price = int(card.get("sale_price") or 0)
-        new_sale_price = calculate_sale_price(market_price)
-        delta = new_sale_price - old_sale_price
-        card["sale_price"] = new_sale_price
+        old_market_price = Decimal(str(card.get("market_price") or 0))
+        delta = market_price - old_market_price
+        card["market_price"] = float(market_price)
+        card.pop("sale_price", None)
+        card.pop("manual_sale_price", None)
         updated_count += 1
         total_delta += delta
 
         messages.append(
-            f"{name}: ${old_sale_price} -> ${new_sale_price} ({delta:+d}) "
-            f"(Scryfall {source_key} ${market_price})"
+            f"{name}: ${old_market_price} -> ${market_price} ({delta:+}) "
+            f"(Scryfall {source_key})"
         )
 
     return updated_count, skipped_count, total_delta, messages
 
 
 def write_cards(path: Path, cards: list[dict[str, Any]]) -> None:
-    cards.sort(key=lambda card: (-int(card.get("sale_price") or 0), str(card.get("name") or "").lower()))
+    cards.sort(key=lambda card: (-Decimal(str(card.get("market_price") or 0)), str(card.get("name") or "").lower()))
     with path.open("w", encoding="utf-8") as cards_file:
         json.dump(cards, cards_file, indent=2)
         cards_file.write("\n")
@@ -232,7 +215,7 @@ def main() -> None:
         timeout=args.timeout,
     )
     summary = (
-        f"Total sale price change: {total_delta:+d} "
+        f"Total market value change: ${total_delta:+} "
         f"across {updated_count} updated cards; {skipped_count} skipped."
     )
 

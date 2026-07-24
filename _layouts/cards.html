@@ -21,8 +21,8 @@
         <label class="flex items-center gap-2 text-slate-700">
           <span class="text-xs uppercase tracking-wide text-slate-500">Sort</span>
           <select id="cards-sort" class="rounded border border-slate-300 bg-white px-2 py-1 text-sm text-slate-900">
-            <option value="price-desc">Sale price high to low</option>
-            <option value="price-asc">Sale price low to high</option>
+            <option value="price-desc">Market value high to low</option>
+            <option value="price-asc">Market value low to high</option>
             <option value="name-asc">Name A-Z</option>
             <option value="name-desc">Name Z-A</option>
           </select>
@@ -62,10 +62,10 @@
         }
 
         if (sortMode === "price-asc") {
-          return left.sale_price - right.sale_price || left.name.localeCompare(right.name);
+          return left.market_price - right.market_price || left.name.localeCompare(right.name);
         }
 
-        return right.sale_price - left.sale_price || left.name.localeCompare(right.name);
+        return right.market_price - left.market_price || left.name.localeCompare(right.name);
       });
     }
 
@@ -87,7 +87,8 @@
       const status = document.getElementById("cards-status");
       const grid = document.getElementById("cards-grid");
 
-      status.textContent = `${availableCards.length} available cards`;
+      const marketValue = availableCards.reduce((total, card) => total + card.market_price, 0);
+      status.textContent = `Market value: ${currency.format(marketValue)}`;
 
       grid.innerHTML = sortedCards.map((card) => `
         <article class="grid grid-cols-[80px_minmax(0,1fr)_64px] gap-3 rounded border border-slate-200 bg-white p-3 shadow-sm sm:grid-cols-[96px_minmax(0,1fr)_72px] sm:gap-4 sm:p-4">
@@ -106,8 +107,8 @@
             <p class="mt-1 text-sm text-slate-600">${escapeHtml(card.set_name)}</p>
             <dl class="mt-4 grid grid-cols-2 gap-3 text-sm">
               <div>
-                <dt class="text-xs uppercase tracking-wide text-slate-500">Sale</dt>
-                <dd class="font-medium">${currency.format(card.sale_price)}</dd>
+                <dt class="text-xs uppercase tracking-wide text-slate-500">Market</dt>
+                <dd class="font-medium">${currency.format(card.market_price)}</dd>
               </div>
             </dl>
           </div>

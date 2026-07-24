@@ -7,8 +7,7 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/6883_in_200x200.jpg",
     "pictures_url": "/cradle/",
     "sold": false,
-    "manual_sale_price": true,
-    "sale_price": 1126
+    "market_price": 1622.57
   },
   {
     "product_id": "11467",
@@ -18,7 +17,7 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/11467_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 155
+    "market_price": 175.8
   },
   {
     "product_id": "179473",
@@ -28,7 +27,7 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/179473_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 123
+    "market_price": 134.33
   },
   {
     "product_id": "179517",
@@ -38,7 +37,7 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/179517_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 100
+    "market_price": 115.09
   },
   {
     "product_id": "487805",
@@ -48,17 +47,7 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/487805_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 95
-  },
-  {
-    "product_id": "218698",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/218698?Language=English",
-    "name": "Force of Will",
-    "set_name": "Double Masters",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/218698_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 66
+    "market_price": 104.35
   },
   {
     "product_id": "162125",
@@ -68,7 +57,17 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/162125_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 66
+    "market_price": 76.13
+  },
+  {
+    "product_id": "218698",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/218698?Language=English",
+    "name": "Force of Will",
+    "set_name": "Double Masters",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/218698_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 69.91
   },
   {
     "product_id": "4332",
@@ -78,7 +77,7 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/4332_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 50
+    "market_price": 62.88
   },
   {
     "product_id": "7357",
@@ -88,7 +87,7 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/7357_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 50
+    "market_price": 60.24
   },
   {
     "product_id": "277161",
@@ -98,7 +97,7 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/277161_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 47
+    "market_price": 55.04
   },
   {
     "product_id": "91106",
@@ -108,47 +107,7 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/91106_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 47
-  },
-  {
-    "product_id": "179480",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/179480?Language=English",
-    "name": "Cavern of Souls",
-    "set_name": "Ultimate Masters",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/179480_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 42
-  },
-  {
-    "product_id": "71039",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/71039?Language=English",
-    "name": "Nykthos, Shrine to Nyx",
-    "set_name": "Theros",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/71039_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 42
-  },
-  {
-    "product_id": "139830",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/139830?Language=English",
-    "name": "Teferi's Protection",
-    "set_name": "Commander 2017",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/139830_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 42
-  },
-  {
-    "product_id": "504142",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/504142?Language=English",
-    "name": "Finale of Devastation",
-    "set_name": "Commander Masters",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/504142_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 41
+    "market_price": 54.68
   },
   {
     "product_id": "227008",
@@ -158,7 +117,37 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/227008_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 41
+    "market_price": 52.95
+  },
+  {
+    "product_id": "504142",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/504142?Language=English",
+    "name": "Finale of Devastation",
+    "set_name": "Commander Masters",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/504142_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 52.69
+  },
+  {
+    "product_id": "179480",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/179480?Language=English",
+    "name": "Cavern of Souls",
+    "set_name": "Ultimate Masters",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/179480_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 52.63
+  },
+  {
+    "product_id": "71039",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/71039?Language=English",
+    "name": "Nykthos, Shrine to Nyx",
+    "set_name": "Theros",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/71039_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 51.8
   },
   {
     "product_id": "262050",
@@ -168,37 +157,17 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/262050_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 40
+    "market_price": 49.98
   },
   {
-    "product_id": "46940",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/46940?Language=English",
-    "name": "Animar, Soul of Elements",
-    "set_name": "Commander",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/46940_in_200x200.jpg",
+    "product_id": "139830",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/139830?Language=English",
+    "name": "Teferi's Protection",
+    "set_name": "Commander 2017",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/139830_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 38
-  },
-  {
-    "product_id": "12160",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/12160?Language=English",
-    "name": "Sensei's Divining Top",
-    "set_name": "Champions of Kamigawa",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/12160_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 38
-  },
-  {
-    "product_id": "484938",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/484938?Language=English",
-    "name": "Jeweled Lotus",
-    "set_name": "Commander Masters",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/484938_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 37
+    "market_price": 49.98
   },
   {
     "product_id": "98645",
@@ -208,7 +177,37 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/98645_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 34
+    "market_price": 48.64
+  },
+  {
+    "product_id": "12160",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/12160?Language=English",
+    "name": "Sensei's Divining Top",
+    "set_name": "Champions of Kamigawa",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/12160_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 46.89
+  },
+  {
+    "product_id": "46940",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/46940?Language=English",
+    "name": "Animar, Soul of Elements",
+    "set_name": "Commander",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/46940_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 46.74
+  },
+  {
+    "product_id": "484938",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/484938?Language=English",
+    "name": "Jeweled Lotus",
+    "set_name": "Commander Masters",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/484938_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 43.5
   },
   {
     "product_id": "98506",
@@ -218,27 +217,7 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/98506_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 33
-  },
-  {
-    "product_id": "11640",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/11640?Language=English",
-    "name": "Mycosynth Lattice",
-    "set_name": "Darksteel",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/11640_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 33
-  },
-  {
-    "product_id": "5889",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/5889?Language=English",
-    "name": "Natural Order",
-    "set_name": "Visions",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/5889_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 33
+    "market_price": 42.0
   },
   {
     "product_id": "128282",
@@ -248,7 +227,17 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/128282_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 32
+    "market_price": 41.55
+  },
+  {
+    "product_id": "5889",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/5889?Language=English",
+    "name": "Natural Order",
+    "set_name": "Visions",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/5889_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 40.52
   },
   {
     "product_id": "526073",
@@ -258,17 +247,17 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/526073_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 29
+    "market_price": 39.78
   },
   {
-    "product_id": "128281",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/128281?Language=English",
-    "name": "Misty Rainforest",
-    "set_name": "Modern Masters 2017",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/128281_in_200x200.jpg",
+    "product_id": "11640",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/11640?Language=English",
+    "name": "Mycosynth Lattice",
+    "set_name": "Darksteel",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/11640_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 29
+    "market_price": 39.39
   },
   {
     "product_id": "39082",
@@ -278,67 +267,17 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/39082_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 28
+    "market_price": 39.08
   },
   {
-    "product_id": "5615",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/5615?Language=English",
-    "name": "Lotus Petal",
-    "set_name": "Tempest",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/5615_in_200x200.jpg",
+    "product_id": "128281",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/128281?Language=English",
+    "name": "Misty Rainforest",
+    "set_name": "Modern Masters 2017",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/128281_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 28
-  },
-  {
-    "product_id": "190748",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/190748?Language=English",
-    "name": "Prismatic Vista",
-    "set_name": "Modern Horizons",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/190748_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 28
-  },
-  {
-    "product_id": "14843",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/14843?Language=English",
-    "name": "Akroma's Memorial",
-    "set_name": "Future Sight",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/14843_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 26
-  },
-  {
-    "product_id": "121620",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/121620?Language=English",
-    "name": "Burgeoning",
-    "set_name": "Conspiracy: Take the Crown",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/121620_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 26
-  },
-  {
-    "product_id": "272901",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/272901?Language=English",
-    "name": "Displacer Kitten",
-    "set_name": "Commander Legends: Battle for Baldur's Gate",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/272901_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 26
-  },
-  {
-    "product_id": "2290",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/2290?Language=English",
-    "name": "Necropotence",
-    "set_name": "Fifth Edition",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/2290_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 26
+    "market_price": 38.14
   },
   {
     "product_id": "56324",
@@ -348,47 +287,17 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/56324_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 26
+    "market_price": 37.75
   },
   {
-    "product_id": "490422",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/490422?Language=English",
-    "name": "Etali, Primal Conqueror (Showcase)",
-    "set_name": "March of the Machine",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/490422_in_200x200.jpg",
+    "product_id": "2290",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/2290?Language=English",
+    "name": "Necropotence",
+    "set_name": "Fifth Edition",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/2290_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 25
-  },
-  {
-    "product_id": "82224",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/82224?Language=English",
-    "name": "Mana Confluence",
-    "set_name": "Journey Into Nyx",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/82224_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 25
-  },
-  {
-    "product_id": "98507",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/98507?Language=English",
-    "name": "Ulamog, the Infinite Gyre",
-    "set_name": "Modern Masters 2015",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/98507_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 25
-  },
-  {
-    "product_id": "9627",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/9627?Language=English",
-    "name": "Cabal Coffers",
-    "set_name": "Torment",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/9627_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 24
+    "market_price": 36.75
   },
   {
     "product_id": "167709",
@@ -398,57 +307,27 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/167709_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 24
+    "market_price": 36.4
   },
   {
-    "product_id": "457191",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/457191?Language=English",
-    "name": "Exploration",
-    "set_name": "Dominaria Remastered",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/457191_in_200x200.jpg",
+    "product_id": "14843",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/14843?Language=English",
+    "name": "Akroma's Memorial",
+    "set_name": "Future Sight",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/14843_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 24
+    "market_price": 36.37
   },
   {
-    "product_id": "128221",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/128221?Language=English",
-    "name": "Marsh Flats",
-    "set_name": "Modern Masters 2017",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/128221_in_200x200.jpg",
+    "product_id": "190748",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/190748?Language=English",
+    "name": "Prismatic Vista",
+    "set_name": "Modern Horizons",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/190748_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 24
-  },
-  {
-    "product_id": "6131",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/6131?Language=English",
-    "name": "Winding Canyons",
-    "set_name": "Weatherlight",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/6131_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 24
-  },
-  {
-    "product_id": "66473",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/66473?Language=English",
-    "name": "Cyclonic Rift",
-    "set_name": "Return to Ravnica",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/66473_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 23
-  },
-  {
-    "product_id": "192562",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/192562?Language=English",
-    "name": "Field of the Dead",
-    "set_name": "Core Set 2020",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/192562_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 23
+    "market_price": 35.38
   },
   {
     "product_id": "139784",
@@ -458,27 +337,77 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/139784_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 22
+    "market_price": 35.31
   },
   {
-    "product_id": "499967",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/499967?Language=English",
-    "name": "Mithril Coat (Extended Art)",
-    "set_name": "Universes Beyond: The Lord of the Rings: Tales of Middle-earth",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/499967_in_200x200.jpg",
+    "product_id": "121620",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/121620?Language=English",
+    "name": "Burgeoning",
+    "set_name": "Conspiracy: Take the Crown",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/121620_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 21
+    "market_price": 35.26
   },
   {
-    "product_id": "180789",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/180789?Language=English",
-    "name": "Phyrexian Tower",
-    "set_name": "Ultimate Masters",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/180789_in_200x200.jpg",
+    "product_id": "98507",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/98507?Language=English",
+    "name": "Ulamog, the Infinite Gyre",
+    "set_name": "Modern Masters 2015",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/98507_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 21
+    "market_price": 34.8
+  },
+  {
+    "product_id": "5615",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/5615?Language=English",
+    "name": "Lotus Petal",
+    "set_name": "Tempest",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/5615_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 33.66
+  },
+  {
+    "product_id": "9627",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/9627?Language=English",
+    "name": "Cabal Coffers",
+    "set_name": "Torment",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/9627_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 33.6
+  },
+  {
+    "product_id": "6131",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/6131?Language=English",
+    "name": "Winding Canyons",
+    "set_name": "Weatherlight",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/6131_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 33.17
+  },
+  {
+    "product_id": "128221",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/128221?Language=English",
+    "name": "Marsh Flats",
+    "set_name": "Modern Masters 2017",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/128221_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 33.11
+  },
+  {
+    "product_id": "490422",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/490422?Language=English",
+    "name": "Etali, Primal Conqueror (Showcase)",
+    "set_name": "March of the Machine",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/490422_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 33.08
   },
   {
     "product_id": "202858",
@@ -488,17 +417,77 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/202858_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 20
+    "market_price": 32.71
   },
   {
-    "product_id": "27601",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/27601?Language=English",
-    "name": "Ad Nauseam",
-    "set_name": "Shards of Alara",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/27601_in_200x200.jpg",
+    "product_id": "499967",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/499967?Language=English",
+    "name": "Mithril Coat (Extended Art)",
+    "set_name": "Universes Beyond: The Lord of the Rings: Tales of Middle-earth",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/499967_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 19
+    "market_price": 32.05
+  },
+  {
+    "product_id": "457191",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/457191?Language=English",
+    "name": "Exploration",
+    "set_name": "Dominaria Remastered",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/457191_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 31.47
+  },
+  {
+    "product_id": "82224",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/82224?Language=English",
+    "name": "Mana Confluence",
+    "set_name": "Journey Into Nyx",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/82224_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 31.13
+  },
+  {
+    "product_id": "272901",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/272901?Language=English",
+    "name": "Displacer Kitten",
+    "set_name": "Commander Legends: Battle for Baldur's Gate",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/272901_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 30.74
+  },
+  {
+    "product_id": "66473",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/66473?Language=English",
+    "name": "Cyclonic Rift",
+    "set_name": "Return to Ravnica",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/66473_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 29.16
+  },
+  {
+    "product_id": "192562",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/192562?Language=English",
+    "name": "Field of the Dead",
+    "set_name": "Core Set 2020",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/192562_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 29.15
+  },
+  {
+    "product_id": "180789",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/180789?Language=English",
+    "name": "Phyrexian Tower",
+    "set_name": "Ultimate Masters",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/180789_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 28.06
   },
   {
     "product_id": "517244",
@@ -508,37 +497,7 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/517244_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 19
-  },
-  {
-    "product_id": "82733",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/82733?Language=English",
-    "name": "City of Brass",
-    "set_name": "Magic Modern Event Deck",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/82733_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 17
-  },
-  {
-    "product_id": "504554",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/504554?Language=English",
-    "name": "Flawless Maneuver",
-    "set_name": "Commander Masters",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/504554_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 16
-  },
-  {
-    "product_id": "5321",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/5321?Language=English",
-    "name": "Constant Mists",
-    "set_name": "Stronghold",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/5321_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 15
+    "market_price": 27.26
   },
   {
     "product_id": "128572",
@@ -548,197 +507,7 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/128572_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 15
-  },
-  {
-    "product_id": "166822",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/166822?Language=English",
-    "name": "Goblin Welder",
-    "set_name": "Commander Anthology Volume II",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/166822_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 15
-  },
-  {
-    "product_id": "12009",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/12009?Language=English",
-    "name": "Hall of the Bandit Lord",
-    "set_name": "Champions of Kamigawa",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/12009_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 15
-  },
-  {
-    "product_id": "171168",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/171168?Language=English",
-    "name": "Unwinding Clock",
-    "set_name": "Commander 2018",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/171168_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 15
-  },
-  {
-    "product_id": "451977",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/451977?Language=English",
-    "name": "Unwinding Clock (Schematic)",
-    "set_name": "The Brothers' War: Retro Frame Artifacts",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/451977_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 15
-  },
-  {
-    "product_id": "248609",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/248609?Language=English",
-    "name": "Vedalken Orrery",
-    "set_name": "The List Reprints",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/248609_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 15
-  },
-  {
-    "product_id": "452655",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/452655?Language=English",
-    "name": "Awaken the Woods",
-    "set_name": "The Brothers' War",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/452655_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 13
-  },
-  {
-    "product_id": "5360",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/5360?Language=English",
-    "name": "Horn of Greed",
-    "set_name": "Stronghold",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/5360_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 13
-  },
-  {
-    "product_id": "166684",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/166684?Language=English",
-    "name": "Kalemne, Disciple of Iroas",
-    "set_name": "Commander Anthology Volume II",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/166684_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 13
-  },
-  {
-    "product_id": "179489",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/179489?Language=English",
-    "name": "Noble Hierarch",
-    "set_name": "Ultimate Masters: Box Toppers",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/179489_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 13
-  },
-  {
-    "product_id": "179520",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/179520?Language=English",
-    "name": "Platinum Emperion",
-    "set_name": "Ultimate Masters",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/179520_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 13
-  },
-  {
-    "product_id": "216962",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/216962?Language=English",
-    "name": "Sigarda's Aid",
-    "set_name": "Promo Pack: Core Set 2021",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/216962_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 13
-  },
-  {
-    "product_id": "105007",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/105007?Language=English",
-    "name": "Void Winnower",
-    "set_name": "Battle for Zendikar",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/105007_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 13
-  },
-  {
-    "product_id": "124681",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/124681?Language=English",
-    "name": "Wave of Reckoning",
-    "set_name": "Commander 2016",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/124681_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 13
-  },
-  {
-    "product_id": "166660",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/166660?Language=English",
-    "name": "Bountiful Promenade",
-    "set_name": "Battlebond",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/166660_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 12
-  },
-  {
-    "product_id": "119260",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/119260?Language=English",
-    "name": "Emrakul, the Promised End",
-    "set_name": "Eldritch Moon",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/119260_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 12
-  },
-  {
-    "product_id": "179538",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/179538?Language=English",
-    "name": "Entomb",
-    "set_name": "Ultimate Masters",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/179538_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 12
-  },
-  {
-    "product_id": "544936",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/544936?Language=English",
-    "name": "Grand Abolisher",
-    "set_name": "Outlaws of Thunder Junction: The Big Score",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/544936_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 12
-  },
-  {
-    "product_id": "6928",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/6928?Language=English",
-    "name": "Karn, Silver Golem",
-    "set_name": "Urza's Saga",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/6928_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 12
-  },
-  {
-    "product_id": "124561",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/124561?Language=English",
-    "name": "Lurking Predators",
-    "set_name": "Commander 2016",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/124561_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 12
+    "market_price": 24.29
   },
   {
     "product_id": "162752",
@@ -748,87 +517,167 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/162752_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 12
+    "market_price": 22.33
   },
   {
-    "product_id": "233786",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/233786?Language=English",
-    "name": "Pact of Negation",
-    "set_name": "Time Spiral: Remastered",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/233786_in_200x200.jpg",
+    "product_id": "166822",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/166822?Language=English",
+    "name": "Goblin Welder",
+    "set_name": "Commander Anthology Volume II",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/166822_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 12
+    "market_price": 22.15
   },
   {
-    "product_id": "519544",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/519544?Language=English",
-    "name": "Quantum Misalignment",
-    "set_name": "Universes Beyond: Doctor Who",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/519544_in_200x200.jpg",
+    "product_id": "12009",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/12009?Language=English",
+    "name": "Hall of the Bandit Lord",
+    "set_name": "Champions of Kamigawa",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/12009_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 12
+    "market_price": 22.14
   },
   {
-    "product_id": "167811",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/167811?Language=English",
-    "name": "Spellseeker",
-    "set_name": "Battlebond",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/167811_in_200x200.jpg",
+    "product_id": "82733",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/82733?Language=English",
+    "name": "City of Brass",
+    "set_name": "Magic Modern Event Deck",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/82733_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 12
+    "market_price": 21.33
   },
   {
-    "product_id": "236401",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/236401?Language=English",
-    "name": "Stinging Study",
-    "set_name": "Commander 2021",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/236401_in_200x200.jpg",
+    "product_id": "27601",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/27601?Language=English",
+    "name": "Ad Nauseam",
+    "set_name": "Shards of Alara",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/27601_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 12
+    "market_price": 20.97
   },
   {
-    "product_id": "212212",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/212212?Language=English",
-    "name": "Twinning Staff",
-    "set_name": "Commander 2020",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/212212_in_200x200.jpg",
+    "product_id": "504554",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/504554?Language=English",
+    "name": "Flawless Maneuver",
+    "set_name": "Commander Masters",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/504554_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 12
+    "market_price": 20.84
   },
   {
-    "product_id": "92831",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/92831?Language=English",
-    "name": "Wooded Foothills",
-    "set_name": "Khans of Tarkir",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/92831_in_200x200.jpg",
+    "product_id": "179538",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/179538?Language=English",
+    "name": "Entomb",
+    "set_name": "Ultimate Masters",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/179538_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 12
+    "market_price": 20.17
   },
   {
-    "product_id": "121761",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/121761?Language=English",
-    "name": "Berserk",
-    "set_name": "Conspiracy: Take the Crown",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/121761_in_200x200.jpg",
+    "product_id": "179489",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/179489?Language=English",
+    "name": "Noble Hierarch",
+    "set_name": "Ultimate Masters: Box Toppers",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/179489_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 11
+    "market_price": 20.17
   },
   {
-    "product_id": "524278",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/524278?Language=English",
-    "name": "Dino DNA (Borderless)",
-    "set_name": "Universes Beyond: Jurassic World Collection",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/524278_in_200x200.jpg",
+    "product_id": "216962",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/216962?Language=English",
+    "name": "Sigarda's Aid",
+    "set_name": "Promo Pack: Core Set 2021",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/216962_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 11
+    "market_price": 20.17
+  },
+  {
+    "product_id": "6928",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/6928?Language=English",
+    "name": "Karn, Silver Golem",
+    "set_name": "Urza's Saga",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/6928_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 19.99
+  },
+  {
+    "product_id": "5360",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/5360?Language=English",
+    "name": "Horn of Greed",
+    "set_name": "Stronghold",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/5360_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 19.9
+  },
+  {
+    "product_id": "248609",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/248609?Language=English",
+    "name": "Vedalken Orrery",
+    "set_name": "The List Reprints",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/248609_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 19.89
+  },
+  {
+    "product_id": "451977",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/451977?Language=English",
+    "name": "Unwinding Clock (Schematic)",
+    "set_name": "The Brothers' War: Retro Frame Artifacts",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/451977_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 19.83
+  },
+  {
+    "product_id": "124561",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/124561?Language=English",
+    "name": "Lurking Predators",
+    "set_name": "Commander 2016",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/124561_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 19.72
+  },
+  {
+    "product_id": "5321",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/5321?Language=English",
+    "name": "Constant Mists",
+    "set_name": "Stronghold",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/5321_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 19.62
+  },
+  {
+    "product_id": "179520",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/179520?Language=English",
+    "name": "Platinum Emperion",
+    "set_name": "Ultimate Masters",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/179520_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 19.45
+  },
+  {
+    "product_id": "171168",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/171168?Language=English",
+    "name": "Unwinding Clock",
+    "set_name": "Commander 2018",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/171168_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 18.91
   },
   {
     "product_id": "202957",
@@ -838,127 +687,37 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/202957_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 11
+    "market_price": 18.83
   },
   {
-    "product_id": "118415",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/118415?Language=English",
-    "name": "Gamble",
-    "set_name": "Eternal Masters",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/118415_in_200x200.jpg",
+    "product_id": "544936",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/544936?Language=English",
+    "name": "Grand Abolisher",
+    "set_name": "Outlaws of Thunder Junction: The Big Score",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/544936_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 11
+    "market_price": 18.81
   },
   {
-    "product_id": "221359",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/221359?Language=English",
-    "name": "Training Center",
-    "set_name": "Commander Legends",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/221359_in_200x200.jpg",
+    "product_id": "166684",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/166684?Language=English",
+    "name": "Kalemne, Disciple of Iroas",
+    "set_name": "Commander Anthology Volume II",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/166684_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 11
+    "market_price": 18.78
   },
   {
-    "product_id": "167791",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/167791?Language=English",
-    "name": "Vigor",
-    "set_name": "Battlebond",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/167791_in_200x200.jpg",
+    "product_id": "119260",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/119260?Language=English",
+    "name": "Emrakul, the Promised End",
+    "set_name": "Eldritch Moon",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/119260_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 11
-  },
-  {
-    "product_id": "118603",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/118603?Language=English",
-    "name": "Winter Orb",
-    "set_name": "Eternal Masters",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/118603_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 11
-  },
-  {
-    "product_id": "18849",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/18849?Language=English",
-    "name": "Wooded Bastion",
-    "set_name": "Shadowmoor",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/18849_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 11
-  },
-  {
-    "product_id": "14000",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/14000?Language=English",
-    "name": "Arcum Dagsson",
-    "set_name": "Coldsnap",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/14000_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 10
-  },
-  {
-    "product_id": "82233",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/82233?Language=English",
-    "name": "Athreos, God of Passage",
-    "set_name": "Journey Into Nyx",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/82233_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 10
-  },
-  {
-    "product_id": "139786",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/139786?Language=English",
-    "name": "Hammer of Nazahn",
-    "set_name": "Commander 2017",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/139786_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 10
-  },
-  {
-    "product_id": "499755",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/499755?Language=English",
-    "name": "Heroic Intervention",
-    "set_name": "Commander: The Lord of the Rings: Tales of Middle-earth",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/499755_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 10
-  },
-  {
-    "product_id": "124536",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/124536?Language=English",
-    "name": "Homeward Path",
-    "set_name": "Commander 2016",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/124536_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 10
-  },
-  {
-    "product_id": "11314",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/11314?Language=English",
-    "name": "Isochron Scepter",
-    "set_name": "Mirrodin",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/11314_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 10
-  },
-  {
-    "product_id": "39455",
-    "tcgplayer_url": "https://www.tcgplayer.com/product/39455?Language=English",
-    "name": "Phyrexian Metamorph",
-    "set_name": "Launch Party & Release Event Promos",
-    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/39455_in_200x200.jpg",
-    "pictures_url": "",
-    "sold": false,
-    "sale_price": 10
+    "market_price": 18.02
   },
   {
     "product_id": "83296",
@@ -968,7 +727,227 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/83296_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 10
+    "market_price": 17.67
+  },
+  {
+    "product_id": "105007",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/105007?Language=English",
+    "name": "Void Winnower",
+    "set_name": "Battle for Zendikar",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/105007_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 17.62
+  },
+  {
+    "product_id": "118415",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/118415?Language=English",
+    "name": "Gamble",
+    "set_name": "Eternal Masters",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/118415_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 17.57
+  },
+  {
+    "product_id": "233786",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/233786?Language=English",
+    "name": "Pact of Negation",
+    "set_name": "Time Spiral: Remastered",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/233786_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 17.52
+  },
+  {
+    "product_id": "18849",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/18849?Language=English",
+    "name": "Wooded Bastion",
+    "set_name": "Shadowmoor",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/18849_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 17.19
+  },
+  {
+    "product_id": "124681",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/124681?Language=English",
+    "name": "Wave of Reckoning",
+    "set_name": "Commander 2016",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/124681_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 17.0
+  },
+  {
+    "product_id": "92831",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/92831?Language=English",
+    "name": "Wooded Foothills",
+    "set_name": "Khans of Tarkir",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/92831_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 16.77
+  },
+  {
+    "product_id": "221359",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/221359?Language=English",
+    "name": "Training Center",
+    "set_name": "Commander Legends",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/221359_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 16.65
+  },
+  {
+    "product_id": "166660",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/166660?Language=English",
+    "name": "Bountiful Promenade",
+    "set_name": "Battlebond",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/166660_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 16.42
+  },
+  {
+    "product_id": "39455",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/39455?Language=English",
+    "name": "Phyrexian Metamorph",
+    "set_name": "Launch Party & Release Event Promos",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/39455_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 16.38
+  },
+  {
+    "product_id": "14000",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/14000?Language=English",
+    "name": "Arcum Dagsson",
+    "set_name": "Coldsnap",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/14000_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 16.3
+  },
+  {
+    "product_id": "118603",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/118603?Language=English",
+    "name": "Winter Orb",
+    "set_name": "Eternal Masters",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/118603_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 16.25
+  },
+  {
+    "product_id": "499755",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/499755?Language=English",
+    "name": "Heroic Intervention",
+    "set_name": "Commander: The Lord of the Rings: Tales of Middle-earth",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/499755_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 16.16
+  },
+  {
+    "product_id": "236401",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/236401?Language=English",
+    "name": "Stinging Study",
+    "set_name": "Commander 2021",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/236401_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 15.96
+  },
+  {
+    "product_id": "139786",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/139786?Language=English",
+    "name": "Hammer of Nazahn",
+    "set_name": "Commander 2017",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/139786_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 15.94
+  },
+  {
+    "product_id": "124536",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/124536?Language=English",
+    "name": "Homeward Path",
+    "set_name": "Commander 2016",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/124536_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 15.88
+  },
+  {
+    "product_id": "524278",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/524278?Language=English",
+    "name": "Dino DNA (Borderless)",
+    "set_name": "Universes Beyond: Jurassic World Collection",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/524278_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 15.83
+  },
+  {
+    "product_id": "167811",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/167811?Language=English",
+    "name": "Spellseeker",
+    "set_name": "Battlebond",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/167811_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 15.82
+  },
+  {
+    "product_id": "121761",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/121761?Language=English",
+    "name": "Berserk",
+    "set_name": "Conspiracy: Take the Crown",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/121761_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 15.51
+  },
+  {
+    "product_id": "212212",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/212212?Language=English",
+    "name": "Twinning Staff",
+    "set_name": "Commander 2020",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/212212_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 15.39
+  },
+  {
+    "product_id": "82233",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/82233?Language=English",
+    "name": "Athreos, God of Passage",
+    "set_name": "Journey Into Nyx",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/82233_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 15.34
+  },
+  {
+    "product_id": "167791",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/167791?Language=English",
+    "name": "Vigor",
+    "set_name": "Battlebond",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/167791_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 14.93
+  },
+  {
+    "product_id": "452655",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/452655?Language=English",
+    "name": "Awaken the Woods",
+    "set_name": "The Brothers' War",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/452655_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 14.21
   },
   {
     "product_id": "240045",
@@ -978,7 +957,7 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/240045_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 10
+    "market_price": 13.91
   },
   {
     "product_id": "36312",
@@ -988,7 +967,7 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/36312_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 9
+    "market_price": 12.97
   },
   {
     "product_id": "67378",
@@ -998,7 +977,27 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/67378_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 9
+    "market_price": 12.91
+  },
+  {
+    "product_id": "11314",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/11314?Language=English",
+    "name": "Isochron Scepter",
+    "set_name": "Mirrodin",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/11314_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 12.53
+  },
+  {
+    "product_id": "519544",
+    "tcgplayer_url": "https://www.tcgplayer.com/product/519544?Language=English",
+    "name": "Quantum Misalignment",
+    "set_name": "Universes Beyond: Doctor Who",
+    "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/519544_in_200x200.jpg",
+    "pictures_url": "",
+    "sold": false,
+    "market_price": 12.43
   },
   {
     "product_id": "166659",
@@ -1008,6 +1007,6 @@
     "photo_url": "https://tcgplayer-cdn.tcgplayer.com/product/166659_in_200x200.jpg",
     "pictures_url": "",
     "sold": false,
-    "sale_price": 8
+    "market_price": 7.82
   }
 ]
